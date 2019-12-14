@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fcebe2;
+  /*background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");*/
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Amatic SC', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em 0 0.5em;
+}

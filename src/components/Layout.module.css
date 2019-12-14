@@ -1,0 +1,52 @@
+.nav, .container, .logo, .footer {
+  max-width: 32em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.nav {
+  text-align: center;
+}
+
+.navBar {
+  display: inline-block;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px black;
+}
+
+.navItem {
+  display: inline-block;
+  padding: 0.5em 2em;
+  color: black;
+  text-decoration: none;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navItem--active {
+  background: url('/scratch.svg');
+  background-size: cover;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.earth {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.footer p {
+  color: rgba(0,0,0,0.5);
+  margin: 1em 0;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
