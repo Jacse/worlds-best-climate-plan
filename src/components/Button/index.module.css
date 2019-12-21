@@ -1,0 +1,17 @@
+.button {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.button:active path {
+  transform: scale(0.97) translate(1.5%, 1.5%);
+}
+.button:focus path {
+  stroke-width: 1.5;
+}

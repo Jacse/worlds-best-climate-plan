@@ -1,0 +1,26 @@
+.TOC {
+  position: absolute;
+  width: 180px;
+  transform: translateX(-100%);
+  display: flex;
+  padding: 0.5em;
+  align-items: stretch;
+}
+
+.TOCSlider {
+  width: 10px;
+}
+
+.TOCLink{
+  display: block;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.TOCLinkActive {
+  color: blue;
+}
+
+.TOCIndent {
+  padding-left: 1em;
+}

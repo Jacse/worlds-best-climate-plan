@@ -1,7 +1,12 @@
-.nav, .container, .logo, .footer {
+.logo, .nav, .ctas, .container, .footer {
   max-width: 32em;
   margin: auto;
   padding: 0 1em;
+}
+
+.ctas {
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav {
