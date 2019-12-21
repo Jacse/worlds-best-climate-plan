@@ -1,4 +1,5 @@
 import React from 'react';
+import text from '../../i18n/da';
 import Divider from '../Divider';
 import Button from '../Button';
 import Carousels from '../Carousel';
@@ -7,16 +8,16 @@ import styles from './index.module.css';
 const Layout = ({ children }) => (
   <div>
     <div className={styles.logo}>
-      <h1>Den Bedste</h1>
+      <h1>{text.topTitle}</h1>
       <img className={styles.earth} src="/earth.svg" />
-      <h1>Klimaplan</h1>
+      <h1>{text.bottomTitle}</h1>
     </div>
     <div className={styles.container}>
-      <h2>UNDERTITEL</h2>
+      <h2>{text.subtitle}</h2>
     </div>
     <div className={styles.ctas}>
-      <Button>Støt som organisation</Button>
-      <Button>Støt som borger</Button>
+      <Button>{text.supportAsOrg}</Button>
+      <Button>{text.supportAsPerson}</Button>
     </div>
     <Carousels />
     <div className={styles.container}>{children}</div>

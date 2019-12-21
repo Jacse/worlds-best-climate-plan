@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Link, Element } from 'react-scroll';
 import { StickyContainer, Sticky } from 'react-sticky';
 import Layout from '../components/Layout';
-import PriceChart from '../components/PriceChart';
-import da from '../i18n/da';
+import text from '../i18n/da';
 import Card from '../components/Card';
 import styles from './index.module.css';
 import Slider from '../components/Slider';
@@ -37,7 +36,7 @@ const Index = () => {
                   <TOCLink to="box" title="Kort fortalt" />
                   <TOCLink to="intro" title="Ikke-så-kort fortalt" />
                   <div className={styles.TOCIndent}>
-                    {da.intro.map(({ title }) => (
+                    {text.intro.map(({ title }) => (
                       <TOCLink key={title} title={title} to={title} />
                     ))}
                   </div>
@@ -55,7 +54,7 @@ const Index = () => {
         </Element>
         <Element name="intro">
           <h1>Ikke-så-kort fortalt</h1>
-          {da.intro.map(({ title, text }) => (
+          {text.intro.map(({ title, text }) => (
             <Element key={title} name={title}>
               <h2>{title}</h2>
               <p>{text}</p>
@@ -65,7 +64,7 @@ const Index = () => {
         <Element name="FAQ">
           <Card backgroundColor="rgba(134, 207, 234, 0.8)">
             <h1>FAQ</h1>
-            {da.faq.map(([question, answer], i) => (
+            {text.faq.map(([question, answer], i) => (
               <div key={i}>
                 <h3>{question}</h3>
                 <p>{answer}</p>

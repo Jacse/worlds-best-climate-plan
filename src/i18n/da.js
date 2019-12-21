@@ -1,4 +1,11 @@
 export default {
+  topTitle: 'Den Bedste',
+  bottomTitle: 'Klimaplan',
+  subtitle: 'Undertitel',
+  supportedBy: 'Støttet af',
+  mentionedIn: 'Nævnt i',
+  supportAsOrg: 'Støt som organisation',
+  supportAsPerson: 'Støt som borger',
   intro: [
     {
       title: 'Den dovne revolution',
