@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, Element } from 'react-scroll';
 import { StickyContainer, Sticky } from 'react-sticky';
 import Layout from '../components/Layout';
@@ -21,8 +21,6 @@ const Circ = React.memo(() => (
 ));
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState('box');
-
   const TOCLink = ({ to, title }) => (
     <Link
       key={to}
@@ -31,7 +29,6 @@ const Index = () => {
       spy
       to={to}
       smooth={true}
-      // onSetActive={setActiveSection} TODO: Move slider ball to active section
     >
       <Circ />
       <span>{title}</span>
