@@ -5,7 +5,20 @@ import Layout from '../components/Layout';
 import text from '../i18n/da';
 import Card from '../components/Card';
 import styles from './index.module.css';
-import Slider from '../components/Slider';
+import ReactRough, { Circle } from 'react-rough';
+
+const Circ = React.memo(() => (
+  <ReactRough renderer="svg" width={20} height={20}>
+    <Circle
+      diameter={10}
+      x={10}
+      y={10}
+      fill="inherit"
+      stroke="none"
+      fillStyle="solid"
+    />
+  </ReactRough>
+));
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('box');
@@ -20,7 +33,8 @@ const Index = () => {
       smooth={true}
       // onSetActive={setActiveSection} TODO: Move slider ball to active section
     >
-      {title}
+      <Circ />
+      <span>{title}</span>
     </Link>
   );
 
@@ -31,7 +45,6 @@ const Index = () => {
           {({ style }) => (
             <div style={style}>
               <div className={styles.TOC}>
-                <Slider size={10} pos={-1} />
                 <div>
                   <TOCLink to="box" title="Kort fortalt" />
                   <TOCLink to="intro" title="Ikke-så-kort fortalt" />

@@ -2,13 +2,7 @@
   position: absolute;
   width: 180px;
   transform: translateX(-100%);
-  display: flex;
   padding: 0.5em;
-  align-items: stretch;
-}
-
-.TOCSlider {
-  width: 10px;
 }
 
 .TOCLink{
@@ -17,8 +11,18 @@
   cursor: pointer;
 }
 
-.TOCLinkActive {
-  color: blue;
+.TOCLink svg {
+  vertical-align: sub;
+}
+
+.TOCLink g {
+  stroke: #999;
+  fill: #999;
+}
+
+.TOCLinkActive g {
+  stroke: rgb(134, 207, 234);
+  fill: rgb(134, 207, 234);
 }
 
 .TOCIndent {

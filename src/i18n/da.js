@@ -1,7 +1,8 @@
 export default {
   topTitle: 'Den Bedste',
   bottomTitle: 'Klimaplan',
-  subtitle: 'Undertitel',
+  subtitle:
+    'Ved at sætte en pris på udledninger kan vi bedst og billigst løse klimakrisen',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
   supportAsOrg: 'Støt som organisation',

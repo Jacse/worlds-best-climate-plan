@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
       <h1>{text.bottomTitle}</h1>
     </div>
     <div className={styles.container}>
-      <h2>{text.subtitle}</h2>
+      <p className={styles.subTitle}>{text.subtitle}</p>
     </div>
     <div className={styles.ctas}>
       <Button>{text.supportAsOrg}</Button>
