@@ -1,0 +1,11 @@
+.separator {
+  position: absolute;
+  height: 5rem;
+  width: 100%;
+  display: block;
+  transform: translateY(-50%);
+}
+.shadow {
+  fill: rgba(0,0,0,0.1);
+  transform: translate3d(2%, -2%, 0) rotate(-2deg);
+}

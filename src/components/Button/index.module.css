@@ -6,7 +6,8 @@
   letter-spacing: 1.25px;
   text-align: center;
   font-size: 1em;
-  border-radius: 2px;
+  font-weight: bold;
+  border-radius: 2em;
   padding: 0.5em 1.5em;
 }
 

@@ -6,6 +6,7 @@ import text from '../i18n/da';
 import styles from './index.module.css';
 import 'rc-collapse/assets/index.css';
 import { Link } from 'gatsby';
+import Separator from '../components/Separator';
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         </div>
       </div>
       <section className={styles.carousels}>
+        <Separator variant={1} />
         <div className="container-large">
           <h4>{text.supportedBy}</h4>
           <div className={styles.carousel}>
@@ -72,9 +74,10 @@ const Index = () => {
         </div>
       </section>
       <section className="green">
+        <Separator green />
         <div className={`container-large ${styles.brief}`}>
           <h2>{text.frontpage.explainedBriefly}</h2>
-          <div className="container-small-no-padding">
+          <div className="container-medium-no-padding">
             <p>{text.frontpage.explainedBrieflyText}</p>
           </div>
           <div className="cols">
@@ -101,15 +104,18 @@ const Index = () => {
           </Link>
         </div>
       </section>
-      <section className="container-medium">
-        <h2>FAQ</h2>
-        <Collapse accordion className={styles.faq}>
-          {text.faq.map(([question, answer]) => (
-            <Panel key={question} header={question}>
-              {answer}
-            </Panel>
-          ))}
-        </Collapse>
+      <section>
+        <Separator />
+        <div className="container-medium">
+          <h2>FAQ</h2>
+          <Collapse accordion className={styles.faq}>
+            {text.faq.map(([question, answer]) => (
+              <Panel key={question} header={question}>
+                {answer}
+              </Panel>
+            ))}
+          </Collapse>
+        </div>
       </section>
     </Layout>
   );

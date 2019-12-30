@@ -20,11 +20,6 @@
   margin: 0.5rem 1rem;
 }
 
-.supportButton {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .burgerButton {
   position: relative;
   width: 26px;
@@ -123,7 +118,6 @@
   cursor: pointer;
   margin: 1rem;
   padding: none;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   border: none;

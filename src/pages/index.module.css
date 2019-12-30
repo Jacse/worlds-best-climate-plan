@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #315640;
   color: #EEE;
-  padding: 5em 0 2em;
+  padding: 5em 0 1.5em;
 }
 
 .logo {
@@ -12,13 +12,13 @@
 }
 
 .subTitle {
-  margin: 0.5em 0 1.5em;
+  margin: 0.5em 0 1em;
   font-weight: normal;
   color: rgb(173, 215, 146);
 }
 
 .ctas button {
-  margin: 0 0.5em;
+  margin: 0.5em;
 }
 
 .carousels {
