@@ -1,6 +1,6 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
-import Button from '../components/Button';
 import text from '../i18n/da';
 import styles from './index.module.css';
 
@@ -9,21 +9,11 @@ const ThePlan = () => {
     <Layout>
       <div className={styles.top}>
         <div className={styles.container}>
-          <h1>Mere om planen</h1>
+          <h1>{text.aboutThePlan}</h1>
         </div>
       </div>
-
       <section className={styles.container}>
-        <p>Støttet af</p>
-        <div className={styles.carousel}></div>
-        <p>Nævnt i</p>
-        <div className={styles.carousel}></div>
-      </section>
-      <section className={styles.greenBox}>
-        <div className={styles.container}>
-          <h2>Kort om verdens bedste klimaplan</h2>
-          <p>Lorem ipsum</p>
-        </div>
+        <ReactMarkdown source={text.plan} />
       </section>
     </Layout>
   );

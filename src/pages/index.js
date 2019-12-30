@@ -14,12 +14,12 @@ const Index = () => {
           <h3 className={styles.subTitle}>{text.subtitle}</h3>
         </div>
         <div className={styles.ctas}>
-          <Button>Støt som person</Button>
-          <Button stroke>Støt som organisation</Button>
+          <Button>{text.supportAsPerson}</Button>
+          <Button stroke>{text.supportAsOrg}</Button>
         </div>
       </div>
       <section className={styles.carousels}>
-        <h4>Støttet af</h4>
+        <h4>{text.supportedBy}</h4>
         <div className={styles.carousel}>
           {/* All images are #000 black */}
           <a href="https://www.klimabevaegelsen.dk/" target="blank">
@@ -32,7 +32,7 @@ const Index = () => {
             <img src="/supporters/ccl.png" width="131" height="100" />
           </a>
         </div>
-        <h4>Nævnt i</h4>
+        <h4>{text.mentionedIn}</h4>
         <div className={styles.carousel}>
           <a
             href="https://www.information.dk/debat/2019/09/saet-afgifter-paa-former-klimabelastning-giv-pengene-tilbage-befolkningen"
@@ -68,13 +68,13 @@ const Index = () => {
         <h2>Kort om verdens bedste klimaplan</h2>
         <div className={styles.briefItems}>
           <div className={styles.briefItem}>
-            <p>Loremp ipsum</p>
+            <p>Lorem ipsum</p>
           </div>
           <div className={styles.briefItem}>
-            <p>Loremp ipsum</p>
+            <p>Lorem ipsum</p>
           </div>
           <div className={styles.briefItem}>
-            <p>Loremp ipsum</p>
+            <p>Lorem ipsum</p>
           </div>
         </div>
       </section>
