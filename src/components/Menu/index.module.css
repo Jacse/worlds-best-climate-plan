@@ -1,0 +1,108 @@
+.topNav {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  background: #315640;
+  justify-content: flex-end;
+}
+
+.topNav .menuItem {
+  display: inline-block;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #315640;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transform: translate3d(0,-100%,0);
+  transition: transform 0.2s ease-in-out;
+  z-index: 9;
+}
+
+.navBarActive {
+  transform: translate3d(0, 0, 0);
+}
+
+.supportButtons {
+  margin: 0 auto;
+}
+
+.supportButton {
+  margin: 0 0.5rem;
+}
+
+.burgerButton {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burgerButtonBar {
+  position: absolute;
+  height: 20%;
+  left: 0;
+  right: 0;
+  top: 0%;
+  background: #FFF;
+}
+
+.burgerButtonBar:nth-child(2) {
+  top: 40%;
+}
+
+.burgerButtonBar:nth-child(3) {
+  top: 80%;
+}
+
+.burgerMenu {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: #315640;
+  transform: translate3d(-100%,0,0);
+  transition: transform 0.2s ease-in-out;
+  z-index: 11;
+  padding: 1rem;
+}
+
+.burgerMenuActive {
+  transform: translate3d(0,0,0)
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+  transform: background-color 0.2s;
+}
+
+.overlayActive {
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.menuItem {
+  display: block;
+  cursor: pointer;
+  margin: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+
+.menuItemActive {
+  color: rgba(255, 255, 255, 1);
+}

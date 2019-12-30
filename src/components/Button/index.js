@@ -1,11 +1,16 @@
 import React from 'react';
-import Card from '../Card';
 import styles from './index.module.css';
 
-const Button = ({ children }) => {
+const Button = ({ children, stroke = false, className }) => {
   return (
-    <button className={styles.button}>
-      <Card>{children}</Card>
+    <button
+      className={[
+        styles.button,
+        className,
+        stroke ? styles.buttonStroke : '',
+      ].join(' ')}
+    >
+      {children}
     </button>
   );
 };

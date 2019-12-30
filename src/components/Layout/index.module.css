@@ -1,27 +1,7 @@
-.logo, .nav, .ctas, .container, .footer {
+.container, .footer {
   max-width: 32em;
   margin: auto;
   padding: 0 1em;
-}
-
-.logo {
-  text-align: center;
-  margin: 2em auto;
-}
-
-.earth {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
-
-.subTitle {
-  text-align: center;
-}
-
-.ctas {
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer p {

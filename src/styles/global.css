@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -13,8 +14,8 @@ html, body {
 body {
   font-family: sans-serif;
   font-size: 16px;
-  background-color: #fcebe2;
-  /*background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");*/
+  background-color: #FFF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -23,20 +24,30 @@ p {
 }
 
 h1, h2, h3 {
-  font-family: 'Amatic SC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8rem;
   text-align: center;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5rem;
   margin: 1em 0 0.5em;
+  font-weight: 800;
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.3rem;
   margin: 1em 0 0.5em;
+  font-weight: normal;
+}
+
+/* Global container style controls width of contents */
+.container {
+  max-width: 32em;
+  margin: auto;
+  padding: 0 1em;
 }

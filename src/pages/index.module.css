@@ -1,30 +1,31 @@
-.TOC {
-  position: absolute;
-  width: 180px;
-  transform: translateX(-100%);
-  padding: 0.5em;
+.top {
+  text-align: center;
+  background-color: #315640;
+  color: #EEE;
+  padding: 2em 0;
 }
 
-.TOCLink{
+.logo {
   display: block;
-  padding: 0.5em;
-  cursor: pointer;
+  max-width: 40%;
+  margin: 2em auto;
 }
 
-.TOCLink svg {
-  vertical-align: sub;
+.subTitle {
+  color: rgba(255,255,255,0.5);
 }
 
-.TOCLink g {
-  stroke: #999;
-  fill: #999;
+.greenBox {
+  background-color: #315640;
+  color: #EEE;
 }
 
-.TOCLinkActive g {
-  stroke: rgb(134, 207, 234);
-  fill: rgb(134, 207, 234);
+.carousel {
+  background-color: transparent;
 }
 
-.TOCIndent {
-  padding-left: 1em;
+.container {
+  max-width: 32em;
+  margin: auto;
+  padding: 0 1em;
 }

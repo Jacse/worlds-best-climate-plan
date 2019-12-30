@@ -8,3 +8,11 @@
 </h1>
 
 Gatsby project for theworldsbestclimateplan.org / denbedsteklimaplan.dk
+
+
+# Pages
+- front page
+- long-read
+- contact / about us
+
+# i18n
