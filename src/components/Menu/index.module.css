@@ -3,11 +3,10 @@
   width: 100%;
   display: flex;
   padding: 1.5rem 1rem;
-  background: #315640;
   justify-content: flex-end;
   align-items: center;
   z-index: 10;
-  border-bottom: 1px solid #315640;
+  border-bottom: 1px solid transparent;
   transition: padding .2s, border-bottom-color .2s;
 }
 .navBarActive {

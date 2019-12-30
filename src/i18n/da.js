@@ -1,5 +1,5 @@
 export default {
-  title: 'Verdens Bedste Klimaplan',
+  title: 'Verdens bedste klimaplan',
   subtitle:
     'Ved at sætte en pris på udledninger kan vi bedst og billigst løse klimakrisen',
   supportedBy: 'Støttet af',

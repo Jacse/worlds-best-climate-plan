@@ -11,9 +11,9 @@ import Separator from '../components/Separator';
 const Index = () => {
   return (
     <Layout>
-      <div className={styles.top}>
+      <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
-          <h1>{text.title}</h1>
+          <h1 className={styles.title}>{text.title}</h1>
           <h2 className={styles.subTitle}>{text.subtitle}</h2>
           <div className={styles.ctas}>
             <Button large>{text.supportAsPerson}</Button>
@@ -22,7 +22,7 @@ const Index = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </section>
       <section className={styles.carousels}>
         <Separator variant={1} />
         <div className="container-large">
@@ -72,11 +72,11 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="green">
-        <Separator green />
-        <div className={`container-large ${styles.brief}`}>
+      <section className="green separator-bottom">
+        <Separator reverse />
+        <div className={`container-large ${styles.brief} separator-top`}>
           <h2>{text.frontpage.explainedBriefly}</h2>
-          <div className="container-medium-no-padding">
+          <div className="container-medium">
             <p>{text.frontpage.explainedBrieflyText}</p>
           </div>
           <div className="cols">
@@ -103,7 +103,7 @@ const Index = () => {
           </Link>
         </div>
       </section>
-      <section>
+      <section className="separator-bottom">
         <Separator />
         <div className="container-medium">
           <h2>FAQ</h2>

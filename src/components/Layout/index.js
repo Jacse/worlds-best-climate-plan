@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import text from '../../i18n/da';
 import Menu from '../Menu';
+import Separator from '../../components/Separator';
 import styles from './index.module.css';
 
 const Layout = ({ children }) => (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => (
     <Menu />
     {children}
     <div className={styles.footer}>
+      <Separator color="#F0F0F0" variant={2} />
       <div className="container-large">
         <div className="cols">
           <div className="col">

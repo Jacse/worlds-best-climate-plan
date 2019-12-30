@@ -3,17 +3,21 @@ import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import text from '../i18n/da';
 import styles from './index.module.css';
+import Separator from '../components/Separator';
 
 const ThePlan = () => {
   return (
     <Layout>
-      <div className={styles.top}>
+      <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
           <h1>{text.moreAboutThePlan}</h1>
         </div>
-      </div>
-      <section className="container-small">
-        <ReactMarkdown source={text.plan} />
+      </section>
+      <section>
+        <Separator variant={1} />
+        <div className="container-small">
+          <ReactMarkdown source={text.plan} />
+        </div>
       </section>
     </Layout>
   );

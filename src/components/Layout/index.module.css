@@ -1,5 +1,7 @@
 .footer {
+  margin-top: 5rem; /* To offset separator */
   background: #F0F0F0;
+  overflow: hidden;
 }
 
 .footer p {
@@ -16,8 +18,8 @@
   text-decoration: none;
 }
 
-.copyright {
-  margin-top: 2em;
+p.copyright{
+  margin: 2em;
   text-align: center;
   color: rgba(0,0,0,0.4);
 }

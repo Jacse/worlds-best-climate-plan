@@ -43,9 +43,11 @@ const Menu = ({ scrollThreshold = 100 }) => {
   return (
     <div>
       <div
-        className={[styles.navBar, isSticky ? styles.navBarActive : ''].join(
-          ' '
-        )}
+        className={[
+          styles.navBar,
+          'green',
+          isSticky ? styles.navBarActive : '',
+        ].join(' ')}
       >
         <div
           className={[

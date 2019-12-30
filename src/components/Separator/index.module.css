@@ -3,7 +3,10 @@
   height: 5rem;
   width: 100%;
   display: block;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
+}
+.seperatorReverse {
+  transform: translateY(0) rotate(180deg);
 }
 .shadow {
   fill: rgba(0,0,0,0.1);
