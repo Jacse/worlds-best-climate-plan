@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #315640;
   color: #EEE;
-  padding: 2em 0;
+  padding: 5em 0 2em;
 }
 
 .logo {
@@ -15,17 +15,47 @@
   color: rgba(255,255,255,0.5);
 }
 
-.greenBox {
-  background-color: #315640;
-  color: #EEE;
-}
-
 .carousel {
   background-color: transparent;
 }
 
-.container {
-  max-width: 32em;
-  margin: auto;
-  padding: 0 1em;
+.ctas button {
+  margin: 0 0.5em;
+}
+
+.carousels {
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  opacity: 0.15;
+  margin: 1em 1.5em;
+}
+
+.brief {
+  padding: 1em;
+  background-color: #315640;
+  color: #EEE;
+  text-align: center;
+}
+
+.briefItems {
+  display: flex;
+}
+
+.briefItem {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .briefItems {
+    flex-direction: column;
+  }
 }

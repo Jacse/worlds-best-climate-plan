@@ -12,6 +12,7 @@ const ThePlan = () => {
           <h1>Mere om planen</h1>
         </div>
       </div>
+
       <section className={styles.container}>
         <p>Støttet af</p>
         <div className={styles.carousel}></div>
@@ -23,15 +24,6 @@ const ThePlan = () => {
           <h2>Kort om verdens bedste klimaplan</h2>
           <p>Lorem ipsum</p>
         </div>
-      </section>
-      <section className={styles.container}>
-        <h2>FAQ</h2>
-        {text.faq.map(([question, answer], i) => (
-          <div key={i}>
-            <h3>{question}</h3>
-            <p>{answer}</p>
-          </div>
-        ))}
       </section>
     </Layout>
   );
