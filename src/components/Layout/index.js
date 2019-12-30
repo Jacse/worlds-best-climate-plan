@@ -8,12 +8,14 @@ const Layout = ({ children }) => (
     <Menu />
     {children}
     <div className={styles.footer}>
-      <p>
-        Background vector created by{' '}
-        <a href="https://www.freepik.com/free-photos-vectors/background">
-          freepik
-        </a>
-      </p>
+      <div className="container">
+        <p>
+          Contact{' '}
+          <a href="mailto:kontakt@denbedsteklimaplan.dk">
+            kontakt@denbedsteklimaplan.dk
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 );

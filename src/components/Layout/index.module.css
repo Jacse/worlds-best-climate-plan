@@ -1,7 +1,5 @@
-.container, .footer {
-  max-width: 32em;
-  margin: auto;
-  padding: 0 1em;
+.footer {
+  background: #EAEAEA;
 }
 
 .footer p {

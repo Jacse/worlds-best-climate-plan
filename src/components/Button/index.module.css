@@ -6,8 +6,12 @@
   letter-spacing: 1.25px;
   text-align: center;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 0.5em 1.5em;
+}
+
+.buttonLarge {
+  padding: 1em 2em;
 }
 
 .buttonStroke {

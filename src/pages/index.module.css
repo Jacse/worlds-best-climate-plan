@@ -12,7 +12,9 @@
 }
 
 .subTitle {
-  color: rgba(255,255,255,0.5);
+  margin: 0.25em 0 1em;
+  font-weight: normal;
+  color: rgb(173, 215, 146);
 }
 
 .carousel {
@@ -31,12 +33,13 @@
 .carousel {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .carousel img {
   opacity: 0.15;
-  margin: 1em 1.5em;
+  margin: 1em;
 }
 
 .brief {
@@ -52,6 +55,28 @@
 
 .briefItem {
   flex: 1;
+}
+
+.faq {
+  background: none !important;
+  border: none !important;
+}
+
+:global .rc-collapse > .rc-collapse-item {
+  border: none !important;
+}
+
+:global .rc-collapse > .rc-collapse-item.rc-collapse-item-active {
+  border-bottom: 1px solid #CCC !important;
+}
+
+:global .rc-collapse > .rc-collapse-item > .rc-collapse-header {
+  border-bottom: 1px solid #CCC;
+}
+
+:global .rc-collapse > .rc-collapse-item.rc-collapse-item-active > .rc-collapse-header {
+  color: #315640;
+  border-bottom: 1px solid #315640;
 }
 
 @media (max-width: 480px) {

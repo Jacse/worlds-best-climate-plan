@@ -7,9 +7,13 @@ export default {
   supportAsOrg: 'Støt som organisation',
   supportAsPerson: 'Støt som borger',
   aboutThePlan: 'Mere om planen',
+  behindThePlan: 'Bag planen',
   plan: `
   #### Header
   Paragraph
+  #### Header 2
+  paragraph 2
+  still p 2
   `,
   faq: [
     [

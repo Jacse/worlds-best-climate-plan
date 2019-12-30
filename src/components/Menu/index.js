@@ -4,8 +4,8 @@ import styles from './index.module.css';
 import Button from '../Button';
 
 const pages = [
-  ['/', 'Home'],
-  ['/the-plan', 'Mere om planen'],
+  ['/', 'Verdens Bedste Klimaplan'],
+  ['/the-plan', 'Læs mere om planen'],
   ['/behind-the-plan', 'Bag planen'],
 ];
 
@@ -71,6 +71,13 @@ const Menu = ({ scrollThreshold = 100 }) => {
           burgerActive ? styles.burgerMenuActive : '',
         ].join(' ')}
       >
+        <div
+          className={styles.crossButton}
+          onClick={() => setBurgerActive(false)}
+        >
+          <span className={styles.crossBar}></span>
+          <span className={styles.crossBar}></span>
+        </div>
         <MenuItems />
       </div>
       <div

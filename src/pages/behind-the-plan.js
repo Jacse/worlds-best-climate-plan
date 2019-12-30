@@ -1,20 +1,15 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Button from '../components/Button';
 import text from '../i18n/da';
 import styles from './index.module.css';
 
-const Index = () => {
+const BehindThePlan = () => {
   return (
     <Layout>
       <div className={styles.top}>
-        <div className={styles.container}>
-          <img className={styles.logo} src="/earth.svg" />
-          <h1>{text.title}</h1>
-          <h3 className={styles.subTitle}>{text.subtitle}</h3>
+        <div className="container">
+          <h1>{text.behindThePlan}</h1>
         </div>
-        <Button>Støt</Button>
-        <Button stroke>Støt</Button>
       </div>
       <section className={styles.container}>
         <p>Støttet af</p>
@@ -22,23 +17,8 @@ const Index = () => {
         <p>Nævnt i</p>
         <div className={styles.carousel}></div>
       </section>
-      <section className={styles.greenBox}>
-        <div className={styles.container}>
-          <h2>Kort om verdens bedste klimaplan</h2>
-          <p>Lorem ipsum</p>
-        </div>
-      </section>
-      <section className={styles.container}>
-        <h2>FAQ</h2>
-        {text.faq.map(([question, answer], i) => (
-          <div key={i}>
-            <h3>{question}</h3>
-            <p>{answer}</p>
-          </div>
-        ))}
-      </section>
     </Layout>
   );
 };
 
-export default Index;
+export default BehindThePlan;

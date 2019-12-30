@@ -20,8 +20,8 @@
 
 .burgerButton {
   position: relative;
-  width: 36px;
-  height: 30px;
+  width: 30px;
+  height: 26px;
   margin-right: auto;
   cursor: pointer;
   opacity: 0;
@@ -57,11 +57,32 @@
   transform: translate3d(-100%,0,0);
   transition: transform 0.2s ease-in-out;
   z-index: 11;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
 .burgerMenuActive {
   transform: translate3d(0,0,0)
+}
+
+.crossButton {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 1rem;
+  top: 1rem;
+  margin-right: -13px;
+}
+.crossBar {
+  position: absolute;
+  width: 3px;
+  height: 26px;
+  transform-origin: center;
+  transform: rotate(45deg);
+  background: #FFF;
+  cursor: pointer;
+}
+.crossBar:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .overlay {
@@ -102,4 +123,21 @@
 
 .menuItemActive {
   color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 768px) {
+  /* Always do burger menu on small devices */
+  .menuItems {
+    display: none;
+  }
+  .burgerButton {
+    opacity: 1
+  }
+}
+
+@media (max-width: 480px) {
+  /* Burger menu takes up full screen width */
+  .burgerMenu {
+    width: 100%;
+  }
 }

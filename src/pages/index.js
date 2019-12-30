@@ -1,8 +1,10 @@
 import React from 'react';
+import Collapse, { Panel } from 'rc-collapse';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import text from '../i18n/da';
 import styles from './index.module.css';
+import 'rc-collapse/assets/index.css';
 
 const Index = () => {
   return (
@@ -11,11 +13,13 @@ const Index = () => {
         <div className="container">
           <img className={styles.logo} src="/earth.svg" />
           <h1>{text.title}</h1>
-          <h3 className={styles.subTitle}>{text.subtitle}</h3>
+          <h2 className={styles.subTitle}>{text.subtitle}</h2>
         </div>
         <div className={styles.ctas}>
-          <Button>{text.supportAsPerson}</Button>
-          <Button stroke>{text.supportAsOrg}</Button>
+          <Button large>{text.supportAsPerson}</Button>
+          <Button large stroke>
+            {text.supportAsOrg}
+          </Button>
         </div>
       </div>
       <section className={styles.carousels}>
@@ -80,12 +84,13 @@ const Index = () => {
       </section>
       <section className="container">
         <h2>FAQ</h2>
-        {text.faq.map(([question, answer], i) => (
-          <div key={i}>
-            <h3>{question}</h3>
-            <p>{answer}</p>
-          </div>
-        ))}
+        <Collapse accordion className={styles.faq}>
+          {text.faq.map(([question, answer]) => (
+            <Panel key={question} header={question}>
+              {answer}
+            </Panel>
+          ))}
+        </Collapse>
       </section>
     </Layout>
   );
