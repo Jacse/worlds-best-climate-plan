@@ -24,7 +24,7 @@ const MenuItems = () => (
   </React.Fragment>
 );
 
-const Menu = ({ scrollThreshold = 200 }) => {
+const Menu = ({ scrollThreshold = 100 }) => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const handleScroll = () => {
@@ -41,16 +41,12 @@ const Menu = ({ scrollThreshold = 200 }) => {
 
   return (
     <div>
-      <div className={styles.topNav}>
-        <MenuItems />
-      </div>
-      <div
-        className={[styles.navBar, isSticky ? styles.navBarActive : ''].join(
-          ' '
-        )}
-      >
+      <div className={styles.navBar}>
         <div
-          className={styles.burgerButton}
+          className={[
+            styles.burgerButton,
+            isSticky ? styles.burgerButtonActive : '',
+          ].join(' ')}
           onClick={() => setBurgerActive(true)}
         >
           <span>
@@ -59,12 +55,15 @@ const Menu = ({ scrollThreshold = 200 }) => {
             <span className={styles.burgerButtonBar}></span>
           </span>
         </div>
-        <div className={styles.supportButtons}>
-          <Button className={styles.supportButton}>Støt som person</Button>
-          <Button className={styles.supportButton} stroke>
-            Støt som organisation
-          </Button>
+        <div
+          className={[
+            styles.menuItems,
+            !isSticky ? styles.menuItemsActive : '',
+          ].join(' ')}
+        >
+          <MenuItems />
         </div>
+        <Button className={styles.supportButton}>Støt</Button>
       </div>
       <div
         className={[

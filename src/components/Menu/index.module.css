@@ -1,47 +1,34 @@
-.topNav {
+.navBar {
+  position: fixed;
   width: 100%;
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   background: #315640;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.topNav .menuItem {
+.navBar .menuItem {
   display: inline-block;
 }
 
-.navBar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #315640;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  transform: translate3d(0,-100%,0);
-  transition: transform 0.2s ease-in-out;
-  z-index: 9;
-}
-
-.navBarActive {
-  transform: translate3d(0, 0, 0);
-}
-
-.supportButtons {
-  margin: 0 auto;
-}
-
 .supportButton {
-  margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .burgerButton {
   position: relative;
   width: 36px;
   height: 30px;
+  margin-right: auto;
   cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.burgerButtonActive {
+  opacity: 1;
 }
 
 .burgerButtonBar {
@@ -93,13 +80,22 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
+.menuItems {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.menuItemsActive {
+  opacity: 1;
+}
+
 .menuItem {
   display: block;
   cursor: pointer;
   margin: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }
 
