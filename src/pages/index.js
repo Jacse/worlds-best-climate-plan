@@ -13,7 +13,6 @@ const Index = () => {
     <Layout>
       <div className={styles.top}>
         <div className="container-large">
-          <img className={styles.logo} src="/earth.svg" />
           <h1>{text.title}</h1>
           <h2 className={styles.subTitle}>{text.subtitle}</h2>
           <div className={styles.ctas}>

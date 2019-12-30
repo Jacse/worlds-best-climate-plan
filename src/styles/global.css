@@ -32,7 +32,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin: 1em 0 0.5em;
   text-align: center;
   font-weight: 800;
 }
