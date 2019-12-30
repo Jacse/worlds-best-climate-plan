@@ -8,11 +8,11 @@ const ThePlan = () => {
   return (
     <Layout>
       <div className={styles.top}>
-        <div className="container">
-          <h1>{text.aboutThePlan}</h1>
+        <div className="container-large">
+          <h1>{text.moreAboutThePlan}</h1>
         </div>
       </div>
-      <section className="container">
+      <section className="container-small">
         <ReactMarkdown source={text.plan} />
       </section>
     </Layout>

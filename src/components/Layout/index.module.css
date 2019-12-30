@@ -1,5 +1,5 @@
 .footer {
-  background: #EAEAEA;
+  background: #F0F0F0;
 }
 
 .footer p {
@@ -8,6 +8,16 @@
 }
 
 .footer a {
+  display: block;
+  margin: 1rem 0;
+  padding: none;
+  border: none;
   color: black;
   text-decoration: none;
+}
+
+.copyright {
+  margin-top: 2em;
+  text-align: center;
+  color: rgba(0,0,0,0.6);
 }

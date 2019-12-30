@@ -2,15 +2,22 @@
   position: fixed;
   width: 100%;
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
   background: #315640;
   justify-content: flex-end;
   align-items: center;
   z-index: 10;
+  border-bottom: 1px solid #315640;
+  transition: padding .2s, border-bottom-color .2s;
+}
+.navBarActive {
+  padding: 0.5rem 1rem;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 .navBar .menuItem {
   display: inline-block;
+  margin: 0.5rem 1rem;
 }
 
 .supportButton {
@@ -20,8 +27,8 @@
 
 .burgerButton {
   position: relative;
-  width: 30px;
-  height: 26px;
+  width: 26px;
+  height: 22px;
   margin-right: auto;
   cursor: pointer;
   opacity: 0;
@@ -115,10 +122,11 @@
   display: block;
   cursor: pointer;
   margin: 1rem;
+  padding: none;
   text-transform: uppercase;
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
+  border: none;
 }
 
 .menuItemActive {

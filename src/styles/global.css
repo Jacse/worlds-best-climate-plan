@@ -58,9 +58,52 @@ h4 {
   letter-spacing: 0.15em;
 }
 
-/* Global container style controls width of contents */
-.container {
+a {
+  color: #87b56b;
+  text-decoration: none;
+  border-bottom: 1px solid #87b56b;
+  padding-bottom: 2px;
+}
+
+/* Global convenience classes */
+.green {
+  background: #315640;
+  color: #EEE;
+}
+
+.cols {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin: 1rem;
+}
+
+@media (max-width: 480px) {
+  .cols {
+    flex-direction: column;
+  }
+}
+
+/* Global container styles controls width of contents */
+.container-large {
+  max-width: 64em;
+  margin: auto;
+  padding: 3em 1em;
+}
+.container-medium {
   max-width: 42em;
   margin: auto;
-  padding: 1em;
+  padding: 3em 1em;
+}
+.container-small {
+  max-width: 32em;
+  margin: auto;
+  padding: 3em 1em;
+}
+
+.container-small-no-padding {
+  max-width: 32em;
+  margin: auto;
 }

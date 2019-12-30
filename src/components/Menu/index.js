@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import text from '../../i18n/da';
 import styles from './index.module.css';
 import Button from '../Button';
 
 const pages = [
-  ['/', 'Verdens Bedste Klimaplan'],
-  ['/the-plan', 'Læs mere om planen'],
-  ['/behind-the-plan', 'Bag planen'],
+  ['/', text.title],
+  ['/the-plan', text.moreAboutThePlan],
+  ['/behind-the-plan', text.behindThePlan],
 ];
 
 const MenuItems = () => (
@@ -41,7 +42,11 @@ const Menu = ({ scrollThreshold = 100 }) => {
 
   return (
     <div>
-      <div className={styles.navBar}>
+      <div
+        className={[styles.navBar, isSticky ? styles.navBarActive : ''].join(
+          ' '
+        )}
+      >
         <div
           className={[
             styles.burgerButton,

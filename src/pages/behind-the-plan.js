@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import text from '../i18n/da';
 import styles from './index.module.css';
@@ -7,15 +8,12 @@ const BehindThePlan = () => {
   return (
     <Layout>
       <div className={styles.top}>
-        <div className="container">
+        <div className="container-large">
           <h1>{text.behindThePlan}</h1>
         </div>
       </div>
-      <section className={styles.container}>
-        <p>Støttet af</p>
-        <div className={styles.carousel}></div>
-        <p>Nævnt i</p>
-        <div className={styles.carousel}></div>
+      <section className="container-small">
+        <ReactMarkdown source={text.behindThePlanText} />
       </section>
     </Layout>
   );
