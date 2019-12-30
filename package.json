@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "worlds-best-climate-plan",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Worlds best climate plan",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
+    "gatsby": "gatsby build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
