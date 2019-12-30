@@ -8,6 +8,7 @@ export default {
   supportAsPerson: 'Støt som borger',
   aboutThePlan: 'Mere om planen',
   behindThePlan: 'Bag planen',
+  explainedBriefly: 'Planen kort forklaret',
   plan: `
   #### Header
   Paragraph

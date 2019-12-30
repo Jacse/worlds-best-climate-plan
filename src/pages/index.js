@@ -69,7 +69,7 @@ const Index = () => {
         </div>
       </section>
       <section className={styles.brief}>
-        <h2>Kort om verdens bedste klimaplan</h2>
+        <h2>{text.explainedBriefly}</h2>
         <div className={styles.briefItems}>
           <div className={styles.briefItem}>
             <p>Lorem ipsum</p>
