@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  pathPrefix: '/worlds-best-climate-plan',
+  //pathPrefix: '/worlds-best-climate-plan',
 };
