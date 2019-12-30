@@ -16,3 +16,4 @@ Gatsby project for theworldsbestclimateplan.org / denbedsteklimaplan.dk
 - contact / about us
 
 # i18n
+- 
