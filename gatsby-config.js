@@ -5,5 +5,10 @@
  */
 
 module.exports = {
-  //pathPrefix: '/worlds-best-climate-plan',
+  siteMetadata: {
+    title: 'Verdens bedste klimaplan',
+    titleTemplate: '%s · Verdens bedste klimaplan',
+    description: '<indsæt>',
+    url: 'https://verdensbedsteklimaplan.dk', // No trailing slash allowed!
+  },
 };

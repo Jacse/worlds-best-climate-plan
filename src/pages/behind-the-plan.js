@@ -4,10 +4,12 @@ import Layout from '../components/Layout';
 import text from '../i18n/da';
 import styles from './index.module.css';
 import Separator from '../components/Separator';
+import SEO from '../components/SEO';
 
 const BehindThePlan = () => {
   return (
     <Layout>
+      <SEO title="Bag planen" description="" />
       <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
           <h1>{text.behindThePlan}</h1>

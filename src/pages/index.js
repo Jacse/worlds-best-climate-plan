@@ -7,10 +7,12 @@ import styles from './index.module.css';
 import 'rc-collapse/assets/index.css';
 import { Link } from 'gatsby';
 import Separator from '../components/Separator';
+import SEO from '../components/SEO';
 
 const Index = () => {
   return (
     <Layout>
+      <SEO title="Verdens Bedste klimaplan" description="" />
       <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
           <h1 className={styles.title}>{text.title}</h1>
