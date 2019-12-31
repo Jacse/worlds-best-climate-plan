@@ -27,32 +27,29 @@ p {
   line-height: 1.5;
 }
 
-h1, h2, h3 {
-  font-family: 'Open Sans', sans-serif;
+h1, h2, h3, h4 {
+  margin: 1em 0 0.5em;
+  color: #333;
 }
 
 h1 {
   font-size: 3.5rem;
-  margin: 1em 0 0.5em;
   text-align: center;
   font-weight: 800;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin: 1em 0 0.5em;
   font-weight: 800;
 }
 
 h3 {
   font-size: 1.3rem;
-  margin: 1em 0 0.5em;
   font-weight: normal;
 }
 
 h4 {
   font-size: 1rem;
-  margin: 1em 0 0.5em;
   color: #666;
   font-weight: 800;
   text-transform: uppercase;
@@ -109,7 +106,7 @@ a {
   padding: 0 1em;
 }
 .container-small {
-  max-width: 32em;
+  max-width: 36em;
   margin: auto;
   padding: 0 1em;
 }
@@ -117,7 +114,10 @@ a {
 /* Global convenience classes */
 .green {
   background: linear-gradient(to right, #254d35, #50755f);
-  color: #EEE;
+  color: #FFF;
+}
+.green h1, .green h2, .green h3 {
+  color: #FFF;
 }
 .separator-bottom {
   padding-bottom: 5rem;
