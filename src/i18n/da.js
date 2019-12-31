@@ -109,11 +109,11 @@ Den sætter Danmark på den rigtige kurs, og sørger for at vi får den billigst
     ],
     [
       'Er en pris på forurening nok til at give os 70 pct. CO2-reduktion i 2030?',
-      'Nej, fordi vi har mægtig travlt. Men det kan os langt og bedst muligt hen af vejen. Derfor skal politikerne også investere i forskning, infrastruktur og incitamenter, for at få de sidste procenter med.',
+      'Nej, fordi vi har mægtig travlt. Men det kan få os langt og bedst muligt hen af vejen. Derfor skal politikerne også investere i forskning, infrastruktur og incitamenter, for at få de sidste procenter med.',
     ],
     [
       'Skal løsningen ikke bruges i hele EU eller verden før den er effektiv?',
-      'Det vil være den ideele løsning, hvis verdens bedste klimaplan blev implementeret i hele verden, eller i EU. Uanset hvad der sker udenfor vores grænser, er økononmere stadigvæk overbevist, at det er bedst for Danmark at bruge planen, fordi det er den billigste og bedste vej for at nå vores mål, og så kan vi også vise vejen for de andre lande.',
+      'Det vil være den ideele løsning, hvis verdens bedste klimaplan blev implementeret i hele verden, eller i EU. Uanset hvad der sker udenfor vores grænser, er økonomere stadigvæk overbevist om, at det er bedst for Danmark at bruge planen, fordi det er den billigste og bedste vej for at nå vores mål, og så kan vi også vise vejen for de andre lande.',
     ],
     [
       'Skal man regne hvor meget CO2 der er i enhver produkt?',
@@ -133,7 +133,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for at vi får den billigst
     ],
     [
       'Smutter alle jobs til udlandet?',
-      'Det er meget usandsynligt. For det første er mange af de andre lande også ved at blive ambitiøse (og er derfor ikke interesserede i at få klimasyndere hos dem). Fordi EU har planer om en klimatold, så vil ikke-EU lande også være ambitiøse. Der findes også muligheder, for at forbedre vores konkurrenceevne. Sidst men ikke mindst betyder verdens bedste klimaplan, at vi alle får travlt med den grønne omstilling. Der kommer til at opstå mange nye muligheder, fordi grønne produkter bliver mere konkurrencedygtige.',
+      'Det er meget usandsynligt. For det første er mange af de andre lande også ved at blive ambitiøse (og er derfor ikke interesserede i at få klimasyndere hos dem). Fordi EU har planer om en klimatold, så vil ikke-EU lande også være ambitiøse. Der findes også muligheder for at forbedre vores konkurrenceevne. Sidst men ikke mindst betyder verdens bedste klimaplan, at vi alle får travlt med den grønne omstilling. Der kommer til at opstå mange nye muligheder, fordi grønne produkter bliver mere konkurrencedygtige.',
     ],
     [
       'Er der andre lande, der har gjort det før?',
