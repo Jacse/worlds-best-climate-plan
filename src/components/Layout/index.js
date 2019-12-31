@@ -18,6 +18,7 @@ const Layout = ({ children }) => (
             <Link to="/">{text.title}</Link>
             <Link to="/the-plan">{text.moreAboutThePlan}</Link>
             <Link to="/behind-the-plan">{text.behindThePlan}</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
           </div>
           <div className="col">
             <h4>{text.footer.organisations}</h4>
