@@ -110,7 +110,9 @@ const Index = () => {
           <Collapse accordion className={styles.faq}>
             {text.faq.map(([question, answer]) => (
               <Panel key={question} header={question}>
-                {answer}
+                {answer.split('\n').map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </Panel>
             ))}
           </Collapse>
