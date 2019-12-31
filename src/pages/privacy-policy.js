@@ -7,118 +7,58 @@ import SEO from '../components/SEO';
 const PrivacyPolicy = () => {
   return (
     <Layout>
-      <SEO title="Privacy policy" description="Our privacy policy" />
+      <SEO title="Cookie- og Privatlivspolitik" description="Vores cookie- og privatlivspolitik" />
       <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
-          <h1>Privacy Policy</h1>
+          <h1>Cookie- og Privatlivspolitik</h1>
         </div>
       </section>
       <section>
         <Separator variant={1} />
         <div className="container-small">
+          <h2>Introduktion</h2>
           <p>
-            At Verdens bedste klimaplan, accessible from
-            verdensbedsteklimaplan.dk, one of our main priorities is the privacy
-            of our visitors. This Privacy Policy document contains types of
-            information that is collected and recorded by Verdens bedste
-            klimaplan and how we use it.
+            Når du besøger vores website indsamles der oplysninger om dig, som bruges til at tilpasse og forbedre vores indhold og til at øge værdien af de annoncer, der vises på siden. Hvis du ikke ønsker, at der indsamles oplysninger, bør du slette dine cookies (se vejledning: https://minecookies.org/cookiehandtering/ ) og undlade videre brug af websitet. Nedenfor har vi uddybet, hvilke informationer der indsamles, deres formål og hvilke tredjeparter, der har adgang til dem.
           </p>
+          <h2>Cookies</h2>
           <p>
-            If you have additional questions or require more information about
-            our Privacy Policy, do not hesitate to contact us.
+           Websitet anvender ”cookies”, der er en tekstfil, som gemmes på din computer, mobil el. tilsvarende med det formål at genkende den, huske indstillinger, udføre statistik og målrette annoncer. Cookies kan ikke indeholde skadelig kode som f.eks. virus.
+Det er muligt at slette eller blokere for cookies. Se vejledning: http://minecookies.org/cookiehandtering
+Hvis du sletter eller blokerer cookies vil annoncer kunne blive mindre relevante for dig og optræde hyppigere. Du kan desuden risikere at websitet ikke fungerer optimalt samt at der er indhold, du ikke kan få adgang til.
           </p>
-          <h2>Log Files</h2>
+          <h2>Generelt</h2>
           <p>
-            Verdens bedste klimaplan follows a standard procedure of using log
-            files. These files log visitors when they visit websites. All
-            hosting companies do this and a part of hosting services' analytics.
-            The information collected by log files include internet protocol
-            (IP) addresses, browser type, Internet Service Provider (ISP), date
-            and time stamp, referring/exit pages, and possibly the number of
-            clicks. These are not linked to any information that is personally
-            identifiable. The purpose of the information is for analyzing
-            trends, administering the site, tracking users' movement on the
-            website, and gathering demographic information.
+          Personoplysninger er alle slags informationer, der i et eller andet omfang kan henføres til dig. Når du benytter vores website indsamler og behandler vi en række sådanne informationer. Det sker f.eks. ved alm. tilgang af indhold, hvis du tilmelder dig vores nyhedsbrev, deltager i konkurrencer eller undersøgelser, registrerer dig som bruger eller abonnent, øvrig brug af services eller foretager køb via websitet.
+Vi indsamler og behandler typisk følgende typer af oplysninger: Et unikt ID og tekniske oplysninger om din computer, tablet eller mobiltelefon, dit IP-nummer, geografisk placering, samt hvilke sider du klikker på (interesser). I det omfang du selv giver eksplicit samtykke hertil og selv indtaster informationerne behandles desuden: Navn, telefonnummer, e-mail, adresse og betalingsoplysninger. Det vil typisk være i forbindelse med oprettelse af login eller ved køb.
           </p>
-          <h2>Cookies and Web Beacons</h2>
+          <h3>Sikkerhed</h3>
           <p>
-            Like any other website, Verdens bedste klimaplan uses 'cookies'.
-            These cookies are used to store information including visitors'
-            preferences, and the pages on the website that the visitor accessed
-            or visited. The information is used to optimize the users'
-            experience by customizing our web page content based on visitors'
-            browser type and/or other information.
+          Vi har truffet tekniske og organisatoriske foranstaltninger mod, at dine oplysninger hændeligt eller ulovligt bliver slettet, offentliggjort, fortabt, forringet eller kommer til uvedkommendes kendskab, misbruges eller i øvrigt behandles i strid med lovgivningen.
           </p>
-          <h2>Privacy Policies</h2>
+          <h3>Formål</h3>
           <p>
-            You may consult this list to find the Privacy Policy for each of the
-            advertising partners of Verdens bedste klimaplan. Our Privacy Policy
-            was created with the help of the{' '}
-            <a href="https://www.privacypolicygenerator.info">
-              Privacy Policy Generator
-            </a>{' '}
-            and the{' '}
-            <a href="https://www.privacypolicyonline.com">
-              Privacy Policy Generator Online
-            </a>
-            .
+          Oplysningerne bruges til at identificere dig som bruger og vise dig de annoncer, som vil have størst sandsynlighed for at være relevante for dig, at registrere dine køb og betalinger, samt at kunne levere de services, du har efterspurgt, som f.eks. at fremsende et nyhedsbrev. Herudover anvender vi oplysningerne til at optimere vores services og indhold.
           </p>
+          <h3>Periode for opbevaring</h3>
           <p>
-            Third-party ad servers or ad networks uses technologies like
-            cookies, JavaScript, or Web Beacons that are used in their
-            respective advertisements and links that appear on Verdens bedste
-            klimaplan, which are sent directly to users' browser. They
-            automatically receive your IP address when this occurs. These
-            technologies are used to measure the effectiveness of their
-            advertising campaigns and/or to personalize the advertising content
-            that you see on websites that you visit.
+          Oplysningerne opbevares i det tidsrum, der er tilladt i henhold til lovgivningen, og vi sletter dem, når de ikke længere er nødvendige. Perioden afhænger af karakteren af oplysningen og baggrunden for opbevaring. Det er derfor ikke muligt at angive en generel tidsramme for, hvornår informationer slettes.
           </p>
+          <h3>Videregivelse af oplysninger</h3>
           <p>
-            Note that Verdens bedste klimaplan has no access to or control over
-            these cookies that are used by third-party advertisers.
+          Data om din brug af websitet, hvilke annoncer, du modtager og evt. klikker på, geografisk placering, køn og alderssegment m.v. videregives til tredjeparter i det omfang disse oplysninger er kendt. Du kan se hvilke tredjeparter, der er tale om, i afsnittet om ”Cookies” ovenfor. Oplysningerne anvendes til målretning af annoncering.
+Vi benytter herudover en række tredjeparter til opbevaring og behandling af data. Disse behandler udelukkende oplysninger på vores vegne og må ikke anvende dem til egne formål.
+Videregivelse af personoplysninger som navn og e-mail m.v. vil kun ske, hvis du giver samtykke til det. Vi anvender kun databehandlere i EU eller i lande, der kan give dine oplysninger en tilstrækkelig beskyttelse.
           </p>
-          <h2>Third Party Privacy Policies</h2>
+          <h3>Indsigt og klager</h3>
           <p>
-            Verdens bedste klimaplan's Privacy Policy does not apply to other
-            advertisers or websites. Thus, we are advising you to consult the
-            respective Privacy Policies of these third-party ad servers for more
-            detailed information. It may include their practices and
-            instructions about how to opt-out of certain options. You may find a
-            complete list of these Privacy Policies and their links here:
-            Privacy Policy Links.
+          Du har ret til at få oplyst, hvilke personoplysninger, vi behandler om dig. Du kan desuden til enhver tid gøre indsigelse mod, at oplysninger anvendes. Du kan også tilbagekalde dit samtykke til, at der bliver behandlet oplysninger om dig. Hvis de oplysninger, der behandles om dig, er forkerte har du ret til at de bliver rettet eller slettet. Henvendelse herom kan ske til: kontakt@verdensbedsteklimaplan.dk . Hvis du vil klage over vores behandling af dine personoplysninger, har du også mulighed for at tage kontakt til Datatilsynet.
           </p>
+          <h3>Udgiver</h3>
           <p>
-            You can choose to disable cookies through your individual browser
-            options. To know more detailed information about cookie management
-            with specific web browsers, it can be found at the browsers'
-            respective websites. What Are Cookies?
-          </p>
-          <h2>Children's Information</h2>
-          <p>
-            Another part of our priority is adding protection for children while
-            using the internet. We encourage parents and guardians to observe,
-            participate in, and/or monitor and guide their online activity.
-          </p>
-          <p>
-            Verdens bedste klimaplan does not knowingly collect any Personal
-            Identifiable Information from children under the age of 13. If you
-            think that your child provided this kind of information on our
-            website, we strongly encourage you to contact us immediately and we
-            will do our best efforts to promptly remove such information from
-            our records.
-          </p>
-          <h2>Online Privacy Policy Only</h2>
-          <p>
-            This Privacy Policy applies only to our online activities and is
-            valid for visitors to our website with regards to the information
-            that they shared and/or collect in Verdens bedste klimaplan. This
-            policy is not applicable to any information collected offline or via
-            channels other than this website.
-          </p>
-          <h2>Consent</h2>
-          <p>
-            By using our website, you hereby consent to our Privacy Policy and
-            agree to its Terms and Conditions.
+          Websitet ejes og publiceres af:
+Verdens bedste klimaplan
+Telefon: 42 91 31 10
+Email: kontakt@verdensbedsteklimaplan.dk
           </p>
         </div>
       </section>
