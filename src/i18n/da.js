@@ -23,12 +23,10 @@ Den bedste klimaplan er støttet af 27 Nobelprismodtagere, over 3.500 økonomer,
 
 Den sætter Danmark på den rigtige kurs, og sørger for at vi får den billigste og hurtigste grønne omstilling muligt.
     `,
-    brief1Title:
-      'Foruneren betaler en stigende pris for at forurene',
+    brief1Title: 'Foruneren betaler en stigende pris for at forurene',
     brief1Text:
       'Den nemmeste og billigste måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for forureningen. En stigende pris giver dem mulighed for at tilpasse sig.',
-    brief2Title:
-      'Det skal ikke koste noget for den gennemsnitlige dansker',
+    brief2Title: 'Det skal ikke koste noget for den gennemsnitlige dansker',
     brief2Text:
       'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag. Hvis man køber mere klimavenligt end før ender man med flere penge på kontoen.',
     brief3Title:
@@ -63,7 +61,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for at vi får den billigst
     ],
     [
       'Skal industrier der allerede er dækket af ETS-kvotesystemet også betale afgiften?',
-      'Det skal de, da ETS-kvoterne er for billige til, at de kan støtte 70 pct. målet. Man kan eventuelt godt refundere det der svarer til ETS prisen til de pågældende industrier.'
+      'Det skal de, da ETS-kvoterne er for billige til, at de kan støtte 70 pct. målet. Man kan eventuelt godt refundere det der svarer til ETS prisen til de pågældende industrier.',
     ],
     [
       'Skal alle pengene gives tilbage til borgerne?',
@@ -75,15 +73,15 @@ Den sætter Danmark på den rigtige kurs, og sørger for at vi får den billigst
     ],
     [
       'Er der andre lande, der har gjort det før?',
-      'British Columbia i Canada har gjort det med succes - og det bliver nu udrullet i hele Canada. Det er på planen i flere andre lande.'
+      'British Columbia i Canada har gjort det med succes - og det bliver nu udrullet i hele Canada. Det er på planen i flere andre lande.',
     ],
     [
       'Hvad siger industrien?',
-      'Nogle store danske virksomheder støtter en pris på forurening. Det gælder fx. Nordea, Danfoss, Vestas, og Ørsted. Dansk Industri og Dansk Erhverv har generelt være imod “dumme afgifter”. Så er det heldigt, at verdens bedste klimaplan er super smart! Fordi den er billigere samfundsøkonomisk og mere forudsigeligt end alternativerne, er det nærmest en selvfølge, at virksomhederne overordnet kommer til at elske planen. Nogle kommer til at brokke sig (især klimasyndere), men det er mere fordi nogle af deres forretninger ikke rigtig kan være bæredygtig - og de kan godt se at det bliver svært at være klimaneutrale i 2050.
+      'Nogle store danske virksomheder støtter en pris på forurening. Det gælder fx. Nordea, Danfoss, Vestas, og Ørsted. Dansk Industri og Dansk Erhverv har generelt være imod “dumme afgifter”. Så er det heldigt, at verdens bedste klimaplan er super smart! Fordi den er billigere samfundsøkonomisk og mere forudsigeligt end alternativerne, er det nærmest en selvfølge, at virksomhederne overordnet kommer til at elske planen. Nogle kommer til at brokke sig (især klimasyndere), men det er mere fordi nogle af deres forretninger ikke rigtig kan være bæredygtig - og de kan godt se at det bliver svært at være klimaneutrale i 2050.',
     ],
     [
       'Hvor meget skal det koste at udlede et ton CO2?',
-      'For at vi skal af med vores udledninger, skal prisen være tilstrækkeligt højt. Klimarådet nævnt i 2018 en pris på over 800 kroner, men det var før målet om 70 pct blev til. Det er sandsynligt, at prisen ville være mellem 1000 og 1500 kroner i 2030.'
+      'For at vi skal af med vores udledninger, skal prisen være tilstrækkeligt højt. Klimarådet nævnt i 2018 en pris på over 800 kroner, men det var før målet om 70 pct blev til. Det er sandsynligt, at prisen ville være mellem 1000 og 1500 kroner i 2030.',
     ],
     [
       'Hvordan finansierer vi velfærdsstaten hvis afgifterne fra fossile brændsler ikke findes længere?',
