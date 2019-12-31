@@ -50,26 +50,32 @@ const Index = () => {
               <img
                 style={{ marginTop: 0 /* Fix alignment with logo */ }}
                 src="/media/information.svg"
-                height="30"
+                height="24"
               />
             </a>
             <a
               href="https://www.berlingske.dk/videnskab/derfor-er-en-klimaskat-verdens-bedste-klimaloesning-og-noget-naer-umulig"
               target="blank"
             >
-              <img src="/media/berlingske.svg" height="30" />
+              <img src="/media/berlingske.svg" height="24" />
             </a>
             <a
               href="https://www.zetland.dk/historie/soNVDq4b-ae6XddK5-15a74"
               target="blank"
             >
-              <img src="/media/zetland.png" height="30" />
+              <img src="/media/zetland.png" height="24" />
             </a>
             <a
               href="https://jyllands-posten.dk/debat/breve/ECE11492645/S%C3%A5dan-bliver-man-husket-i-historieb%C3%B8gerne-Dan-J%C3%B8rgensen/"
               target="blank"
             >
-              <img src="/media/jp.svg" height="30" />
+              <img src="/media/jp.svg" height="24" />
+            </a>
+            <a
+              href="https://politiken.dk/klima/art7458992/S%C3%A5dan-bliver-markedsmekanismerne-og-den-frie-konkurrence-medspillere-i-klimakampen"
+              target="blank"
+            >
+              <img src="/media/politiken.svg" height="18" />
             </a>
           </div>
         </div>
