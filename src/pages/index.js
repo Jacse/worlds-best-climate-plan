@@ -54,13 +54,13 @@ const Index = () => {
               />
             </a>
             <a
-              href="https://www.berlingske.dk/videnskab/derfor-er-en-klimaskat-verdens-bedste-klimaloesning-og-noget-naer-umulig"
+              href="https://www.berlingske.dk/kommentarer/saadan-faar-danmark-mest-klima-for-pengene"
               target="blank"
             >
               <img src="/media/berlingske.svg" height="24" />
             </a>
             <a
-              href="https://www.zetland.dk/historie/soNVDq4b-ae6XddK5-15a74"
+              href="https://www.zetland.dk/historie/sekd5yZD-aOMNamWw-a2949"
               target="blank"
             >
               <img src="/media/zetland.png" height="24" />
