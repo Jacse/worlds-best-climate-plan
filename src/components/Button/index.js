@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './index.module.css';
 
-const Button = ({ children, className, stroke = false, large = false }) => {
+const Button = ({
+  children,
+  className,
+  stroke = false,
+  large = false,
+  ...other
+}) => {
   return (
     <button
       className={[
@@ -10,6 +16,7 @@ const Button = ({ children, className, stroke = false, large = false }) => {
         large ? styles.buttonLarge : '',
         stroke ? styles.buttonStroke : '',
       ].join(' ')}
+      {...other}
     >
       {children}
     </button>
