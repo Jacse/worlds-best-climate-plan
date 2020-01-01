@@ -6,6 +6,7 @@ const Button = ({
   className,
   stroke = false,
   large = false,
+  icon = false,
   ...other
 }) => {
   return (
@@ -15,6 +16,7 @@ const Button = ({
         className,
         large ? styles.buttonLarge : '',
         stroke ? styles.buttonStroke : '',
+        icon ? styles.buttonWithIcon : '',
       ].join(' ')}
       {...other}
     >
