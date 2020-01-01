@@ -2,13 +2,13 @@ export default {
   title: 'Verdens bedste klimaplan',
   description: '<indsæt>',
   subtitle:
-    'Ved at sætte en pris på udledninger kan vi bedst og billigst løse klimakrisen',
+    'Lad os løse klimakrisen på den hurtigste, billigste og mest retfærdige måde',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
   support: 'Støt',
-  supportAsOrg: 'Støt som organisation',
-  supportAsPerson: 'Støt som borger',
-  moreAboutThePlan: 'Mere om planen',
+  supportAsOrg: 'Giv din støtte som organisation',
+  supportAsPerson: 'Giv din støtte som borger',
+  moreAboutThePlan: 'Læs mere om planen',
   behindThePlan: 'Bag planen',
   plan: `
 Ligesom alle os andre har du nok lidt klimaangst. Du ved, at hvis vi ikke gør noget drastisk snart, så bliver det slemt. Men. Du vil stadigvæk gerne bruge din bil i fred, og demonstrationer med Greta Thunberg er måske ikke helt din kop te.
