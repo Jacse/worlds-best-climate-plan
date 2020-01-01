@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'gatsby';
 import text from '../../i18n/da';
 import styles from './index.module.css';
 import Button from '../Button';
+import { ModalContext } from '../SupportModal';
 
 const pages = [
   ['/', text.title],
@@ -28,6 +29,7 @@ const MenuItems = () => (
 const Menu = ({ scrollThreshold = 100 }) => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [isSticky, setSticky] = useState(false);
+  const openModal = useContext(ModalContext);
   const handleScroll = () => {
     setSticky(window.scrollY > scrollThreshold);
   };
@@ -70,7 +72,9 @@ const Menu = ({ scrollThreshold = 100 }) => {
         >
           <MenuItems />
         </div>
-        <Button className={styles.supportButton}>Støt</Button>
+        <Button onClick={openModal} className={styles.supportButton}>
+          Støt
+        </Button>
       </div>
       <div
         className={[

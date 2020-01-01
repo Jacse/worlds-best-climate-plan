@@ -1,0 +1,61 @@
+.modalContainer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.modal {
+  position: relative;
+  padding: 1.5em;
+  border-radius: 1rem;
+  background: white;
+  z-index: 21;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.field {
+  display: block;
+  margin: 0.8em 0;
+}
+.field input {
+  display: block;
+  width: 100%;
+  margin: 0.2em 0;
+  padding: .6em 1em;
+  background: #EEE;
+  border: none;
+  border-radius: .3rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+}
+
+.fieldWithError input {
+  border: 2px solid red;
+}
+
+.fieldWithCheckbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.fieldWithCheckbox input {
+  width: initial;
+  margin-right: 0.4em;
+}
+
+.errorText {
+  color: red;
+  font-size: 0.8em;
+}
