@@ -11,7 +11,7 @@ export default {
   moreAboutThePlan: 'Læs mere om planen',
   behindThePlan: 'Bag planen',
   plan: `
-Ligesom alle os andre har du nok lidt klimaangst. Du ved, at hvis vi ikke gør noget drastisk snart, så bliver det slemt. Men. Du vil stadigvæk gerne bruge din bil i fred, og demonstrationer med Greta Thunberg er måske ikke helt din kop te.
+Ligesom alle os andre har du nok lidt klimaangst. Du hørte godt, hvad dronningen sagde til nytår. Du ved, at hvis vi ikke gør noget drastisk snart, så bliver det slemt. Men. Du vil stadigvæk gerne bruge din bil i fred, og demonstrationer med Greta Thunberg er måske ikke helt din kop te.
 
 Du kunne godt tænke dig, at klimaet fikser sig selv, og at du ikke behøver tænke over det. Det, du godt kunne tænke dig, er en slags “doven revolution”.
 
