@@ -3,10 +3,11 @@ import { Link } from 'gatsby';
 import text from '../../i18n/da';
 import Menu from '../Menu';
 import Separator from '../../components/Separator';
+import SupportModalProvider from '../../components/SupportModal';
 import styles from './index.module.css';
 
 const Layout = ({ children }) => (
-  <div>
+  <SupportModalProvider>
     <Menu />
     {children}
     <div className={styles.footer}>
@@ -47,7 +48,7 @@ const Layout = ({ children }) => (
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1&scrolling=1"
     ></script>
-  </div>
+  </SupportModalProvider>
 );
 
 export default Layout;

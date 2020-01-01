@@ -2,6 +2,7 @@ import React from 'react';
 import Collapse, { Panel } from 'rc-collapse';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import { ModalContext } from '../components/SupportModal';
 import text from '../i18n/da';
 import styles from './index.module.css';
 import 'rc-collapse/assets/index.css';
@@ -17,12 +18,18 @@ const Index = () => {
         <div className="container-large">
           <h1 className={styles.title}>{text.title}</h1>
           <h2 className={styles.subTitle}>{text.subtitle}</h2>
-          <div className={styles.ctas}>
-            <Button large>{text.supportAsPerson}</Button>
-            <Button large stroke>
-              {text.supportAsOrg}
-            </Button>
-          </div>
+          <ModalContext.Consumer>
+            {openModal => (
+              <div className={styles.ctas}>
+                <Button onClick={openModal} large>
+                  {text.supportAsPerson}
+                </Button>
+                <Button onClick={openModal} large stroke>
+                  {text.supportAsOrg}
+                </Button>
+              </div>
+            )}
+          </ModalContext.Consumer>
         </div>
       </section>
       <section className={styles.carousels}>

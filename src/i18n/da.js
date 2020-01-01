@@ -102,6 +102,17 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     organisations: 'Organisationer',
     contact: 'Kontakt',
   },
+  supportModal: {
+    firstname: 'Fornavn',
+    lastname: 'Efternavn',
+    email: 'Email',
+    organisation: 'Organisation (hvis relevant)',
+    fieldRequired: 'Dette felt skal udfyldes',
+    emailInvalid: 'Denne email ser ugyldig ud',
+    supportCheckbox: 'Ja, vil jeg gerne støtte op om Verdens bedste klimaplan',
+    receiveUpdatesCheckbox:
+      'Jeg vil gerne få opdateringer fra Verdens bedste klimaplan',
+  },
   faq: [
     [
       'Hvorfor skal Danmark have verdens bedste klimaplan?',
