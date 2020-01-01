@@ -141,11 +141,11 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     ],
     [
       'Hvad siger industrien?',
-      'Nogle store danske virksomheder støtter en pris på forurening. Det gælder eksempelvis Nordea, Danfoss, Vestas, og Ørsted. Dansk Industri og Dansk Erhverv har generelt været imod “dumme afgifter”. Så er det heldigt, at verdens bedste klimaplan er super smart! Fordi den er billigere samfundsøkonomisk og mere forudsigelig end alternativerne, er det nærmest en selvfølge, at virksomhederne overordnet kommer til at elske planen. Nogle kommer til at brokke sig (især klimasyndere), men det er mere fordi nogle af deres forretninger ikke rigtig kan være bæredygtig - og de kan godt se at det bliver svært at være klimaneutrale i 2050.',
+      'Nogle store danske virksomheder støtter en pris på forurening. Det gælder eksempelvis Nordea, Danfoss, Vestas, og Ørsted. Dansk Industri og Dansk Erhverv har generelt været imod “dumme afgifter”. Så er det heldigt, at verdens bedste klimaplan er super smart! Fordi den er billigere samfundsøkonomisk og mere forudsigelig end alternativerne, er det nærmest en selvfølge, at virksomhederne overordnet kommer til at elske planen. Nogle kommer til at brokke sig (især klimasyndere), men det er mere fordi nogle af deres forretninger ikke rigtig kan være bæredygtig - og de kan godt se at det bliver svært at være klimaneutrale i 2050. Men selve Aalborg Portland og Arla burde se fidusen i det - så kan de sælge mere af henholdsvis Futurecem og plantedrik',
     ],
     [
-      'Hvor meget skal det koste at udlede 1 ton CO2?',
-      'For at vi skal af med vores udledninger, skal prisen være tilstrækkelig høj. Klimarådet nævnte i 2018 en pris på over 800 kroner, men det var før målet om 70 pct. blev til. Det er sandsynligt, at prisen vil være mellem 1.000 og 1.500 kroner i 2030.',
+      'Hvor meget skal det koste at udlede CO2?',
+      'For at vi skal af med vores udledninger, skal prisen være tilstrækkelig høj. Klimarådet nævnte i 2018 en pris på over 800 kroner per ton udledt CO2, men det var før målet om 70 pct. blev til. Det er sandsynligt, at prisen vil være mellem 1.000 og 1.500 kroner i 2030.',
     ],
     [
       'Hvordan finansierer vi velfærdsstaten hvis afgifterne fra fossile brændsler ikke findes længere?',
@@ -165,7 +165,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     ],
     [
       'Er det ikke bare en skjult måde at lave borgerløn på?',
-      'At give pengene tilbage gennem den grønne check er kun en metode at gøre det på. Man kunne også vælge at reducere andre afgifter, eller hæve personfradraget. Beløbene vil dog ikke være særlige store for de fleste, så det er usandsynligt, at det vil påvirke borgernes bankkonto på en måde, der vil gøre at de ikke vil i arbejde.',
+      'At give pengene tilbage gennem den grønne check er kun en metode at gøre det på. Man kunne også vælge at reducere andre afgifter, eller at hæve personfradraget. Beløbene vil dog ikke være særlige store for de fleste, så det er usandsynligt, at det vil påvirke borgernes bankkonto på en måde, der vil gøre at de ikke vil i arbejde.',
     ],
     [
       'Kan vi ikke bare støtte virksomhederne gennem den grønne omstilling i stedet?',
