@@ -66,12 +66,16 @@ const SupportForm = ({ closeModal }) => {
           'https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient',
           { method: 'POST', body: new URLSearchParams(values) }
         )
-          .then(() => {
-            setIsSubmitted(true);
+          .then(res => res.json())
+          .then(res => {
+            if (res.err) {
+              setError(true);
+            } else {
+              setIsSubmitted(true);
+            }
             setSubmitting(false);
           })
-          .catch(e => {
-            console.error(e);
+          .catch(() => {
             setError(true);
             setSubmitting(false);
           });

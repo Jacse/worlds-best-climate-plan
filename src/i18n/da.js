@@ -113,7 +113,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     receiveUpdatesCheckbox:
       'Jeg vil gerne modtage opdateringer fra verdens bedste klimaplan',
     supportButton: 'Støt op om verdens bedste klimaplan',
-    thanksText: 'Tak - tjek din email for at bekræfte din støtte',
+    thanksText: 'Tak for støtten!',
     errorText: 'Noget gik galt... :/',
   },
   faq: [

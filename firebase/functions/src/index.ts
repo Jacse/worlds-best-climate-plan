@@ -12,7 +12,7 @@ const mailgun = Mailgun({
 });
 
 const corsMiddleware = cors({
-  origin: 'verdensbedsteklimaplan.dk',
+  origin: 'https://verdensbedsteklimaplan.dk',
 });
 
 export const addRecipient = functions.https.onRequest((request, response) => {

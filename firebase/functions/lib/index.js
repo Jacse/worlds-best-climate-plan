@@ -21,7 +21,7 @@ const mailgun = mailgun_js_1.default({
     domain,
 });
 const corsMiddleware = cors_1.default({
-    origin: 'verdensbedsteklimaplan.dk',
+    origin: 'https://verdensbedsteklimaplan.dk',
 });
 exports.addRecipient = functions.https.onRequest((request, response) => {
     return corsMiddleware(request, response, () => {
