@@ -55,6 +55,7 @@ const SupportForm = ({ children }) => {
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
+          // Use https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient?email=jacsebl@hotmail.com&name=Jacob
           alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
         }, 400);
