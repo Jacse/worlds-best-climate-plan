@@ -15,6 +15,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "formik": "^2.1.0",
     "gatsby": "^2.18.4",
     "gatsby-plugin-google-tagmanager": "^2.1.20",
     "rc-collapse": "^1.11.8",

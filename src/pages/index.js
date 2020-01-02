@@ -3,6 +3,7 @@ import Collapse, { Panel } from 'rc-collapse';
 import { FaUserTie, FaUniversity } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import { ModalContext } from '../components/SupportModal';
 import text from '../i18n/da';
 import styles from './index.module.css';
 import 'rc-collapse/assets/index.css';
@@ -18,16 +19,20 @@ const Index = () => {
         <div className="container-large">
           <h1 className={styles.title}>{text.title}</h1>
           <h2 className={styles.subTitle}>{text.subtitle}</h2>
-          <div className={styles.ctas}>
-            <Button icon large>
-              <FaUserTie />
-              {text.supportAsPerson}
-            </Button>
-            <Button icon large stroke>
-              <FaUniversity />
-              {text.supportAsOrg}
-            </Button>
-          </div>
+          <ModalContext.Consumer>
+            {openModal => (
+              <div className={styles.ctas}>
+                <Button onClick={openModal} icon large>
+                  <FaUserTie />
+                  {text.supportAsPerson}
+                </Button>
+                <Button onClick={openModal} icon large stroke>
+                  <FaUniversity />
+                  {text.supportAsOrg}
+                </Button>
+              </div>
+            )}
+          </ModalContext.Consumer>
         </div>
       </section>
       <section className={styles.carousels}>
