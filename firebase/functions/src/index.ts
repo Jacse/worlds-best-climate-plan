@@ -13,11 +13,23 @@ export const addRecipient = functions.https.onRequest((request, response) => {
   return new Promise(resolve => {
     const address = request.query.email;
     const name = request.query.name;
+    const organisation = request.query.organisation;
+    const subscribed = request.query.receiveUpdates;
+
+    const vars: { [k: string]: string } = {};
+
+    if (organisation && organisation !== '') {
+      vars.organisation = organisation;
+    }
     // Add email to Mailgun list
     mailgun
       .lists(`${list}@${domain}`)
       .members()
-      .create({ address, name, subscribed: true }, (err, data) => {
+      .create({ address, name, subscribed, vars }, (err, data) => {
+        response.set(
+          'Access-Control-Allow-Origin',
+          'verdensbedsteklimaplan.dk'
+        );
         response.json(data);
         resolve();
       });
