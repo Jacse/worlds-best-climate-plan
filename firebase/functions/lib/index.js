@@ -29,7 +29,7 @@ exports.addRecipient = functions.https.onRequest((request, response) => {
             const address = request.body.email;
             const name = request.body.name;
             const organisation = request.body.organisation;
-            const subscribed = !!request.body.receiveUpdates;
+            const subscribed = !!request.body.subscribe;
             const vars = {};
             if (organisation && organisation !== '') {
                 vars.organisation = organisation;
