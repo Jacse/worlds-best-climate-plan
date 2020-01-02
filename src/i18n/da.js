@@ -103,15 +103,16 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     contact: 'Kontakt',
   },
   supportModal: {
+    header: 'Støt op og hjælp verdens bedste klimaplan',
     firstname: 'Fornavn',
     lastname: 'Efternavn',
     email: 'Email',
     organisation: 'Organisation (hvis relevant)',
     fieldRequired: 'Dette felt skal udfyldes',
     emailInvalid: 'Denne email ser ugyldig ud',
-    supportCheckbox: 'Ja, vil jeg gerne støtte op om Verdens bedste klimaplan',
     receiveUpdatesCheckbox:
-      'Jeg vil gerne få opdateringer fra Verdens bedste klimaplan',
+      'Jeg vil gerne modtage opdateringer fra verdens bedste klimaplan',
+    supportButton: 'Støt op om verdens bedste klimaplan',
   },
   faq: [
     [

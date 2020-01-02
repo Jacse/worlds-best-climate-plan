@@ -54,15 +54,22 @@ const SupportForm = ({ children }) => {
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          // Use https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient?email=jacsebl@hotmail.com&name=Jacob
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+        fetch(
+          `https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient?${new URLSearchParams(
+            values
+          ).toString()}`
+        )
+          .then(() => {
+            setSubmitting(false);
+          })
+          .catch(() => {
+            setSubmitting(false);
+          });
       }}
     >
       {({ isSubmitting }) => (
         <Form>
+          <h3>{text.supportModal.header}</h3>
           <FormField name="firstname" label={text.supportModal.firstname} />
           <FormField name="lastname" label={text.supportModal.lastname} />
           <FormField
@@ -75,17 +82,12 @@ const SupportForm = ({ children }) => {
             type={text.supportModal.email}
           />
           <FormField
-            name="support"
-            label={text.supportModal.supportCheckbox}
-            type="checkbox"
-          />
-          <FormField
-            name="support"
+            name="subscribe"
             label={text.supportModal.receiveUpdatesCheckbox}
             type="checkbox"
           />
           <Button type="submit" disabled={isSubmitting}>
-            Submit
+            {text.supportModal.supportButton}
           </Button>
         </Form>
       )}
