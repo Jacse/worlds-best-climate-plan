@@ -14,7 +14,7 @@ const ModalProvider = ({ children }) => {
       {isModalOpen && (
         <div className={styles.modalContainer}>
           <div className={[styles.modal, 'container-small'].join(' ')}>
-            <Form />
+            <Form closeModal={() => setIsModalOpen(false)} />
           </div>
           <div
             onClick={() => setIsModalOpen(false)}

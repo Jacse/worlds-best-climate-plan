@@ -25,6 +25,39 @@
   background: rgba(0,0,0,0.3);
 }
 
+.form {
+  position: relative;
+}
+
+.form .overlay {
+  background: rgba(255,255,255,0.7);
+}
+
+.form h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.form .icon {
+  font-size: 3rem;
+  color: #999;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(359deg);}
+}
+
+.spinner {
+  animation: spin 1s infinite;
+}
+
+.isSubmitting > *:not(.icon) {
+  opacity: 0.3;
+}
+
 .field {
   display: block;
   margin: 0.8em 0;
@@ -58,4 +91,9 @@
 .errorText {
   color: red;
   font-size: 0.8em;
+}
+
+.submitButton {
+  display: block;
+  margin: 1rem auto 0;
 }
