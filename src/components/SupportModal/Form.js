@@ -35,7 +35,7 @@ const FormField = ({ name, label, type = 'text' }) => (
 
 const SupportForm = ({ closeModal }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
   return (
     <Formik
       initialValues={{
@@ -63,15 +63,15 @@ const SupportForm = ({ closeModal }) => {
       }}
       onSubmit={(values, { setSubmitting }) => {
         fetch(
-          `https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient?${new URLSearchParams(
-            values
-          ).toString()}`
+          'https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient',
+          { method: 'POST', body: new URLSearchParams(values) }
         )
           .then(() => {
             setIsSubmitted(true);
             setSubmitting(false);
           })
-          .catch(() => {
+          .catch(e => {
+            console.error(e);
             setError(true);
             setSubmitting(false);
           });
