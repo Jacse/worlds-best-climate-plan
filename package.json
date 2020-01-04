@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "formik": "^2.1.0",
-    "gatsby": "^2.18.4",
+    "gatsby": "^2.18.17",
     "gatsby-plugin-google-tagmanager": "^2.1.20",
     "rc-collapse": "^1.11.8",
     "react": "^16.12.0",
