@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import styles from './index.module.css';
 
 const variants = [
@@ -10,10 +11,9 @@ const variants = [
 const Separator = ({ color = 'white', reverse = false, variant = 0 }) => {
   return (
     <svg
-      className={[
-        styles.separator,
-        reverse ? styles.seperatorReverse : '',
-      ].join(' ')}
+      className={classNames(styles.separator, {
+        [styles.seperatorReverse]: reverse,
+      })}
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none"
       viewBox="0 0 1440 320"

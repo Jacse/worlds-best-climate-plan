@@ -2,14 +2,15 @@ export default {
   title: 'Verdens bedste klimaplan',
   description: '<indsæt>',
   subtitle:
-    'Lad os løse klimakrisen på den hurtigste, billigste og mest retfærdige måde',
+    'Lad os sammen løse klimakrisen på den mest effektive og socialt retfærdige måde',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
-  support: 'Støt',
+  support: 'Støt planen',
   supportAsOrg: 'Giv din støtte som organisation',
-  supportAsPerson: 'Giv din støtte som borger',
+  supportAsPerson: 'Giv din støtte',
   moreAboutThePlan: 'Læs mere om planen',
   behindThePlan: 'Bag planen',
+  cookiePrivacyPolicy: 'Cookie- og privatlivspolitik',
   plan: `
 Ligesom alle os andre har du nok lidt klimaangst. Du hørte godt, hvad dronningen sagde til nytår. Du ved, at hvis vi ikke gør noget drastisk snart, så bliver det slemt. Men. Du vil stadigvæk gerne bruge din bil i fred, og demonstrationer med Greta Thunberg er måske ikke helt din kop te.
 
@@ -89,14 +90,14 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     `,
     brief1Title: 'Forureneren betaler en stigende pris for at forurene',
     brief1Text:
-      'Den nemmeste og billigste måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for forureningen. En stigende pris giver dem mulighed for at tilpasse sig.',
+      'Den mest effektive måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for forureningen.',
     brief2Title: 'Det skal ikke koste noget for den gennemsnitlige dansker',
     brief2Text:
-      'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag. Hvis man køber mere klimavenligt end før så ender man med flere penge på kontoen.',
+      'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag, så dem der køber klimavenligt får flere penge på kontoen.',
     brief3Title:
       'Danske virksomheder bliver støttet for at bevare konkurrenceevnen',
     brief3Text:
-      'At være grøn bør gøre danske virksomheder mere konkurrencedygtige og bør skabe nye danske jobs. Derfor skal danske virksomheder, der kan være særlig udsatte for international konkurrence, støttes.',
+      'Danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
   },
   footer: {
     organisations: 'Organisationer',

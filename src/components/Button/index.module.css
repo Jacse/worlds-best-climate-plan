@@ -1,16 +1,20 @@
 .button {
   border: 1px solid transparent;
-  color: white;
-  background: #87b56b;
-  cursor: pointer;
+  color: #000;
+  /* background: #87b56b; */
+  background-color: #fff;
   letter-spacing: 1.25px;
   text-align: center;
   font-size: 1em;
-  font-weight: bold;
-  border-radius: 0.2em;
+  /* font-weight: bold; */
+  text-transform: uppercase;
   padding: 0.5em 1.5em;
   transition: transform 100ms ease-in-out;
-  /* box-shadow: 0px 1px 2px rgba(0,0,0,0.1); */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .buttonWithIcon {
@@ -26,10 +30,10 @@
 }
 
 .button:hover {
-  transform: scale(1.04);
+  transform: scale(1.1);
 }
 .buttonLarge:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 .button:active {
@@ -39,11 +43,13 @@
 
 .buttonLarge {
   padding: 1em 2em;
-  border-radius: 2em;
+  /* border-radius: 2em; */
   /* box-shadow: 0px 1px 4px rgba(0,0,0,0.3); */
 }
 
-.buttonStroke, .buttonStroke:active {
+.buttonStroke,
+.buttonStroke:active {
   background: none;
+  color: #fff;
   border: 1px solid white;
 }

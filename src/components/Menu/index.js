@@ -4,6 +4,7 @@ import text from '../../i18n/da';
 import styles from './index.module.css';
 import Button from '../Button';
 import { ModalContext } from '../SupportModal';
+import classNames from 'classnames';
 
 const pages = [
   ['/', text.title],
@@ -12,7 +13,7 @@ const pages = [
 ];
 
 const MenuItems = () => (
-  <React.Fragment>
+  <>
     {pages.map(([href, title]) => (
       <Link
         activeClassName={styles.menuItemActive}
@@ -23,13 +24,14 @@ const MenuItems = () => (
         {title}
       </Link>
     ))}
-  </React.Fragment>
+  </>
 );
 
 const Menu = ({ scrollThreshold = 100 }) => {
   const [burgerActive, setBurgerActive] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const openModal = useContext(ModalContext);
+
   const handleScroll = () => {
     setSticky(window.scrollY > scrollThreshold);
   };
@@ -45,17 +47,22 @@ const Menu = ({ scrollThreshold = 100 }) => {
   return (
     <div>
       <div
-        className={[
-          styles.navBar,
-          'green',
-          isSticky ? styles.navBarActive : '',
-        ].join(' ')}
+        className={classNames(styles.navBar, {
+          green: isSticky,
+          [styles.navBarActive]: isSticky,
+        })}
       >
+        <img
+          src="/logo_white.png"
+          alt=""
+          className={classNames(styles.logo, {
+            // [styles.logoActive]: !isSticky,
+          })}
+        />
         <div
-          className={[
-            styles.burgerButton,
-            isSticky ? styles.burgerButtonActive : '',
-          ].join(' ')}
+          className={classNames(styles.burgerButton, {
+            // [styles.burgerButtonActive]: isSticky,
+          })}
           onClick={() => setBurgerActive(true)}
         >
           <span>
@@ -65,22 +72,20 @@ const Menu = ({ scrollThreshold = 100 }) => {
           </span>
         </div>
         <div
-          className={[
-            styles.menuItems,
-            !isSticky ? styles.menuItemsActive : '',
-          ].join(' ')}
+          className={classNames(styles.menuItems, {
+            [styles.menuItemsActive]: true, //!isSticky,
+          })}
         >
           <MenuItems />
         </div>
         <Button onClick={openModal} className={styles.supportButton}>
-          Støt
+          {text.support}
         </Button>
       </div>
       <div
-        className={[
-          styles.burgerMenu,
-          burgerActive ? styles.burgerMenuActive : '',
-        ].join(' ')}
+        className={classNames(styles.burgerMenu, {
+          [styles.burgerMenuActive]: burgerActive,
+        })}
       >
         <div
           className={styles.crossButton}
@@ -92,10 +97,9 @@ const Menu = ({ scrollThreshold = 100 }) => {
         <MenuItems />
       </div>
       <div
-        className={[
-          styles.overlay,
-          burgerActive ? styles.overlayActive : '',
-        ].join(' ')}
+        className={classNames(styles.overlay, {
+          [styles.overlayActive]: burgerActive,
+        })}
         onClick={() => setBurgerActive(false)}
       ></div>
     </div>

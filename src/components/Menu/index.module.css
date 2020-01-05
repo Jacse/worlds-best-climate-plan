@@ -1,3 +1,13 @@
+.logo {
+  height: 80px;
+  /* display: none; */
+  transition: display 0.2s;
+}
+
+.logoActive {
+  display: block;
+}
+
 .navBar {
   position: fixed;
   width: 100%;
@@ -7,8 +17,10 @@
   align-items: center;
   z-index: 10;
   border-bottom: 1px solid transparent;
-  transition: padding .2s, border-bottom-color .2s;
+  transition: padding 0.2s, border-bottom-color 0.2s;
+  height: 100px;
 }
+
 .navBarActive {
   padding: 0.5rem 1rem;
   border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -39,7 +51,7 @@
   left: 0;
   right: 0;
   top: 0%;
-  background: #FFF;
+  background: #fff;
 }
 
 .burgerButtonBar:nth-child(2) {
@@ -55,14 +67,14 @@
   top: 0;
   height: 100%;
   background: #315640;
-  transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%, 0, 0);
   transition: transform 0.2s ease-in-out;
   z-index: 11;
   padding: 2rem 1rem 1rem;
 }
 
 .burgerMenuActive {
-  transform: translate3d(0,0,0)
+  transform: translate3d(0, 0, 0);
 }
 
 .crossButton {
@@ -79,7 +91,7 @@
   height: 26px;
   transform-origin: center;
   transform: rotate(45deg);
-  background: #FFF;
+  background: #fff;
   cursor: pointer;
 }
 .crossBar:nth-child(2) {
@@ -106,6 +118,7 @@
 .menuItems {
   opacity: 0;
   transition: opacity 0.2s;
+  margin-right: 20px;
 }
 
 .menuItemsActive {
@@ -128,11 +141,14 @@
 
 @media (max-width: 768px) {
   /* Always do burger menu on small devices */
+  .logo {
+    display: none;
+  }
   .menuItems {
     display: none;
   }
   .burgerButton {
-    opacity: 1
+    opacity: 1;
   }
 }
 

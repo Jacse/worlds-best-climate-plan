@@ -1,6 +1,7 @@
 import React from 'react';
 import Collapse, { Panel } from 'rc-collapse';
-import { FaUserTie, FaUniversity } from 'react-icons/fa';
+import { FaUserTie } from 'react-icons/fa';
+import classNames from 'classnames';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import { ModalContext } from '../components/SupportModal';
@@ -15,88 +16,119 @@ const Index = () => {
   return (
     <Layout>
       <SEO title="Verdens Bedste klimaplan" description="" />
-      <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
+      <section
+        className={classNames(
+          styles.top,
+          styles.topBackgroundImage,
+          'green',
+          'separator-bottom'
+        )}
+      >
+        <div className={styles.topBackgroundImageOverlay} />
         <div className="container-large">
           <h1 className={styles.title}>{text.title}</h1>
-          <h2 className={styles.subTitle}>{text.subtitle}</h2>
+          <h2 className={styles.subtitle}>{text.subtitle}</h2>
           <ModalContext.Consumer>
             {openModal => (
               <div className={styles.ctas}>
-                <Button onClick={openModal} icon large>
-                  <FaUserTie />
+                <Button onClick={openModal} large>
                   {text.supportAsPerson}
-                </Button>
-                <Button onClick={openModal} icon large stroke>
-                  <FaUniversity />
-                  {text.supportAsOrg}
                 </Button>
               </div>
             )}
           </ModalContext.Consumer>
+          <p style={{ fontSize: 11, marginTop: 5 }}>
+            <em>
+              Allerede støttet af 27 Nobelprismodtagere, 3.500 økonomer
+              <br />
+              og hundredetusindvis af borgere
+            </em>
+          </p>
         </div>
       </section>
       <section className={styles.carousels}>
         <Separator variant={1} />
         <div className="container-large">
-          <h4>{text.supportedBy}</h4>
-          <div className={styles.carousel}>
-            {/* All images are #000 black */}
-            <a href="https://www.klimabevaegelsen.dk/" target="blank">
-              <img src="/supporters/350.svg" height="90" />
-            </a>
-            <a href="https://www.dgsb.dk/" target="blank">
-              <img src="/supporters/dgs.png" width="150" height="80" />
-            </a>
-            <a href="https://citizensclimatelobby.org/" target="blank">
-              <img src="/supporters/ccl.png" width="131" height="100" />
-            </a>
+          <div>
+            <h4>{text.supportedBy}</h4>
+            <div className={styles.carousel}>
+              {/* All images are #000 black */}
+              <a href="https://www.klimabevaegelsen.dk/" target="blank">
+                <img src="/supporters/350.svg" height="90" />
+              </a>
+              <a href="https://www.dgsb.dk/" target="blank">
+                <img src="/supporters/dgs.png" height="80" />
+              </a>
+              <a href="https://citizensclimatelobby.org/" target="blank">
+                <img src="/supporters/ccl.png" height="100" />
+              </a>
+            </div>
+            {/* <div className="cols">
+              <div className="col">
+                <div className={styles.box}>
+                  <h3>27</h3>
+                  <p>Nobelprismodtagere</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className={styles.box}>
+                  <h3>3.500+</h3>
+                  <p>Økonomer</p>
+                </div>
+              </div>
+              <div className="col">
+                <div className={styles.box}>
+                  <h3>100.000+</h3>
+                  <p>Borgere</p>
+                </div>
+              </div>
+            </div> */}
           </div>
-          <h4>{text.mentionedIn}</h4>
-          <div className={styles.carousel}>
-            <a
-              href="https://www.information.dk/debat/2019/09/saet-afgifter-paa-former-klimabelastning-giv-pengene-tilbage-befolkningen"
-              target="blank"
-            >
-              <img
-                style={{ marginTop: 0 /* Fix alignment with logo */ }}
-                src="/media/information.svg"
-                height="24"
-              />
-            </a>
-            <a
-              href="https://www.berlingske.dk/kommentarer/saadan-faar-danmark-mest-klima-for-pengene"
-              target="blank"
-            >
-              <img src="/media/berlingske.svg" height="24" />
-            </a>
-            <a
-              href="https://www.zetland.dk/historie/sekd5yZD-aOMNamWw-a2949"
-              target="blank"
-            >
-              <img src="/media/zetland.png" height="24" />
-            </a>
-            <a
-              href="https://jyllands-posten.dk/debat/breve/ECE11492645/S%C3%A5dan-bliver-man-husket-i-historieb%C3%B8gerne-Dan-J%C3%B8rgensen/"
-              target="blank"
-            >
-              <img src="/media/jp.svg" height="24" />
-            </a>
-            <a
-              href="https://politiken.dk/klima/art7458992/S%C3%A5dan-bliver-markedsmekanismerne-og-den-frie-konkurrence-medspillere-i-klimakampen"
-              target="blank"
-            >
-              <img src="/media/politiken.svg" height="18" />
-            </a>
+          <div>
+            <h4>{text.mentionedIn}</h4>
+            <div className={styles.carousel}>
+              <a
+                href="https://www.information.dk/debat/2019/09/saet-afgifter-paa-former-klimabelastning-giv-pengene-tilbage-befolkningen"
+                target="blank"
+              >
+                <img
+                  style={{ marginTop: 0 /* Fix alignment with logo */ }}
+                  src="/media/information.svg"
+                  height="24"
+                />
+              </a>
+              <a
+                href="https://www.berlingske.dk/kommentarer/saadan-faar-danmark-mest-klima-for-pengene"
+                target="blank"
+              >
+                <img src="/media/berlingske.svg" height="24" />
+              </a>
+              <a
+                href="https://www.zetland.dk/historie/sekd5yZD-aOMNamWw-a2949"
+                target="blank"
+              >
+                <img src="/media/zetland.png" height="24" />
+              </a>
+              <a
+                href="https://jyllands-posten.dk/debat/breve/ECE11492645/S%C3%A5dan-bliver-man-husket-i-historieb%C3%B8gerne-Dan-J%C3%B8rgensen/"
+                target="blank"
+              >
+                <img src="/media/jp.svg" height="24" />
+              </a>
+              <a
+                href="https://politiken.dk/klima/art7458992/S%C3%A5dan-bliver-markedsmekanismerne-og-den-frie-konkurrence-medspillere-i-klimakampen"
+                target="blank"
+              >
+                <img src="/media/politiken.svg" height="18" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section className="green separator-bottom">
-        <Separator reverse />
+        <Separator variant={0} reverse />
         <div className={`container-large ${styles.brief} separator-top`}>
           <h2>{text.frontpage.explainedBriefly}</h2>
-          <div className="container-medium">
-            <p>{text.frontpage.explainedBrieflyText}</p>
-          </div>
           <div className="cols">
             <div className="col">
               <img src="/illustrations/brief1.svg" height="80" />
