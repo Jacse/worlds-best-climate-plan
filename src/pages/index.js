@@ -100,7 +100,7 @@ const Index = () => {
                 />
               </a>
               <a
-                href="https://www.berlingske.dk/kommentarer/saadan-faar-danmark-mest-klima-for-pengene"
+                href="https://www.berlingske.dk/videnskab/derfor-er-en-klimaskat-verdens-bedste-klimaloesning-og-noget-naer-umulig"
                 target="blank"
               >
                 <img src="/media/berlingske.svg" height="24" />
@@ -110,13 +110,13 @@ const Index = () => {
                 target="blank"
               >
                 <img src="/media/zetland.png" height="24" />
-              </a>
-              <a
-                href="https://jyllands-posten.dk/debat/breve/ECE11492645/S%C3%A5dan-bliver-man-husket-i-historieb%C3%B8gerne-Dan-J%C3%B8rgensen/"
-                target="blank"
-              >
-                <img src="/media/jp.svg" height="24" />
-              </a>
+ //             </a>
+ //             <a
+ //               href="https://jyllands-posten.dk/debat/breve/ECE11492645/S%C3%A5dan-bliver-man-husket-i-historieb%C3%B8gerne-Dan-J%C3%B8rgensen/"
+ //               target="blank"
+ //             >
+ //               <img src="/media/jp.svg" height="24" />
+ //             </a>
               <a
                 href="https://politiken.dk/klima/art7458992/S%C3%A5dan-bliver-markedsmekanismerne-og-den-frie-konkurrence-medspillere-i-klimakampen"
                 target="blank"
