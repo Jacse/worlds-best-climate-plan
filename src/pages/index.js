@@ -1,6 +1,5 @@
 import React from 'react';
 import Collapse, { Panel } from 'rc-collapse';
-import { FaUserTie } from 'react-icons/fa';
 import classNames from 'classnames';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
@@ -37,7 +36,14 @@ const Index = () => {
               </div>
             )}
           </ModalContext.Consumer>
-          <p style={{ fontSize: 12, marginTop: 10, paddingLeft: 30, paddingRight: 30 }}>
+          <p
+            style={{
+              fontSize: 12,
+              marginTop: 10,
+              paddingLeft: 30,
+              paddingRight: 30,
+            }}
+          >
             <em>{text.supporterExperts}</em>
           </p>
         </div>
@@ -155,11 +161,7 @@ const Index = () => {
           <h2>FAQ</h2>
           <Collapse accordion className={styles.faq}>
             {text.faq.map(([question, answer]) => (
-              <Panel
-                key={question}
-                header={question}
-                headerClass={styles.faqItem}
-              >
+              <Panel key={question} header={question}>
                 {answer.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}

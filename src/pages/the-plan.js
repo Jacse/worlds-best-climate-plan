@@ -5,6 +5,8 @@ import text from '../i18n/da';
 import styles from './index.module.css';
 import Separator from '../components/Separator';
 import SEO from '../components/SEO';
+import Button from '../components/Button';
+import { ModalContext } from '../components/SupportModal';
 
 const ThePlan = () => {
   return (
@@ -19,6 +21,17 @@ const ThePlan = () => {
         <Separator variant={1} />
         <div className="container-small">
           <ReactMarkdown source={text.plan} />
+          <div style={{ textAlign: 'center' }}>
+            <ModalContext.Consumer>
+              {openModal => (
+                <div className={styles.ctas}>
+                  <Button onClick={openModal} large className="btn-green">
+                    {text.supportAsPerson}
+                  </Button>
+                </div>
+              )}
+            </ModalContext.Consumer>
+          </div>
         </div>
       </section>
     </Layout>

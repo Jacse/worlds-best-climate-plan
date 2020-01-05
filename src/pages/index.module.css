@@ -105,26 +105,34 @@
   border: none !important;
 }
 
-.faqItem {
-  padding: 15px 10px !important;
-}
-
 :global .rc-collapse > .rc-collapse-item {
-  border: none !important;
-}
-
-:global .rc-collapse > .rc-collapse-item.rc-collapse-item-active {
-  border-bottom: 1px solid #ccc !important;
+  margin-bottom: 10px;
 }
 
 :global .rc-collapse > .rc-collapse-item > .rc-collapse-header {
-  border-bottom: 1px solid #ccc;
+  padding: 15px 15px !important;
+  color: #fff !important;
+  background-color: #50755f;
+}
+
+:global .rc-collapse > .rc-collapse-item > .rc-collapse-header > i.arrow {
+  border-left-color: #fff;
+  border-top-color: transparent;
 }
 
 :global
   .rc-collapse
   > .rc-collapse-item.rc-collapse-item-active
-  > .rc-collapse-header {
-  color: #315640;
-  border-bottom: 1px solid #315640;
+  > .rc-collapse-header
+  > i.arrow {
+  border-left-color: transparent;
+  border-top-color: #fff;
+}
+
+:global .rc-collapse > .rc-collapse-item,
+:global
+  .rc-collapse
+  > .rc-collapse-item
+  > .rc-collapse-content.rc-collapse-content-active {
+  background-color: #efefef;
 }

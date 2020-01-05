@@ -90,13 +90,13 @@ Verdens Bedste Klimaplan er støttet af 27 Nobelprismodtagere, flere end 3.500 �
 
 Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødvendige grønne omstilling billigst og hurtigst muligt.
     `,
-    brief1Title: 'Forureneren betaler en stigende pris for at forurene',
+    brief1Title: 'Virksomheder betaler en afgift for at forurene',
     brief1Text:
       'Den mest effektive måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for forureningen.',
-    brief2Title: 'Det skal ikke koste noget for den gennemsnitlige dansker',
+    brief2Title: 'Provenuet betales tilbage til virksomheder og borgere',
     brief2Text:
       'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag, så dem der køber klimavenligt får flere penge på kontoen.',
-    brief3Title: 'Danske virksomheder støttes for bevaret konkurrenceevne',
+    brief3Title: 'Udsatte virksomheder støttes for at undgå udflytning',
     brief3Text:
       'Danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
   },
