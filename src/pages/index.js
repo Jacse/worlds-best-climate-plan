@@ -158,7 +158,7 @@ const Index = () => {
       <section className="separator-bottom">
         <Separator />
         <div className="container-medium">
-          <h2>FAQ</h2>
+          <h2>{text.faqTitle}</h2>
           <Collapse accordion className={styles.faq}>
             {text.faq.map(([question, answer]) => (
               <Panel key={question} header={question}>

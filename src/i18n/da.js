@@ -5,9 +5,9 @@ export default {
     'Lad os sammen løse klimakrisen på den mest effektive og socialt retfærdige måde',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
-  support: 'Støt planen',
-  supportAsOrg: 'Giv din støtte som organisation',
-  supportAsPerson: 'Giv din støtte',
+  support: 'Vis din støtte',
+  supportAsOrg: 'Vis din støtte som organisation',
+  supportAsPerson: 'Vis din støtte',
   supporterExperts:
     'Allerede støttet af 27 Nobelprismodtagere, 3.500 økonomer og hundredetusindvis af borgere',
   moreAboutThePlan: 'Læs mere om planen',
@@ -118,6 +118,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     thanksText: 'Tak for støtten!',
     errorText: 'Noget gik galt... :/',
   },
+  faqTitle: 'Ofte stillede spørgsmål',
   faq: [
     [
       'Hvorfor skal Danmark have verdens bedste klimaplan?',
