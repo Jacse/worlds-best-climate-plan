@@ -4,7 +4,7 @@
 }
 
 .topBackgroundImage {
-  background-image: url('https://images.unsplash.com/photo-1492741428243-892c600f7dbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2982&q=80');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
 }
