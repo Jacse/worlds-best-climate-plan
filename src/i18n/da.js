@@ -84,7 +84,7 @@ Nu er du nået til det sted, hvor du skal få fingeren ud så vi kan sætte den 
 Når du er færdig skal du lige komme tilbage og dele den med din bedstemor, din klimaskeptiske onkel og din hippie-veninde. Det er nu, det gælder. Lad os få den bedste klimaplan i gang så vi alle kan læne os tilbage og fokusere på de mange andre ting, vi hellere vil bruge vores tid på.
 `,
   frontpage: {
-    explainedBriefly: 'Planen kort fortalt',
+    explainedBriefly: 'Hvad går planen ud på?',
     explainedBrieflyText: `
 Verdens Bedste Klimaplan er støttet af 27 Nobelprismodtagere, flere end 3.500 økonomer, flere hundrede virksomheder og organisationer og flere end 100.000 borgere.
 
@@ -98,7 +98,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
       'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag, så dem der køber klimavenligt får flere penge på kontoen.',
     brief3Title: 'Udsatte virksomheder støttes for at undgå udflytning',
     brief3Text:
-      'Danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
+      'Forurenende danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
   },
   footer: {
     organisations: 'Organisationer',
@@ -127,6 +127,10 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     [
       'Er en pris på forurening nok til at give os 70 pct. CO2-reduktion i 2030?',
       'Nej, fordi vi har mægtig travlt. Men det kan få os langt og bedst muligt hen ad vejen. Derfor skal politikerne også investere i forskning, infrastruktur og incitamenter for at få de sidste procenter med.',
+    ],
+    [
+      'Hvad er ulemperne? Det lyder for godt til at være sandt.',
+      'Desværre er afgiften ikke nok i sig selv til at nå 70%. Derfor skal politikerne også træffe hårde beslutninger om fx. bilfrizoner, ladeinfrastruktur, bygningsreglement, olieudvinding og forskning',
     ],
     [
       'Skal løsningen ikke bruges i hele EU eller hele verden før den er effektiv?',
