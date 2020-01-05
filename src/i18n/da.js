@@ -2,7 +2,7 @@ export default {
   title: 'Verdens bedste klimaplan',
   description: '<indsæt>',
   subtitle:
-    'Lad os sammen løse klimakrisen på den mest effektive og socialt retfærdige måde',
+    'Lad os sammen løse klimakrisen\n på den mest effektive og socialt retfærdige måde',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
   support: 'Vis din støtte',
