@@ -52,13 +52,15 @@ const Menu = ({ scrollThreshold = 100 }) => {
           [styles.navBarActive]: isSticky,
         })}
       >
-        <img
-          src="/logo_white.png"
-          alt=""
-          className={classNames(styles.logo, {
-            // [styles.logoActive]: !isSticky,
-          })}
-        />
+        <Link to="/">
+          <img
+            src="/logo_white.png"
+            alt=""
+            className={classNames(styles.logo, {
+              // [styles.logoActive]: !isSticky,
+            })}
+          />
+        </Link>
         <div
           className={classNames(styles.burgerButton, {
             // [styles.burgerButtonActive]: isSticky,

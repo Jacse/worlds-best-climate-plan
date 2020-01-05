@@ -30,8 +30,8 @@ const Footer = () => (
         </div>
         <div className="col">
           <h4>{text.footer.contact}</h4>
-          <a href="mailto:kontakt@denbedsteklimaplan.dk">
-            kontakt@denbedsteklimaplan.dk
+          <a href="mailto:kontakt@verdensbedsteklimaplan.dk">
+            kontakt@verdensbedsteklimaplan.dk
           </a>
         </div>
       </div>

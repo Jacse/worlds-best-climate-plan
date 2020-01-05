@@ -37,12 +37,8 @@ const Index = () => {
               </div>
             )}
           </ModalContext.Consumer>
-          <p style={{ fontSize: 11, marginTop: 5 }}>
-            <em>
-              Allerede støttet af 27 Nobelprismodtagere, 3.500 økonomer
-              <br />
-              og hundredetusindvis af borgere
-            </em>
+          <p style={{ fontSize: 12, marginTop: 10, paddingLeft: 30, paddingRight: 30 }}>
+            <em>{text.supporterExperts}</em>
           </p>
         </div>
       </section>
@@ -128,8 +124,10 @@ const Index = () => {
       <section className="green separator-bottom">
         <Separator variant={0} reverse />
         <div className={`container-large ${styles.brief} separator-top`}>
-          <h2>{text.frontpage.explainedBriefly}</h2>
-          <div className="cols">
+          <h2 style={{ marginBottom: 20 }}>
+            {text.frontpage.explainedBriefly}
+          </h2>
+          <div className={styles.carousel}>
             <div className="col">
               <img src="/illustrations/brief1.svg" height="80" />
               <h4>{text.frontpage.brief1Title}</h4>
@@ -147,9 +145,7 @@ const Index = () => {
             </div>
           </div>
           <Link to="/the-plan" className={styles.readMore}>
-            <Button large stroke>
-              {text.moreAboutThePlan}
-            </Button>
+            <Button large>{text.moreAboutThePlan}</Button>
           </Link>
         </div>
       </section>
@@ -159,7 +155,11 @@ const Index = () => {
           <h2>FAQ</h2>
           <Collapse accordion className={styles.faq}>
             {text.faq.map(([question, answer]) => (
-              <Panel key={question} header={question}>
+              <Panel
+                key={question}
+                header={question}
+                headerClass={styles.faqItem}
+              >
                 {answer.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}

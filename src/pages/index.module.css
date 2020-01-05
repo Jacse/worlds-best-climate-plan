@@ -105,6 +105,10 @@
   border: none !important;
 }
 
+.faqItem {
+  padding: 15px 10px !important;
+}
+
 :global .rc-collapse > .rc-collapse-item {
   border: none !important;
 }

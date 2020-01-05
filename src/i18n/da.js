@@ -8,6 +8,8 @@ export default {
   support: 'Støt planen',
   supportAsOrg: 'Giv din støtte som organisation',
   supportAsPerson: 'Giv din støtte',
+  supporterExperts:
+    'Allerede støttet af 27 Nobelprismodtagere, 3.500 økonomer og hundredetusindvis af borgere',
   moreAboutThePlan: 'Læs mere om planen',
   behindThePlan: 'Bag planen',
   cookiePrivacyPolicy: 'Cookie- og privatlivspolitik',
@@ -94,8 +96,7 @@ Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødven
     brief2Title: 'Det skal ikke koste noget for den gennemsnitlige dansker',
     brief2Text:
       'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag, så dem der køber klimavenligt får flere penge på kontoen.',
-    brief3Title:
-      'Danske virksomheder bliver støttet for at bevare konkurrenceevnen',
+    brief3Title: 'Danske virksomheder støttes for bevaret konkurrenceevne',
     brief3Text:
       'Danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
   },
