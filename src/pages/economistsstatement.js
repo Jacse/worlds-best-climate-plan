@@ -14,13 +14,13 @@ const EconomistsStatement = () => {
       <SEO title="Mere om planen" description="" />
       <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
         <div className="container-large">
-          <h1>{text.moreAboutThePlan}</h1>
+          <h1>{text.economistsStatementHeader}</h1>
         </div>
       </section>
       <section>
         <Separator variant={1} />
         <div className="container-small">
-          <ReactMarkdown source={text.economistsstatement} />
+          <ReactMarkdown source={text.economistsStatement} />
           <div style={{ textAlign: 'center' }}>
             <ModalContext.Consumer>
               {openModal => (
