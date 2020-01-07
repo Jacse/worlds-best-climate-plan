@@ -5,11 +5,11 @@ export default {
     'Lad os sammen løse klimakrisen\n på den mest effektive og socialt retfærdige måde',
   supportedBy: 'Støttet af',
   mentionedIn: 'Nævnt i',
-  support: 'Vis din støtte',
+  support: 'Støt op',
   supportAsOrg: 'Vis din støtte som organisation',
-  supportAsPerson: 'Vis din støtte',
+  supportAsPerson: 'Støt op',
   supporterExperts:
-    'Allerede støttet af 27 Nobelprismodtagere, 3.500 økonomer og hundredetusindvis af borgere',
+    'Allerede støttet af bl.a. 27 Nobelprismodtagere, 3.500 økonomer og hundredetusindvis af borgere',
   moreAboutThePlan: 'Læs mere om planen',
   behindThePlan: 'Bag planen',
   cookiePrivacyPolicy: 'Cookie- og privatlivspolitik',
@@ -90,15 +90,15 @@ Verdens Bedste Klimaplan er støttet af 27 Nobelprismodtagere, flere end 3.500 �
 
 Den sætter Danmark på den rigtige kurs, og sørger for, at vi får den nødvendige grønne omstilling billigst og hurtigst muligt.
     `,
-    brief1Title: 'Virksomheder betaler en afgift for at forurene',
+    brief1Title: 'Virksomheder betaler en stigende afgift for at forurene',
     brief1Text:
-      'Den mest effektive måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for forureningen.',
-    brief2Title: 'Provenuet betales tilbage til virksomheder og borgere',
+      'Den mest effektive måde at få virksomheder til at stoppe med at forurene er at få dem til at betale for deres forurening.',
+    brief2Title: 'Provenuet betales tilbage til borgerne',
     brief2Text:
-      'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag, så dem der køber klimavenligt får flere penge på kontoen.',
-    brief3Title: 'Udsatte virksomheder støttes for at undgå udflytning',
+      'Pengene bliver fordelt ligeligt til borgerne for at undgå en dyrere hverdag. De, der lever klimavenligt får flere penge på kontoen.',
+    brief3Title: 'Udsatte virksomheder støttes for at skåne konkurrenceevnen',
     brief3Text:
-      'Forurenende danske grønne virksomheder, der kan være særlig udsatte for international konkurrence, skal støttes så de kan modstå international konkurrence.',
+      'Forurenende danske grønne virksomheder, der er særlig udsatte for international konkurrence, skal støttes gennem en højere bundfradrag.',
   },
   footer: {
     organisations: 'Organisationer',
