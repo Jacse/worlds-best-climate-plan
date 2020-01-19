@@ -3,36 +3,32 @@
   padding-top: 4em;
 }
 
-.topBackgroundImage {
+.frontpageTop {
   background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
+  padding: 6rem 0;
 }
-
-/* .topBackgroundImageOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-} */
 
 .logo {
   display: block;
   max-width: 160px;
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 .title {
-  margin-top: 2em;
   margin-bottom: 0;
 }
 
 .subtitle {
-  margin-bottom: 2em;
+  margin: 1rem 0 3rem;
   font-weight: normal;
   color: rgb(173, 215, 146);
+}
+
+.top p {
+  font-size: 0.8rem;
+  margin: 2rem 0 1rem;
 }
 
 .ctas button {
@@ -41,10 +37,11 @@
 
 .carousels {
   text-align: center;
+  padding: 1rem 0 2rem;
 }
 
 .carousels h4 {
-  margin: 1em;
+  padding: 1em;
 }
 
 .carousel {

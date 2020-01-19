@@ -53,13 +53,7 @@ const Menu = ({ scrollThreshold = 100 }) => {
         })}
       >
         <Link to="/">
-          <img
-            src="/logo_white.png"
-            alt=""
-            className={classNames(styles.logo, {
-              // [styles.logoActive]: !isSticky,
-            })}
-          />
+          <img src="/logo_white.png" alt="" className={styles.logo} />
         </Link>
         <div
           className={classNames(styles.burgerButton, {

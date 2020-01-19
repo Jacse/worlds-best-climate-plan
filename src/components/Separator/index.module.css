@@ -12,3 +12,8 @@
   fill: rgba(0,0,0,0.1);
   transform: translate3d(2%, -2%, 0) rotate(-2deg);
 }
+
+.filler {
+  height: 5rem;
+  width: 100%;
+}

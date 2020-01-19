@@ -46,6 +46,7 @@ h1 {
 h2 {
   font-size: 1.7rem;
   font-weight: 900;
+  font-family: 'Bebas Neue', cursive;
 }
 
 h3 {
@@ -127,8 +128,5 @@ a {
   color: #fff;
 }
 .separator-bottom {
-  padding-bottom: 5rem;
-}
-.separator-top {
-  padding-top: 5rem;
+  padding-bottom: 3rem;
 }

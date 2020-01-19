@@ -1,15 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import Collapse, { Panel } from 'rc-collapse';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import { ModalContext } from '../components/SupportModal';
 import text from '../i18n/da';
 import styles from './index.module.css';
-import { Link } from 'gatsby';
 import Separator from '../components/Separator';
 import SEO from '../components/SEO';
-import 'rc-collapse/assets/index.css';
 
 const Index = () => {
   return (
@@ -18,7 +15,7 @@ const Index = () => {
       <section
         className={classNames(
           styles.top,
-          styles.topBackgroundImage,
+          styles.frontpageTop,
           'green',
           'separator-bottom'
         )}
@@ -36,21 +33,14 @@ const Index = () => {
               </div>
             )}
           </ModalContext.Consumer>
-          <p
-            style={{
-              fontSize: 12,
-              marginTop: 10,
-              paddingLeft: 30,
-              paddingRight: 30,
-            }}
-          >
+          <p>
             <em>{text.supporterExperts}</em>
           </p>
         </div>
       </section>
-      <section className={styles.carousels}>
+      <section>
         <Separator variant={1} />
-        <div className="container-large">
+        <div className={`container-large ${styles.carousels}`}>
           <div>
             <h4>{text.supportedBy}</h4>
             <div className={styles.carousel}>
@@ -136,47 +126,116 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="green separator-bottom">
-        <Separator variant={0} reverse />
-        <div className={`container-large ${styles.brief} separator-top`}>
-          <h2 style={{ marginBottom: 20 }}>
-            {text.frontpage.explainedBriefly}
-          </h2>
-          <div className={styles.carousel}>
-            <div className="col">
-              <img src="/illustrations/brief1.svg" height="80" />
-              <h4>{text.frontpage.brief1Title}</h4>
-              <p>{text.frontpage.brief1Text}</p>
-            </div>
-            <div className="col">
-              <img src="/illustrations/brief2.svg" height="80" />
-              <h4>{text.frontpage.brief2Title}</h4>
-              <p>{text.frontpage.brief2Text}</p>
-            </div>
-            <div className="col">
-              <img src="/illustrations/brief3.svg" height="80" />
-              <h4>{text.frontpage.brief3Title}</h4>
-              <p>{text.frontpage.brief3Text}</p>
-            </div>
-          </div>
-          <Link to="/the-plan" className={styles.readMore}>
-            <Button large>{text.moreAboutThePlan}</Button>
-          </Link>
+      <section className="green">
+        <Separator variant={0} green />
+        <div className="container-small separator-bottom">
+          <h2>Klimabidrag og dividende-modellen</h2>
+          <p>
+            Forestil dig en lov, der gør de mest klimavenlige varer til de
+            billigste, og gør de borgere, der tjener mindst, rigere. Det lyder
+            måske for godt til at være sandt eller alt for bøvlet at
+            administrere i praksis – men det er det ikke.
+          </p>
+          <p>
+            Modellen kaldes Klimabidrag og Dividende, og den kan blive til lov
+            meget hurtigt, hvis ellers politikerne vil.
+          </p>
+          <p>I store træk ser Klimabidrag og Dividende-modellen således ud:</p>
+          <p>
+            1: Der lægges en afgift på de råmaterialer, der sviner når de bruges
+            til at producere varer, f.eks. i form af udledning af CO2. Jo flere
+            af den slags råmaterialer, en vareproducent bruger, jo højere bliver
+            afgiften. Og jo højere bliver prisen på varerne i butikken. Så dem,
+            der køber flest af de klimafarlige varer, ender med at betale prisen
+            for det høje forbrug af klimafarlige råmaterialer. Det kender du
+            måske som princippet om, at ’forureneren betaler’.
+          </p>
+          <p>
+            2: De penge, der kommer ind til staten via afgiften, bruges ikke til
+            at dække statens udgifter, men sendes direkte tilbage til borgerne,
+            f.eks. i form af en check eller et skattefradrag. Alle borgere får
+            lige meget, krone til krone.
+          </p>
+          <p>
+            Færdigt arbejde. Super simpelt, super effektivt – og super
+            retfærdigt.
+          </p>
         </div>
       </section>
-      <section className="separator-bottom">
-        <Separator />
-        <div className="container-medium">
-          <h2>{text.faqTitle}</h2>
-          <Collapse accordion className={styles.faq}>
-            {text.faq.map(([question, answer]) => (
-              <Panel key={question} header={question}>
-                {answer.split('\n').map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </Panel>
-            ))}
-          </Collapse>
+      <section>
+        <Separator variant={1} />
+        <div className="container-small">
+          <h2>Hvorfor er det effektivt?</h2>
+          <p>
+            Når vi lægger en afgift på råmaterialer, der har høj CO2-udledning,
+            bliver de klimavenlige varer billigere i butikkerne end dem, der
+            ikke er klimavenlige. Derfor bliver det nemmere for dem, der
+            producerer klimavenlige varer, at sælge deres ting, og sværere for
+            dem, der producerer varer på en klimafarlig måde, at sælge deres
+            ting.
+          </p>
+          <p>
+            I løbet af meget kort tid vil producenterne derfor helt af sig selv
+            begynde at udvikle varer, der sviner mindre, for så bliver de
+            billigere og derfor nemmere at sælge. Og det vil blive meget
+            billigere for dig at vælge de klimavenlige varer i butikkerne.
+          </p>
+        </div>
+      </section>
+      <section className="green">
+        <Separator variant={1} green />
+        <div className="container-small separator-bottom">
+          <h2>Hvorfor er det retfærdigt?</h2>
+          <p>
+            Forestil dig to familier – én med høj indkomst og én med lav
+            indkomst. Familien med høj indkomst køber flere varer og betaler
+            derfor mere i klimabidrag, end familien med lav indkomst gør. Men
+            begge familier får det samme i dividende. Familien med høj indkomst
+            får derfor færre penge i dividende, end de har betalt i klimabidrag,
+            mens familien med lav indkomst får flere penge i dividende, end de
+            har betalt i klimabidrag.
+          </p>
+          <p>
+            På den måde er det altså familien med den høje indkomst, som har
+            belastet klimaet mest og som derfor også ender med at betale mest.
+            Familien med den lave indkomst har belastet klimaet mindst og
+            betaler derfor mindre i klimabidrag. Ja, de kan faktisk ende med
+            direkte at tjene penge – få en højere indkomst – ved at vælge de
+            klimavenlige varer.
+          </p>
+        </div>
+      </section>
+      <section>
+        <Separator variant={0} />
+        <div className="container-small">
+          <h2>Kan vi få et regne-eksempel?</h2>
+          <p>
+            Forestil dig, at familien med den høje indkomst har købt så mange
+            varer, at de i alt har betalt 5.000 kroner i klimabidrag i løbet af
+            et år. De får en dividende på fra staten på 2.000 kroner det år. De
+            ender altså med i alt at have betalt 3.000 kroner i klimabidrag.
+          </p>
+          <p>
+            Familien med den lave indkomst har ikke købt nær så mange varer, så
+            de har i alt kun betalt 1.500 i klimabidrag i løbet af et år. Men
+            den familie får også 2.000 kroner i dividende af staten. Så de ender
+            altså med at have 500 kroner til overs til at gøre dagligdagen lidt
+            nemmere.
+          </p>
+        </div>
+      </section>
+      <section className="green">
+        <Separator variant={0} green />
+        <div className="container-small separator-bottom">
+          <h2>Hvordan kan man være med til at få det til at ske?</h2>
+          <p>
+            Vi har lavet et borgerforslag. Hvis bare lidt mere end 1 % af den
+            danske befolkning skriver under på det, er politikerne tvunget til
+            at behandle forslaget i Folketinget. Og de bliver tvunget til at
+            forklare os alle sammen, hvorfor i alverden de ikke vil stemme ja
+            til noget så simpelt, effektivt og retfærdigt.
+          </p>
+          <p>Du kan skrive under ved at klikke her.</p>
         </div>
       </section>
     </Layout>

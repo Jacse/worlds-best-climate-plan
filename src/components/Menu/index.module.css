@@ -4,12 +4,7 @@
 
 .logo {
   height: 80px;
-  /* display: none; */
-  transition: display 0.2s;
-}
-
-.logoActive {
-  display: block;
+  margin-right: 1rem;
 }
 
 .navBar {
@@ -146,7 +141,7 @@
 @media (max-width: 768px) {
   /* Always do burger menu on small devices */
   .logo {
-    display: none;
+    height: 48px;
   }
   .menuItems {
     display: none;
