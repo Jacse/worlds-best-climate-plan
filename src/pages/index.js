@@ -163,7 +163,7 @@ const Index = () => {
         </div>
       </section>
       <section>
-        <Separator variant={1} />
+        <Separator variant={0} />
         <div className="container-small">
           <h2>Hvorfor er det effektivt?</h2>
           <p>
@@ -227,15 +227,39 @@ const Index = () => {
       <section className="green">
         <Separator variant={0} green />
         <div className="container-small separator-bottom">
+          <h2>
+            Hvis det virkeligt er så simpelt og retfærdigt, hvorfor er den lov
+            så ikke vedtaget for længst?
+          </h2>
+          <p>
+            Ja, det er et virkelig godt spørgsmål. Vi ved det ikke, og egentlig
+            synes vi ikke, det er så interessant. Bare det sker meget hurtigt.
+          </p>
+        </div>
+      </section>
+      <section>
+        <Separator variant={0} />
+        <div className="container-small">
           <h2>Hvordan kan man være med til at få det til at ske?</h2>
           <p>
             Vi har lavet et borgerforslag. Hvis bare lidt mere end 1 % af den
             danske befolkning skriver under på det, er politikerne tvunget til
             at behandle forslaget i Folketinget. Og de bliver tvunget til at
             forklare os alle sammen, hvorfor i alverden de ikke vil stemme ja
-            til noget så simpelt, effektivt og retfærdigt.
+            til noget så simpelt, effektivt og retfærdigt. Du kan skrive under
+            ved at klikke her:
           </p>
-          <p>Du kan skrive under ved at klikke her.</p>
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <ModalContext.Consumer>
+            {openModal => (
+              <div className={styles.ctas}>
+                <Button onClick={openModal} large className="btn-green">
+                  {text.supportAsPerson}
+                </Button>
+              </div>
+            )}
+          </ModalContext.Consumer>
         </div>
       </section>
     </Layout>
