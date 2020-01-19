@@ -1,15 +1,15 @@
 import React from 'react';
-import Collapse, { Panel } from 'rc-collapse';
 import classNames from 'classnames';
+import Collapse, { Panel } from 'rc-collapse';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import { ModalContext } from '../components/SupportModal';
 import text from '../i18n/da';
 import styles from './index.module.css';
-import 'rc-collapse/assets/index.css';
 import { Link } from 'gatsby';
 import Separator from '../components/Separator';
 import SEO from '../components/SEO';
+import 'rc-collapse/assets/index.css';
 
 const Index = () => {
   return (
@@ -56,19 +56,22 @@ const Index = () => {
             <div className={styles.carousel}>
               {/* All images are #000 black */}
               <a href="https://www.klimabevaegelsen.dk/" target="blank">
-                <img src="/supporters/350.svg" height="90" />
+                <img src="/supporters/350.svg" height="46" />
               </a>
               <a href="https://www.dgsb.dk/" target="blank">
-                <img src="/supporters/dgs.png" height="80" />
+                <img src="/supporters/dgs.png" height="48" />
               </a>
               <a href="https://citizensclimatelobby.org/" target="blank">
-                <img src="/supporters/ccl.png" height="100" />
+                <img src="/supporters/ccl.png" height="36" />
               </a>
               <a href="https://www.taenk-frej.dk/" target="blank">
-                <img src="/supporters/frej.png" height="100" />
+                <img src="/supporters/frej-2.png" height="36" />
               </a>
-              <a href="https://kefm.dk/klima-og-vejr/ungeklimaraadet/" target="blank">
-                <img src="/supporters/ungeklimaraadet.png" height="100" />
+              <a
+                href="https://kefm.dk/klima-og-vejr/ungeklimaraadet/"
+                target="blank"
+              >
+                <img src="/supporters/ungeklimaraadet.png" height="42" />
               </a>
             </div>
             {/* <div className="cols">
