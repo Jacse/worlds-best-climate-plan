@@ -64,6 +64,12 @@ const Index = () => {
               <a href="https://citizensclimatelobby.org/" target="blank">
                 <img src="/supporters/ccl.png" height="100" />
               </a>
+              <a href="https://www.taenk-frej.dk/" target="blank">
+                <img src="/supporters/frej.png" height="100" />
+              </a>
+              <a href="https://kefm.dk/klima-og-vejr/ungeklimaraadet/" target="blank">
+                <img src="/supporters/ungeklimaraadet.png" height="100" />
+              </a>
             </div>
             {/* <div className="cols">
               <div className="col">
