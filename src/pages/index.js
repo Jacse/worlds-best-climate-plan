@@ -65,10 +65,10 @@ const Index = () => {
                 <img src="/supporters/ccl.png" height="100" />
               </a>
               <a href="https://www.taenk-frej.dk/" target="blank">
-                <img src="/supporters/frej.png" height="100" />
+                <img src="/supporters/frej.png" height="75" />
               </a>
               <a href="https://kefm.dk/klima-og-vejr/ungeklimaraadet/" target="blank">
-                <img src="/supporters/ungeklimaraadet.png" height="100" />
+                <img src="/supporters/ungeklimaraadet.png" height="80" />
               </a>
             </div>
             {/* <div className="cols">
