@@ -23,7 +23,7 @@ const EconomistsStatement = () => {
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSf-wtAyJBnTpPggT2-OSzW64FFnhG20ajBHAFQZwAEjJGC-HA/viewform?embedded=true"
               width="640"
-              height="1200"
+              height="1300"
               frameBorder="0"
               marginHeight="0"
               marginWidth="0"
