@@ -1,8 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import styles from './index.module.css';
-import Separator from '../components/Separator';
 import SEO from '../components/SEO';
+
+const P = ({ children }) => (
+  <p className="my-4 leading-loose text-gray-800">{children}</p>
+);
 
 const PrivacyPolicy = () => {
   return (
@@ -11,16 +13,15 @@ const PrivacyPolicy = () => {
         title="Cookie- og Privatlivspolitik"
         description="Vores cookie- og privatlivspolitik"
       />
-      <section className={[styles.top, 'green', 'separator-bottom'].join(' ')}>
-        <div className="container-large">
-          <h1>Cookie- og Privatlivspolitik</h1>
-        </div>
-      </section>
       <section>
-        <Separator variant={1} />
-        <div className="container-small">
-          <h2>Introduktion</h2>
-          <p>
+        <h1 className="text-center text-3xl md:text-5xl my-12 font-bold">
+          Cookie- og Privatlivspolitik
+        </h1>
+        <div className="w-full max-w-lg mx-auto">
+          <h2 className="text-2xl my-3 font-bold text-gray-800">
+            Introduktion
+          </h2>
+          <P>
             Når du besøger vores website indsamles der oplysninger om dig, som
             bruges til at tilpasse og forbedre vores indhold og til at øge
             værdien af de annoncer, der vises på siden. Hvis du ikke ønsker, at
@@ -29,9 +30,9 @@ const PrivacyPolicy = () => {
             videre brug af websitet. Nedenfor har vi uddybet, hvilke
             informationer der indsamles, deres formål og hvilke tredjeparter,
             der har adgang til dem.
-          </p>
-          <h2>Cookies</h2>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">Cookies</h2>
+          <P>
             Websitet anvender ”cookies”, der er en tekstfil, som gemmes på din
             computer, mobil el. tilsvarende med det formål at genkende den,
             huske indstillinger, udføre statistik og målrette annoncer. Cookies
@@ -41,9 +42,9 @@ const PrivacyPolicy = () => {
             blokerer cookies vil annoncer kunne blive mindre relevante for dig
             og optræde hyppigere. Du kan desuden risikere at websitet ikke
             fungerer optimalt samt at der er indhold, du ikke kan få adgang til.
-          </p>
-          <h2>Generelt</h2>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">Generelt</h2>
+          <P>
             Personoplysninger er alle slags informationer, der i et eller andet
             omfang kan henføres til dig. Når du benytter vores website indsamler
             og behandler vi en række sådanne informationer. Det sker f.eks. ved
@@ -58,34 +59,38 @@ const PrivacyPolicy = () => {
             behandles desuden: Navn, telefonnummer, e-mail, adresse og
             betalingsoplysninger. Det vil typisk være i forbindelse med
             oprettelse af login eller ved køb.
-          </p>
-          <h3>Sikkerhed</h3>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">Sikkerhed</h2>
+          <P>
             Vi har truffet tekniske og organisatoriske foranstaltninger mod, at
             dine oplysninger hændeligt eller ulovligt bliver slettet,
             offentliggjort, fortabt, forringet eller kommer til uvedkommendes
             kendskab, misbruges eller i øvrigt behandles i strid med
             lovgivningen.
-          </p>
-          <h3>Formål</h3>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">Formål</h2>
+          <P>
             Oplysningerne bruges til at identificere dig som bruger og vise dig
             de annoncer, som vil have størst sandsynlighed for at være relevante
             for dig, at registrere dine køb og betalinger, samt at kunne levere
             de services, du har efterspurgt, som f.eks. at fremsende et
             nyhedsbrev. Herudover anvender vi oplysningerne til at optimere
             vores services og indhold.
-          </p>
-          <h3>Periode for opbevaring</h3>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">
+            Periode for opbevaring
+          </h2>
+          <P>
             Oplysningerne opbevares i det tidsrum, der er tilladt i henhold til
             lovgivningen, og vi sletter dem, når de ikke længere er nødvendige.
             Perioden afhænger af karakteren af oplysningen og baggrunden for
             opbevaring. Det er derfor ikke muligt at angive en generel tidsramme
             for, hvornår informationer slettes.
-          </p>
-          <h3>Videregivelse af oplysninger</h3>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">
+            Videregivelse af oplysninger
+          </h2>
+          <P>
             Data om din brug af websitet, hvilke annoncer, du modtager og evt.
             klikker på, geografisk placering, køn og alderssegment m.v.
             videregives til tredjeparter i det omfang disse oplysninger er
@@ -98,9 +103,11 @@ const PrivacyPolicy = () => {
             ske, hvis du giver samtykke til det. Vi anvender kun databehandlere
             i EU eller i lande, der kan give dine oplysninger en tilstrækkelig
             beskyttelse.
-          </p>
-          <h3>Indsigt og klager</h3>
-          <p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">
+            Indsigt og klager
+          </h2>
+          <P>
             Du har ret til at få oplyst, hvilke personoplysninger, vi behandler
             om dig. Du kan desuden til enhver tid gøre indsigelse mod, at
             oplysninger anvendes. Du kan også tilbagekalde dit samtykke til, at
@@ -110,12 +117,21 @@ const PrivacyPolicy = () => {
             kontakt@verdensbedsteklimaplan.dk . Hvis du vil klage over vores
             behandling af dine personoplysninger, har du også mulighed for at
             tage kontakt til Datatilsynet.
-          </p>
-          <h3>Udgiver</h3>
-          <p>
-            Websitet ejes og publiceres af: Verdens bedste klimaplan Telefon: 42
-            91 31 10 Email: kontakt@verdensbedsteklimaplan.dk
-          </p>
+          </P>
+          <h2 className="text-2xl my-3 font-bold text-gray-800">Udgiver</h2>
+          <P>
+            Websitet ejes og publiceres af: Verdens bedste klimaplan
+            <br />
+            Telefon: 42 91 31 10
+            <br />
+            Email:{' '}
+            <a
+              className="text-green-700 border-b border-green-700 hover:text-green-600 hover:border-green-600"
+              href="mailto:kontakt@verdensbedsteklimaplan.dk"
+            >
+              kontakt@verdensbedsteklimaplan.dk
+            </a>
+          </P>
         </div>
       </section>
     </Layout>

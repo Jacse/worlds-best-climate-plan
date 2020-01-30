@@ -12,6 +12,7 @@ module.exports = {
     url: 'https://verdensbedsteklimaplan.dk', // No trailing slash allowed!
   },
   plugins: [
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
