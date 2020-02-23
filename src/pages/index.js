@@ -54,9 +54,9 @@ const Index = () => {
               <a href="https://citizensclimatelobby.org/" target="blank">
                 <img src="/supporters/ccl.png" height="36" />
               </a>
-              /*<a href="https://www.taenk-frej.dk/" target="blank">
+              {/*<a href="https://www.taenk-frej.dk/" target="blank">
                 <img src="/supporters/frej-2.png" height="36" />
-              </a>*/
+              </a>*/}
               <a
                 href="https://kefm.dk/klima-og-vejr/ungeklimaraadet/"
                 target="blank"
