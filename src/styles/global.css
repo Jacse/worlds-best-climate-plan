@@ -1,132 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Styles for rc-collapse imported here so tailwind overwrites take precedence */
+.rc-collapse-anim-active {
+  transition: height 0.2s ease-out;
+}
+.rc-collapse-content {
+  overflow: hidden;
+}
+.rc-collapse-content-inactive {
+  display: none;
 }
 
-*:focus {
-  outline: none;
+/* Import tailwind (don't purge base and components) */
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+/* Custom global styles */
+/*@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 200;
+  src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Light.woff") format("woff");
+}*/
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"), url("/fonts/SpaceGrotesk-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  font-display: swap;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  background-color: #fff;
-}
-
-p {
-  margin-bottom: 1.5em;
-  line-height: 1.9;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 1em 0 0.5em 0;
-  color: #333;
-}
-
-h1 {
-  font-size: 6.25rem;
-  line-height: 90px;
-  font-weight: 800;
-  font-family: 'Bebas Neue', cursive;
-}
-
-h2 {
-  font-size: 1.7rem;
-  font-weight: 900;
-  font-family: 'Bebas Neue', cursive;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-h4 {
-  font-size: 1.3rem;
-  color: #333;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
-a {
-  color: #87b56b;
-  text-decoration: none;
-  border-bottom: 1px solid #87b56b;
-  padding-bottom: 2px;
-}
-
-.cols {
-  display: flex;
-}
-
-.col {
-  flex: 1;
-  margin: 0 1rem;
-}
-
-@media (max-width: 768px) {
-  /* Adjust font sizes on smaller screens */
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .cols {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-  }
-}
-
-/* Global container styles controls width of contents */
-.container-large {
-  max-width: 64em;
-  margin: auto;
-  padding: 0 1em;
-}
-.container-medium {
-  max-width: 42em;
-  margin: auto;
-  padding: 0 1em;
-}
-.container-small {
-  max-width: 36em;
-  margin: auto;
-  padding: 0 1em;
-}
-
-/* Global convenience classes */
-.green {
-  background: linear-gradient(to right, #254d35, #50755f);
-  color: #fff;
-}
-.green h1,
-.green h2,
-.green h3 {
-  color: #fff;
-}
-.separator-bottom {
-  padding-bottom: 3rem;
+  font-family: 'Space Grotesk', sans-serif;
 }
