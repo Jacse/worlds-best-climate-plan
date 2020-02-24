@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Menu from './Menu';
 import Footer from './Footer';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, transparentMenu = false }) => (
   <React.Fragment>
     <Helmet>
       <link
@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
         href="/favicon-16x16.png"
       />
     </Helmet>
-    <Menu />
+    <Menu transparent={transparentMenu} />
     {children}
     <Footer />
     <script

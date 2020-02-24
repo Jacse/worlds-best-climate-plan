@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Link, navigate } from 'gatsby';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import classNames from 'classnames';
+import Button from './Button';
 
 const pages = [
   ['/', 'Hjem'],
@@ -11,10 +13,10 @@ const MenuItems = ({ large = false }) => (
   <React.Fragment>
     {pages.map(([href, title]) => (
       <Link
-        activeClassName="opacity-100"
-        className={`${
+        className={classNames(
+          'cursor-pointer m-6 text-sand-100 font-bold',
           large ? 'hidden md:block' : 'block md:hidden'
-        } cursor-pointer m-4 text-white opacity-50 font-bold`}
+        )}
         to={href}
         key={href}
       >
@@ -26,7 +28,7 @@ const MenuItems = ({ large = false }) => (
 
 const BurgerButton = ({ setsideBarActive }) => (
   <div
-    className="relative cursor-pointer md:hidden ml-2"
+    className="relative cursor-pointer md:hidden ml-8"
     style={{
       width: 26,
       height: 22,
@@ -82,32 +84,44 @@ const CloseButton = ({ setsideBarActive }) => (
   </div>
 );
 
-const Menu = () => {
+const Menu = ({ transparent = false }) => {
   const [sideBarActive, setsideBarActive] = useState(false);
+  const [isSticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    setSticky(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
 
   return (
     <div>
-      <div className="shadow-md fixed flex z-10 items-center bg-green-800 w-full">
+      <div
+        className={classNames(
+          'fixed w-full z-10 flex items-center transition-colors duration-300',
+          {
+            'bg-green-800': !transparent || isSticky,
+          }
+        )}
+      >
         <BurgerButton setsideBarActive={setsideBarActive} />
         <Link to="/">
-          <img src="/logo_white.png" alt="" className="h-10 md:h-12 m-2" />
+          <img
+            src="/logo_white.png"
+            alt=""
+            className="h-12 md:h-12 my-2 mx-8"
+          />
         </Link>
         <MenuItems large />
-        <button
-          onClick={() =>
-            (() => {
-              var doc = document.getElementById('sign');
-              if (doc) {
-                doc.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                navigate('/#sign');
-              }
-            })()
-          }
-          className="m-2 ml-auto bg-green-700 hover:bg-green-600 active:bg-green-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Skriv under
-        </button>
+        <Button secondary className="mr-8 ml-auto">
+          Skriv under 🌱
+        </Button>
       </div>
       <div
         className="fixed inset-0 bg-green-800 z-20 p-4 text-center"
@@ -120,7 +134,7 @@ const Menu = () => {
         <MenuItems />
       </div>
       {/* filler */}
-      <div className="h-12 md:h-16 w-full"></div>
+      {!transparent && <div className="h-16 md:h-20 w-full"></div>}
     </div>
   );
 };

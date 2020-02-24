@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
-
 /* Styles for rc-collapse imported here so tailwind overwrites take precedence */
 .rc-collapse-anim-active {
   transition: height 0.2s ease-out;
@@ -11,35 +9,38 @@
   display: none;
 }
 
+/* Import tailwind (don't purge base and components) */
+/* purgecss start ignore */
 @tailwind base;
-
 @tailwind components;
-
+/* purgecss end ignore */
 @tailwind utilities;
 
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(359deg);}
+/* Custom global styles */
+/*@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 200;
+  src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Light.woff") format("woff");
+}*/
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"), url("/fonts/SpaceGrotesk-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  font-display: swap;
 }
 
-* {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.hover-translate {
-  transform: translateY(0);
-  transition: transform 0.1s ease-in-out;
-}
-
-.hover-translate:hover {
-  transform: translateY(-2px);
-}
-
-.hover-translate:active {
-  transform: translateY(1px);
-}
-
-/* Overwrite shadow for cards */
-.shadow-xl {
-  box-shadow: 0 6px 25px 0px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(102, 30, 30, 0.1);
+body {
+  font-family: 'Space Grotesk', sans-serif;
 }
