@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Form from '../components/Form';
 import SEO from '../components/SEO';
+import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
 
 const Index = () => {
@@ -11,7 +12,7 @@ const Index = () => {
       <SEO title="Verdens Bedste klimaplan" description="" />
       {/* Hero and letter */}
       <section
-        className="lg:pt-20 relative mb-32"
+        className="lg:pt-20 relative mb-64"
         style={{
           background: 'url(../../background.jpg)',
           backgroundSize: 'cover',
@@ -45,11 +46,8 @@ const Index = () => {
           </Button>
         </div>
         {/* Letter */}
-        <div className="relative bg-sand-100 p-20 mx-auto max-w-2xl transform -mt-24 translate-y-24">
-          <h2 className="text-2xl font-bold mb-4">
-            Der er brug for handling nu
-          </h2>
-          <p>Lorem ipsum</p>
+        <div className="transform -mt-64 translate-y-64">
+          <Letter />
         </div>
       </section>
       {/* Sådan virker det */}
