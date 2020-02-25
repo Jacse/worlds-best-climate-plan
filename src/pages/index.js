@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Form from '../components/Form';
 import SEO from '../components/SEO';
+import HowItWorks from '../components/HowItWorks';
 
 const Index = () => {
   return (
@@ -52,19 +53,8 @@ const Index = () => {
         </div>
       </section>
       {/* Sådan virker det */}
-      <section className="mx-auto max-w-2xl">
-        <h2 className="text-2xl text-center font-bold mb-4 mx-auto">
-          Sådan virker det
-        </h2>
-        <p className="text-lg text-center mb-4 mx-auto">
-          Danmark skal have en afgift på varer der ødelægger klimaet.
-          <br />
-          Forureneren betaler og pengene gives tilbage til borgerne.
-        </p>
-        <div className="md:flex">
-          <div className="md:w-1/2"></div>
-          <div className="md:w-1/2 hidden md:block"></div>
-        </div>
+      <section className="mx-auto max-w-2xl px-6 pt-12">
+        <HowItWorks />
       </section>
       <Form />
     </Layout>
