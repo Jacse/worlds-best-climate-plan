@@ -45,11 +45,7 @@ const Index = () => {
         <HowItWorks />
       </section>
       {/* Support form */}
-      <section className="mx-auto max-w-4xl p-8 md:p-20 bg-sand-100 mb-12">
-        <div className="mx-auto max-w-lg">
-          <Form />
-        </div>
-      </section>
+      <Form />
     </Layout>
   );
 };

@@ -1,175 +1,183 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
-import { FaCircleNotch, FaUserEdit } from 'react-icons/fa';
+import { FaCircleNotch, FaTimes } from 'react-icons/fa';
+import classNames from 'classnames';
+import Button from './Button';
 
-const FormField = ({ name, label, type = 'text', className }) => (
+const FormField = ({ name, label, type = 'text', className, ...props }) => (
   <Field name={name}>
     {({
       field, // { name, value, onChange, onBlur }
       meta,
     }) => (
       <label className={className}>
-        <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-          {label}
-        </p>
+        <p className="block text-green-700 mb-2">{label}</p>
         <input
-          className={`w-full bg-gray-300 text-gray-700 border border-${
-            meta.touched && meta.error ? 'red' : 'gray'
-          }-500 rounded py-3 px-4 mb-3 focus:outline-none focus:bg-gray-200`}
+          className={classNames(
+            'w-full border-2 rounded-sm py-3 px-4 focus:border-green-500 bg-sand-100',
+            {
+              'border-red-700 mb-2': meta.touched && meta.error,
+              'border-green-700 mb-8': !(meta.touched && meta.error),
+            }
+          )}
           type={type}
           {...field}
+          {...props}
         />
         {meta.touched && meta.error && (
-          <p className="text-red-500 text-s italic mb-3">{meta.error}</p>
+          <p className="text-red-500 text-s italic mb-6">{meta.error}</p>
         )}
       </label>
     )}
   </Field>
 );
 
-const Checkbox = ({ name, label }) => (
-  <Field name={name}>
-    {({
-      field, // { name, value, onChange, onBlur }
-      meta,
-    }) => (
-      <label className="block">
-        <div className="flex mb-3">
-          <input className="mr-2" type="checkbox" {...field} />
-          <p className="flex-grow text-gray-700 text-s">{label}</p>
-        </div>
-        {meta.touched && meta.error && (
-          <p className="text-red-500 text-s italic mb-3">{meta.error}</p>
-        )}
-      </label>
-    )}
-  </Field>
-);
-
-const SupportForm = () => {
+const SupportForm = ({ modal = true }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState(false);
   return (
-    <Formik
-      initialValues={{
-        email: '',
-        firstname: '',
-        lastname: '',
-        organisation: '',
-      }}
-      validate={values => {
-        const errors = {};
-        if (!values.email) {
-          errors.email = 'Dette felt er påkrævet';
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = 'E-mail adressen ser ugyldig ud';
-        }
-        if (!values.firstname) {
-          errors.firstname = 'Dette felt er påkrævet';
-        }
-        if (!values.lastname) {
-          errors.lastname = 'Dette felt er påkrævet';
-        }
-        return errors;
-      }}
-      onSubmit={(values, { setSubmitting }) => {
-        fetch(
-          'https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient',
-          { method: 'POST', body: new URLSearchParams(values) }
-        )
-          .then(res => res.json())
-          .then(res => {
-            if (res.err) {
-              setError(true);
-            } else {
-              setIsSubmitted(true);
-            }
-            setSubmitting(false);
-          })
-          .catch(() => {
-            setError(true);
-            setSubmitting(false);
-          });
-      }}
+    <section
+      className={classNames('mx-auto max-w-4xl p-8 bg-sand-100 mb-12', {
+        relative: modal,
+      })}
     >
-      {({ isSubmitting }) => (
-        <Form className="md:max-w-2xl mx-auto my-8">
-          {isSubmitted && !error && (
-            <div>
-              <h3 className="font-bold mb-3">Tak for din underskrift!</h3>
-              <p>
-                Vi sender dig en email så snart borgerforlaget er klar til at
-                underskrive. Vi sender også emails om kampagnen, som du
-                selvfølgelig kan framelde hvis du ikke ønsker at høre fra os. Er
-                du i tvivl om noget? Skriv til os på
-                info@verdensbedsteklimaplan.dk
+      <div className="mx-auto max-w-lg">
+        <Formik
+          initialValues={{
+            email: '',
+            firstname: '',
+            lastname: '',
+            zip: '',
+          }}
+          validate={values => {
+            const errors = {};
+            if (!values.firstname) {
+              errors.firstname = 'Dette felt er påkrævet';
+            }
+            if (!values.lastname) {
+              errors.lastname = 'Dette felt er påkrævet';
+            }
+            if (!values.email) {
+              errors.email = 'Dette felt er påkrævet';
+            } else if (
+              !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+            ) {
+              errors.email = 'E-mail adressen ser ugyldig ud';
+            }
+            const zipNum = parseInt(values.zip, 10);
+            if (
+              isNaN(zipNum) ||
+              values.zip.length !== 4 ||
+              zipNum > 9999 ||
+              zipNum < 0
+            ) {
+              errors.zip = 'Postnummeret skal bestå af 4 tal';
+            }
+            return errors;
+          }}
+          onSubmit={(values, { setSubmitting }) => {
+            fetch(
+              'https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient',
+              { method: 'POST', body: new URLSearchParams(values) }
+            )
+              .then(res => res.json())
+              .then(res => {
+                if (res.err) {
+                  setError(true);
+                } else {
+                  setIsSubmitted(true);
+                }
+                setSubmitting(false);
+              })
+              .catch(() => {
+                setError(true);
+                setSubmitting(false);
+              });
+          }}
+        >
+          {({ isSubmitting }) => (
+            <Form className="md:max-w-2xl mx-auto my-8">
+              <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
+                Følg med og hjælp til
+              </h2>
+              <p className="mb-4 sm:mb-8 sm:text-center">
+                Borgerforslaget er første skridt i at indføre klimabidrag- og
+                dividende i Danmark. Skriv dig op til nyheder og støt kampen for
+                at løse klimakrisen på den mest effektive og socialt retfærdige
+                måde.
               </p>
-            </div>
-          )}
-          {(!isSubmitted || error) && (
-            <React.Fragment>
-              {error && (
-                <div
-                  className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-3"
-                  role="alert"
-                >
-                  <span>Noget gik galt. Prøv ventligst igen</span>
+              {isSubmitted && !error && (
+                <div>
+                  <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
+                    Tak for hjælpen
+                  </h2>
+                  <p className="mb-4 sm:mb-8 sm:text-center">
+                    Husk at tjekke din mail og bekræfte din tilmeldelse.
+                  </p>
                 </div>
               )}
-              <div className="sm:flex sm:-mx-2">
-                <FormField
-                  className="w-full sm:w-1/2 sm:mx-2"
-                  name="firstname"
-                  label="Fornavn"
-                />
-                <FormField
-                  className="w-full sm:w-1/2 sm:mx-2"
-                  name="lastname"
-                  label="Efternavn"
-                />
-              </div>
-              <div className="sm:flex sm:-mx-2">
-                <FormField
-                  className="w-full sm:w-1/3 sm:mx-2"
-                  name="zip"
-                  label="Postnummer"
-                />
-                <FormField
-                  className="w-full sm:w-2/3 sm:mx-2"
-                  name="email"
-                  type="email"
-                  label="Email"
-                />
-              </div>
-              <FormField name="organisation" label="Evt. organisation" />
-              <Checkbox
-                name="subscribe"
-                label="Jeg giver tilladelse til at  Verdens Bedste Klimaplan må
-                gemme mine oplysninger og kontakte mig på email"
-              />
-              <Checkbox
-                name="anon"
-                label="Jeg vil være anonym (vi viser ikke dit navn på sitet)"
-              />
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="mx-auto mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
-              >
-                {isSubmitting ? (
-                  <FaCircleNotch style={{ animation: 'spin 1s infinite' }} />
-                ) : (
-                  <FaUserEdit />
-                )}
-                <span className="flex-1 ml-4">Skriv under nu</span>
-              </button>
-            </React.Fragment>
+              {(!isSubmitted || error) && (
+                <React.Fragment>
+                  {error && (
+                    <div
+                      className="border-2 text-red-700 border-red-700 px-4 py-3 rounded-sm mb-4 sm:mb-8"
+                      role="alert"
+                    >
+                      <span>Noget gik galt. Prøv ventligst igen</span>
+                    </div>
+                  )}
+                  <div className="sm:flex sm:-mx-2">
+                    <FormField
+                      className="w-full sm:w-1/2 sm:mx-2"
+                      name="firstname"
+                      label="Fornavn"
+                    />
+                    <FormField
+                      className="w-full sm:w-1/2 sm:mx-2"
+                      name="lastname"
+                      label="Efternavn"
+                    />
+                  </div>
+                  <div className="sm:flex sm:-mx-2">
+                    <FormField
+                      className="w-full sm:w-2/3 sm:mx-2"
+                      name="email"
+                      type="email"
+                      label="Email"
+                    />
+                    <FormField
+                      className="w-full sm:w-1/3 sm:mx-2"
+                      name="zip"
+                      label="Postnummer"
+                      maxLength={4}
+                    />
+                  </div>
+                  {isSubmitting ? (
+                    <div className="text-4xl text-green-500 sm:flex sm:justify-center">
+                      <FaCircleNotch
+                        style={{ animation: 'spin 1s infinite ease-in-out' }}
+                      />
+                    </div>
+                  ) : (
+                    <Button type="submit" className="block sm:mx-auto">
+                      Skriv dig op 📮
+                    </Button>
+                  )}
+                </React.Fragment>
+              )}
+              {modal && (
+                <div className="absolute top-0 right-0 cursor-pointer p-8">
+                  <FaTimes />
+                </div>
+              )}
+              {modal && (
+                <span className="block mt-8 sm:hidden">Luk vinduet</span>
+              )}
+            </Form>
           )}
-        </Form>
-      )}
-    </Formik>
+        </Formik>
+      </div>
+    </section>
   );
 };
 
