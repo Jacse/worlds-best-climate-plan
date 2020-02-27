@@ -6,6 +6,7 @@ import Button from './Button';
 
 const pages = [
   ['/', 'Hjem'],
+  ['/supporters', 'Støtter'],
   ['/about-the-plan', 'Om planen'],
   ['/about-us', 'Bag planen'],
 ];
