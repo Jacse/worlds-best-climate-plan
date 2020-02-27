@@ -74,6 +74,7 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting }) => {
+            setError(false);
             fetch(
               'https://us-central1-boxwood-academy-251913.cloudfunctions.net/addRecipient',
               { method: 'POST', body: new URLSearchParams(values) }
