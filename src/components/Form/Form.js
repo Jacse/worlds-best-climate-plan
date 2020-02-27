@@ -95,15 +95,6 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
         >
           {({ isSubmitting }) => (
             <Form className="md:max-w-2xl mx-auto">
-              <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
-                Følg med og hjælp til
-              </h2>
-              <p className="mb-4 sm:mb-8 sm:text-center">
-                Borgerforslaget er første skridt i at indføre klimabidrag- og
-                dividende i Danmark. Skriv dig op til nyheder og støt kampen for
-                at løse klimakrisen på den mest effektive og socialt retfærdige
-                måde.
-              </p>
               {isSubmitted && !error && (
                 <div>
                   <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
@@ -116,6 +107,15 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
               )}
               {(!isSubmitted || error) && (
                 <React.Fragment>
+                  <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
+                    Følg med og hjælp til
+                  </h2>
+                  <p className="mb-4 sm:mb-8 sm:text-center">
+                    Borgerforslaget er første skridt i at indføre klimabidrag-
+                    og dividende i Danmark. Skriv dig op til nyheder og støt
+                    kampen for at løse klimakrisen på den mest effektive og
+                    socialt retfærdige måde.
+                  </p>
                   {error && (
                     <div
                       className="border-2 text-red-700 border-red-700 px-4 py-3 rounded-sm mb-4 sm:mb-8"
