@@ -2,9 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Menu from './Menu';
 import Footer from './Footer';
+import ModalFormProvider from './Form/Modal';
 
 const Layout = ({ children, transparentMenu = false }) => (
-  <React.Fragment>
+  <ModalFormProvider>
     <Helmet>
       <link
         rel="icon"
@@ -33,7 +34,7 @@ const Layout = ({ children, transparentMenu = false }) => (
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1&scrolling=1"
     ></script>
-  </React.Fragment>
+  </ModalFormProvider>
 );
 
 export default Layout;

@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
-import Form from '../components/Form';
+import Form from '../components/Form/Form';
+import { ModalContext } from '../components/Form/Modal';
 import SEO from '../components/SEO';
 import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
@@ -33,7 +34,13 @@ const Index = () => {
             Danmark skal have en afgift på varer der ødelægger klimaet.
             Forureneren betaler og pengene gives tilbage til borgerne.
           </p>
-          <Button className="block mx-auto">Skriv under nu ✍️</Button>
+          <ModalContext.Consumer>
+            {openModal => (
+              <Button onClick={openModal} className="block mx-auto">
+                Skriv under nu ✍️
+              </Button>
+            )}
+          </ModalContext.Consumer>
         </div>
         {/* Letter */}
         <div className="transform -mt-64 translate-y-64">
@@ -45,11 +52,7 @@ const Index = () => {
         <HowItWorks />
       </section>
       {/* Support form */}
-      <section className="mx-auto max-w-4xl p-8 md:p-20 bg-sand-100 mb-12">
-        <div className="mx-auto max-w-lg">
-          <Form />
-        </div>
-      </section>
+      <Form className="mb-12" />
     </Layout>
   );
 };

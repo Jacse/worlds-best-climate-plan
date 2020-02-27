@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
+import { ModalContext } from './Form/Modal';
 import Button from './Button';
 
 const pages = [
@@ -11,6 +12,8 @@ const pages = [
 
 const Menu = ({ transparent = false }) => {
   const [isSticky, setSticky] = useState(false);
+
+  const openModal = useContext(ModalContext);
 
   const handleScroll = () => {
     setSticky(window.scrollY > 50);
@@ -50,7 +53,7 @@ const Menu = ({ transparent = false }) => {
             {title}
           </Link>
         ))}
-        <Button secondary className="mr-4 md:mr-8 ml-auto">
+        <Button secondary className="mr-4 md:mr-8 ml-auto" onClick={openModal}>
           Skriv under 🌱
         </Button>
       </div>

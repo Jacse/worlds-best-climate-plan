@@ -44,3 +44,15 @@
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
+
+/* Disable default browser outlines */
+*:focus, *:invalid {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* global spin animation - used by form on submit */
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(359deg); }
+}
