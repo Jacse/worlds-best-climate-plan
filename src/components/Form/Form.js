@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import { FaCircleNotch, FaTimes } from 'react-icons/fa';
 import classNames from 'classnames';
-import Button from './Button';
+import Button from '../Button';
 
 const FormField = ({ name, label, type = 'text', className, ...props }) => (
   <Field name={name}>
@@ -17,7 +17,7 @@ const FormField = ({ name, label, type = 'text', className, ...props }) => (
             'w-full border-2 rounded-sm py-3 px-4 focus:border-green-500 bg-sand-100',
             {
               'border-red-700 mb-2': meta.touched && meta.error,
-              'border-green-700 mb-8': !(meta.touched && meta.error),
+              'border-green-700 mb-6': !(meta.touched && meta.error),
             }
           )}
           type={type}
@@ -25,21 +25,19 @@ const FormField = ({ name, label, type = 'text', className, ...props }) => (
           {...props}
         />
         {meta.touched && meta.error && (
-          <p className="text-red-500 text-s italic mb-6">{meta.error}</p>
+          <p className="text-red-500 text-s italic mb-4">{meta.error}</p>
         )}
       </label>
     )}
   </Field>
 );
 
-const SupportForm = ({ modal = true }) => {
+const SupportForm = ({ modal = false, closeModal, className }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState(false);
   return (
     <section
-      className={classNames('mx-auto max-w-4xl p-8 bg-sand-100 mb-12', {
-        relative: modal,
-      })}
+      className={classNames('mx-auto max-w-4xl p-8 bg-sand-100', className)}
     >
       <div className="mx-auto max-w-lg">
         <Formik
@@ -96,7 +94,7 @@ const SupportForm = ({ modal = true }) => {
           }}
         >
           {({ isSubmitting }) => (
-            <Form className="md:max-w-2xl mx-auto my-8">
+            <Form className="md:max-w-2xl mx-auto">
               <h2 className="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
                 Følg med og hjælp til
               </h2>
@@ -166,12 +164,20 @@ const SupportForm = ({ modal = true }) => {
                 </React.Fragment>
               )}
               {modal && (
-                <div className="absolute top-0 right-0 cursor-pointer p-8">
+                <div
+                  className="absolute top-0 right-0 cursor-pointer p-8"
+                  onClick={closeModal}
+                >
                   <FaTimes />
                 </div>
               )}
               {modal && (
-                <span className="block mt-8 sm:hidden">Luk vinduet</span>
+                <span
+                  className="block mt-6 cursor-pointer sm:hidden"
+                  onClick={closeModal}
+                >
+                  Luk vinduet
+                </span>
               )}
             </Form>
           )}
