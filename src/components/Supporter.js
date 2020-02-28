@@ -8,7 +8,7 @@ const Person = ({
   <div className="flex items-center w-full p-4 bg-gray-100 border border-gray-300 rounded-sm">
     <div className="w-12">
       <div
-        className="relative h-0 rounded-full overflow-hidden"
+        className="relative h-0 pb-full rounded-full overflow-hidden"
         style={{ paddingBottom: '100%' }}
       >
         <img
