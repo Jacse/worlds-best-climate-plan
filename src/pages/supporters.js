@@ -4,9 +4,12 @@ import SEO from '../components/SEO';
 import Supporter from '../components/Supporter';
 
 const supporters = [
-  ['background.jpg', 'Alpha Albert', 'Økonom'],
-  ['background.jpg', 'Beta Bjarne', 'Økonom'],
-  ['background.jpg', 'Charlie Charmør', 'Økonom'],
+  ['logo', '350.svg', '', ''],
+  ['logo', 'ccl.png', '', ''],
+  ['logo', 'dgs.png', '', ''],
+  ['logo', 'frej.png', '', ''],
+  ['logo', 'ungeklimaraadet.png', '', ''],
+  // ['person', 'background.jpg', 'Alpha Albert', 'Økonom'],
 ];
 
 const Supporters = () => {
@@ -29,8 +32,14 @@ const Supporters = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto py-8 px-6">
-          {supporters.map(([image, name, title]) => (
-            <Supporter key={name} image={image} name={name} title={title} />
+          {supporters.map(([type, image, name, title], i) => (
+            <Supporter
+              key={i}
+              type={type}
+              image={image}
+              name={name}
+              title={title}
+            />
           ))}
         </div>
       </section>
