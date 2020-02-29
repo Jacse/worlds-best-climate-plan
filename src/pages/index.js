@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
 import MentionedIn from '../components/MentionedIn';
+import SupportedBy from '../components/SupportedBy';
 
 const Index = () => {
   return (
@@ -46,6 +47,7 @@ const Index = () => {
       <section className="mx-auto max-w-2xl px-8 pt-12">
         <HowItWorks />
       </section>
+      <SupportedBy />
       <section className="mx-auto max-w-4xl px-8 pt-12">
         <MentionedIn />
       </section>
