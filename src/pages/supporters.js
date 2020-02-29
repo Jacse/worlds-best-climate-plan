@@ -23,7 +23,7 @@ const Supporters = () => {
               <h1 className="text-3xl my-3 font-bold">Støtter</h1>
               <p className="text-xl">
                 Det er ikke os, der har fundet på ideen med klimabidrag og
-                dividende. Idéen er gennemænkt og støttet af forskere og
+                dividende. Idéen er gennemtænkt og støttet af forskere og
                 økonomer verden over. Og i Danmark støtter over 100 forskere,
                 virksomheder og organisationer ideen.
               </p>
