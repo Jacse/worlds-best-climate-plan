@@ -16,17 +16,10 @@ const Index = () => {
       <section
         className="pt-20 relative mb-64"
         style={{
-          background: 'url(../../background.jpg)',
+          background: 'url(../../background.png)',
           backgroundSize: 'cover',
         }}
       >
-        <div
-          className="absolute w-full h-full inset-0"
-          style={{
-            background:
-              'linear-gradient(rgba(1, 27, 26, 0.2), rgba(1, 27, 26, 1))',
-          }}
-        ></div>
         <div className="relative mx-auto md:py-32 p-8">
           <h1 className="text-center text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none">
             Støt en retfærdig klimaafgift
