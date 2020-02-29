@@ -69,8 +69,9 @@ body {
   width: 100%;
   left: 0;
 }
-.max-w-half {
-  max-width: 50%;
+
+.max-w-15 {
+  max-width: 15rem;
 }
 
 /* Disable default browser outlines */

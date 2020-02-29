@@ -18,7 +18,7 @@ const MentionedIn = () => (
     <p className="text-lg text-center mx-auto mb-8">
       Retfærdige klimaafgifter er beskrevet utallige gange i medierne.
     </p>
-    <div className="flex-none max-w-half sm:max-w-none mx-auto sm:flex items-center justify-around mb-24">
+    <div className="flex-none max-w-15 sm:max-w-none mx-auto sm:flex items-center justify-around mb-24">
       <Image
         link="https://www.information.dk/debat/2019/09/saet-afgifter-paa-former-klimabelastning-giv-pengene-tilbage-befolkningen"
         source="/media/information.svg"
