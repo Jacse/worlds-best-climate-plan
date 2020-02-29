@@ -21,7 +21,7 @@ const MentionedIn = () => (
         <p className="text-xl font-bold mb-4">
           Støttet af forskere, økonomer og erhverv
         </p>
-        <p className="max-w-sm mx-auto sm:mx-none">
+        <p className="max-w-sm mx-auto sm:mx-0">
           Det er ikke os, der har fundet på ideen med klimabidrag og dividende.
           Idéen er gennemtænkt og støttet af forskere og økonomer verden over.
           Og i Danmark støtter over 100 forskere, virksomheder og organisationer
