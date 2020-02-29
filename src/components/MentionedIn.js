@@ -16,7 +16,7 @@ const MentionedIn = () => (
       Find modellen i medierne
     </h2>
     <p className="text-lg text-center mx-auto mb-8">
-      Klimabidrag og –dividende er beskrevet utallige gange i medierne.
+      Retfærdige klimaafgifter er beskrevet utallige gange i medierne.
     </p>
     <div className="flex-none max-w-half sm:max-w-none mx-auto sm:flex items-center justify-around mb-24">
       <Image
