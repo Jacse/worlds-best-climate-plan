@@ -28,11 +28,11 @@ const Index = () => {
         ></div>
         <div className="relative mx-auto md:py-24 p-8">
           <h1 className="text-center text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none">
-            Støt en ny dansk klimaskat
+            Støt en retfærdig klimaafgift
           </h1>
           <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
-            Danmark skal have en afgift på varer der ødelægger klimaet.
-            Forureneren betaler og pengene gives tilbage til borgerne.
+            Danmark skal have en afgift på varer der er klimabelastende. 
+            Forureneren betaler, men uden at det rammer socialt skævt, eller at alle vores udledninger flyttes til udlandet.
           </p>
           <ModalContext.Consumer>
             {openModal => (
