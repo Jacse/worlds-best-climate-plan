@@ -22,7 +22,7 @@ const MentionedIn = () => (
           Støttet af forskere, økonomer og erhverv
         </p>
         <p className="max-w-sm mx-auto sm:mx-0">
-          Det er ikke os, der har fundet på ideen med klimabidrag og dividende.
+          Det er ikke os, der har fundet på ideen med en retfærdig klimaafgift.
           Idéen er gennemtænkt og støttet af forskere og økonomer verden over.
           Og i Danmark støtter over 100 forskere, virksomheder og organisationer
           ideen.
