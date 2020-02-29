@@ -27,18 +27,19 @@ const Index = () => {
               'linear-gradient(rgba(1, 27, 26, 0.2), rgba(1, 27, 26, 1))',
           }}
         ></div>
-        <div className="relative mx-auto md:py-24 p-8">
+        <div className="relative mx-auto md:py-32 p-8">
           <h1 className="text-center text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none">
             Støt en retfærdig klimaafgift
           </h1>
-          <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
-            Danmark skal have en afgift på varer der er klimabelastende. 
-            Forureneren betaler, men uden at det rammer socialt skævt, eller at alle vores udledninger flyttes til udlandet.
+          <p className="max-w-xl mx-auto text-center md:text-xl my-8 sm:mb-16 text-sand-100">
+            Danmark skal have en afgift på varer der er klimabelastende.
+            Forureneren betaler, men uden at det rammer socialt skævt, eller at
+            alle vores udledninger flyttes til udlandet.
           </p>
           <ModalContext.Consumer>
             {openModal => (
-              <Button onClick={openModal} className="block mx-auto">
-                Skriv under nu ✍️
+              <Button onClick={openModal} large className="block mx-auto">
+                Skriv under nu&nbsp;&nbsp;✍️
               </Button>
             )}
           </ModalContext.Consumer>
