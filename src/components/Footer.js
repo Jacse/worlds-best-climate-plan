@@ -1,41 +1,40 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+const LinkStyle =
+  'font-bold block my-2 md:my-6 hover:text-green-300 transition ease-in-out duration-200';
+
 const Footer = () => (
   <div className="bg-green-900 text-green-500">
     <div className="py-8 md:py-24 px-8 md:max-w-5xl mx-auto">
       <div className="md:flex -mx-8">
         <div className="md:w-1/3 m-8">
-          <Link className="block my-2 md:my-6" to="/">
+          <Link className={LinkStyle} to="/">
             Hjem
           </Link>
-          <Link className="block my-2 md:my-6" to="/about-the-plan">
+          <Link className={LinkStyle} to="/about-the-plan">
             Om planen
           </Link>
-          <Link className="block my-2 md:my-6" to="/about-us">
+          <Link className={LinkStyle} to="/about-us">
             Bag planen
           </Link>
-          <Link className="block my-2 md:my-6" to="/privacy-policy">
+          <Link className={LinkStyle} to="/privacy-policy">
             Cookie- og privatlivspolitik
           </Link>
         </div>
         <div className="md:w-1/3 m-8">
           <a
-            className="block my-2 md:my-6"
+            className={LinkStyle}
             href="https://www.klimabevaegelsen.dk/"
             target="blank"
           >
             Klimabevægelsen
           </a>
-          <a
-            className="block my-2 md:my-6"
-            href="https://www.dgsb.dk/"
-            target="blank"
-          >
+          <a className={LinkStyle} href="https://www.dgsb.dk/" target="blank">
             Den Grønne Studenter Bevægelse
           </a>
           <a
-            className="block my-2 md:my-6"
+            className={LinkStyle}
             href="https://citizensclimatelobby.org/"
             target="blank"
           >
@@ -44,7 +43,7 @@ const Footer = () => (
         </div>
         <div className="md:w-1/3 m-8">
           <a
-            className="block my-2 md:my-6"
+            className={LinkStyle}
             href="mailto:kontakt@verdensbedsteklimaplan.dk"
           >
             kontakt@verdensbedsteklimaplan.dk
