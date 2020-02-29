@@ -15,10 +15,9 @@ const Index = () => {
       <SEO title="Verdens Bedste klimaplan" description="" />
       {/* Hero and letter */}
       <section
-        className="pt-20 relative mb-64"
+        className="pt-20 relative mb-64 bg-cover bg-green-900"
         style={{
-          background: 'url(../../background.png)',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(../../background.png)',
         }}
       >
         <div className="relative mx-auto md:py-32 p-8">
