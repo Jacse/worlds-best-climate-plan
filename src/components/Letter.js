@@ -8,22 +8,23 @@ const Letter = () => (
       Der er brug for handling nu
     </h2>
     <p className="my-4">
-      Klimaforandringer har store konsekvenser for mennesker i hele verden i de
-      næste årtier. I Danmark og i EU mærker vi allerede begyndende
-      vejrforandringer og flygtningestrømme som er skabt af klimaændringerne.
+      Danmark har behov for en grøn omstilling. Jo før, jo bedre. 
+      Klimaloven er en god start, men den fortæller os desværre ikke, hvordan vi når de 70-procent i 2030.
     </p>
     <p className="my-4">
-      Det betyder at vores verden bliver mere usikker, og der er risiko for at
-      det går ud over de svageste i samfundet. Derfor vil vi have en retfærdig
-      klimaafgift som lader forureneren betale og giver pengene tilbage til dem,
-      der bliver mest udsat i vores samfund.
+      Vi foreslår en klima-løsning, som klimaeksperter og økonomieksperter støtter og som røde, 
+      grønne, og blå politikere kan blive enige om.
     </p>
     <p className="my-4">
-      Klimaafgiften hjælper os også med at omstille det danske samfund til at
-      forurene mindre. Vi skal reducere vores CO2-udledning med 70 procent inden
-      2030, og for at vi kan nå det mål er der brug for gennemgribende tiltag.
-      En bred klimaafgift vil gøre, at vi danskere gennem vores forbrug vil
-      udlede mindre CO2. Det er en effektiv måde at skabe forandring.
+      Vi ønsker et system i balance, hvor vi som forbrugere belønnes økonomisk for at købe bæredygtigt ind og som virksomhed har et økonomisk incitament til at producere klimavenlige produkter. 
+    </p>
+    <p className="my-4">
+      Derfor vil vi have en social retfærdig klimaafgift som lader forureneren betale, og hvor andre tiltage sørger for, 
+      at løsningen ikke rammer socialt skævt, eller at alle vores udledninger blot flyttes til udlandet.
+    </p>
+    <p className="my-4">
+      En bred klimaafgift vil gøre, at Danmark gennem vores virksomhedernes og borgernes forbrug vil udlede færre drivhusgasser. 
+      Det er den mest effektiv måde at skabe forandring.
     </p>
     <p className="my-4">
       Bag Verdens Bedste Klimaplan står Ungeklimarådet, Citizens&apos; Climate

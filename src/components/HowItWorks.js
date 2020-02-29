@@ -12,17 +12,18 @@ const HowItWorks = () => (
       Sådan virker det
     </h2>
     <p className="text-lg text-center mx-auto mb-16">
-      Danmark skal have en afgift på varer der ødelægger klimaet.
+      Danmark skal have en afgift på varer der er klimabelastende.
       <br />
-      Forureneren betaler og pengene gives tilbage til borgerne.
+      Forureneren betaler, men uden at det rammer socialt skævt, eller at alle vores udledninger flyttes til udlandet.
+
     </p>
     <div className="mb-12 sm:flex sm:items-center">
       <div className="sm:w-1/2 sm:mr-20">
         <Badge>1.</Badge>
         <p>
-          Varer, der udleder CO2 pålægges en ekstra afgift. Når en vare bliver
-          dyrere, køber vi mindre af den. På den måde reducerer vi vores
-          udledning og belaster klimaet mindre.
+          Varer, der udleder drivshusgasser i deres produktion pålægges en ekstra afgift. 
+          Når en vare bliver dyrere, køber vi mindre af den. 
+          På den måde reducerer vi vores udledning og belaster klimaet mindre.
         </p>
       </div>
       <div className="hidden sm:w-1/2 sm:block">
@@ -46,9 +47,9 @@ const HowItWorks = () => (
       <div className="sm:w-1/2 sm:mr-20">
         <Badge>3.</Badge>
         <p>
-          Indtægt fra klimaafgifter betales tilbage til borgerne som
-          klimadividende. Alle får det samme. Hvis du er god til at fravælge de
-          klimabelastende varer, får du altså flere penge til rådighed.
+          Indtægt fra klimaafgifterne betales tilbage til borgerne. 
+          Det betyder, at man kan sørge for, at afgiften ikke rammer socialt skævt, 
+          og at en gennemsnitlig dansker ikke bliver ramt på pengepungen.
         </p>
       </div>
       <div className="hidden sm:w-1/2 sm:block">
