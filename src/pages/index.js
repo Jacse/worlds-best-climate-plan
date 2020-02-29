@@ -6,6 +6,7 @@ import { ModalContext } from '../components/Form/Modal';
 import SEO from '../components/SEO';
 import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
+import MentionedIn from '../components/MentionedIn';
 
 const Index = () => {
   return (
@@ -50,6 +51,9 @@ const Index = () => {
       {/* Sådan virker det */}
       <section className="mx-auto max-w-2xl px-8 pt-12">
         <HowItWorks />
+      </section>
+      <section className="mx-auto max-w-2xl px-8 pt-12">
+        <MentionedIn />
       </section>
       {/* Support form */}
       <Form className="mb-12" />
