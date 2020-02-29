@@ -52,7 +52,7 @@ const Index = () => {
       <section className="mx-auto max-w-2xl px-8 pt-12">
         <HowItWorks />
       </section>
-      <section className="mx-auto max-w-2xl px-8 pt-12">
+      <section className="mx-auto max-w-4xl px-8 pt-12">
         <MentionedIn />
       </section>
       {/* Support form */}

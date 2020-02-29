@@ -45,11 +45,20 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.max-w-half {
+  max-width: 50%;
+}
+
 /* Disable default browser outlines */
 *:focus, *:invalid {
   outline: 0;
   box-shadow: none;
 }
+
 
 /* global spin animation - used by form on submit */
 @keyframes spin {
