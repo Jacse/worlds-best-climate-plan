@@ -55,7 +55,7 @@ const Menu = ({ transparent = false }) => {
           </Link>
         ))}
         <Button secondary className="mr-4 md:mr-8 ml-auto" onClick={openModal}>
-          Skriv under 🌱
+          Skriv&nbsp;under&nbsp;🌱
         </Button>
       </div>
       {/* filler */}
