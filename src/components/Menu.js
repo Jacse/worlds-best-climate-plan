@@ -47,7 +47,8 @@ const Menu = ({ transparent = false }) => {
         </Link>
         {pages.map(([href, title]) => (
           <Link
-            className="cursor-pointer m-6 text-sand-100 font-bold hidden md:block"
+            activeClassName={href !== '/' ? 'menu-item-active' : null}
+            className="menu-item cursor-pointer m-6 text-sand-100 font-bold hidden md:block"
             to={href}
             key={href}
           >

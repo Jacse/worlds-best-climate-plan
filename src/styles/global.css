@@ -49,6 +49,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Mads' hacks to get shit done ¯\_(ツ)_/¯ */
+.menu-item  {
+  position: relative;
+}
+.menu-item:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #74c68c;
+  transition: all 0.2s ease-in-out;
+  width: 0;
+}
+.menu-item:hover:after,
+.menu-item-active:after {
+  width: 100%;
+  left: 0;
+}
 .max-w-half {
   max-width: 50%;
 }
