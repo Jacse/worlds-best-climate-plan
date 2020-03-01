@@ -4,12 +4,14 @@ import { FaExternalLinkAlt, FaPlus, FaMinus } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+import InteractiveBox from '../components/InteractiveBox/InteractiveBox'
+
 const P = ({ children }) => (
   <p className="my-4 leading-loose text-gray-800">{children}</p>
 );
 
-const Article = ({ logo, url, title }) => (
-  <div className="hover-translate w-full rounded-lg bg-white cursor-pointer text-gray-600 hover:text-gray-700 shadow-xl my-8">
+const Article = ({logo, url, title }) => (
+  <div className={`hover-translate w-full rounded-lg bg-white cursor-pointer text-gray-600 hover:text-gray-700 shadow-xl `}>
     <div className="p-6 flex items-center">
       <img className="h-6 opacity-50" src={`/media/${logo}`} />
       <div className="ml-auto text-sm uppercase tracking-wide text-gray-600">
@@ -17,6 +19,11 @@ const Article = ({ logo, url, title }) => (
       </div>
     </div>
     <h4 className="text-lg px-6 pb-6 text-gray-800">{title}</h4>
+    <p className="text-center">'
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      </p>
     <div className="w-full bg-gray-200 p-3 flex items-center justify-center">
       <FaExternalLinkAlt />
       <div className="ml-3">Læs mere</div>
@@ -156,12 +163,12 @@ const ThePlan = () => {
             <P>
               Når vi derimod forurener med drivhusgasser, som forårsager klodens
               globale opvarmning, så er det helt cool og ganske gratis. Forestil
-              dig to virksomheder der begge sælger T-shirts. Den første fabrik
-              er drevet på elektricitet fra vindmøller. Den anden på el fra
+              dig to virksomheder der begge sælger T-shirts.<a className="highlight-link" id="link_1" href="#">Den første fabrik
+              er drevet på elektricitet fra vindmøller.</a> Den anden på el fra
               olie. Den oliedrevne fabrik forurener langt mere end den
-              vindmølledrevne. Alligevel er der ingen, der kommer efter dem med
+              vindmølledrevne. <a id="link_2" href="#" className="highlight-link">Alligevel er der ingen, der kommer efter dem med
               den klækkelige bøde, som du fik, da du kastede skraldeposen ud af
-              vinduet.
+              vinduet.</a>
             </P>
             <P>
               Det skal vi selvfølgelig have sat en stopper for. Og løsningen er
@@ -183,7 +190,10 @@ const ThePlan = () => {
             </P>
           </div>
           <div className="md:w-1/2 md:pl-6">
-            <Article logo="information.svg" title="Lorem ipsum article" />
+            <InteractiveBox>
+              <Article link="link_1" logo="information.svg" title="Slide 1" />
+              <Article link="link_2" logo="information.svg" title="Slide 2" />
+            </InteractiveBox>
           </div>
         </div>
       </section>
@@ -232,7 +242,7 @@ const ThePlan = () => {
             </P>
           </div>
           <div className="md:w-1/2 md:pr-6">
-            <Article logo="information.svg" title="Lorem ipsum article" />
+            <Article logo="information.svg" title="Lorem ipsum article" text=""/>
           </div>
         </div>
       </section>
