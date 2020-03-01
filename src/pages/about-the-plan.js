@@ -205,7 +205,6 @@ const ThePlan = () => {
             <P>
               Selvom klimaafgifter ikke kan levere 70% reduktion i udledninger alene, så kan de 70% ikke realistisk nås uden. De ovenstående forslag sørger for, at klimaafgifter ikke svækker den danske konkurrenceevne, eller at den tunge ende vender nedad. 
             </P>
-            </P>
           </div>
           <div className="md:w-1/2 md:pr-6">
             <Article logo="information.svg" title="Lorem ipsum article" />
