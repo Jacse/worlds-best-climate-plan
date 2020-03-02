@@ -20,7 +20,6 @@
     "gatsby": "^2.19.19",
     "gatsby-plugin-google-tagmanager": "^2.1.25",
     "gatsby-plugin-postcss": "^2.1.20",
-    "rc-collapse": "^1.11.8",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
