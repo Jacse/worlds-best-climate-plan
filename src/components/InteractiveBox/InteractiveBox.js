@@ -5,15 +5,16 @@ import './InteractiveBox.css';
 const InteractiveBox = ({ children }) => {
   const [slide, setSlide] = useState(0);
 
-  useEffect(() => {
-    children.map((c, idx) => {
-      document
-        .getElementById(c.props.link)
-        .addEventListener('mouseenter', () => {
-          setSlide(idx);
-        });
-    });
-  });
+  useEffect(()=>{
+    children.map((c,idx)=>{
+      const element = document.getElementById(c.props.link)
+      if(typeof element !== 'undefined' && element !== null){
+        element.addEventListener('mouseenter',()=>{
+          setSlide(idx)
+        })
+      }
+    })
+  })
 
   return (
     <div className="interactive-box-container">
@@ -37,6 +38,7 @@ const InteractiveBox = ({ children }) => {
       <div className="box-index-container">
         {children.map((c, idx) => (
           <div
+            key={idx}
             onClick={() => setSlide(idx)}
             className={`box-index-ball ${
               slide === idx ? 'box-index-ball-active' : ''
