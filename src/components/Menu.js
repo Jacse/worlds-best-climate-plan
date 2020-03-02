@@ -13,6 +13,7 @@ const pages = [
 
 const Menu = ({ transparent = false }) => {
   const [isSticky, setSticky] = useState(false);
+  const [backers, setBackers] = useState(null);
 
   const openModal = useContext(ModalContext);
 
@@ -21,8 +22,22 @@ const Menu = ({ transparent = false }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    // Fetch backers
+    const fetchData = async () => {
+      const res = await fetch(
+        'https://us-central1-boxwood-academy-251913.cloudfunctions.net/scrapeSignatures'
+      );
+      const json = await res.json();
+      setBackers(
+        `${new Intl.NumberFormat('da-DK').format(
+          json.backers
+        )} danskere har skrevet under`
+      );
+    };
+    fetchData();
 
+    // Scrolling - activate menu background
+    window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', () => handleScroll);
     };
@@ -55,7 +70,12 @@ const Menu = ({ transparent = false }) => {
             {title}
           </Link>
         ))}
-        <Button secondary className="mr-4 md:mr-8 ml-auto" onClick={openModal}>
+        <p className="text-sand-100 mx-4 ml-auto hidden xl:block">{backers}</p>
+        <Button
+          secondary
+          className="mr-4 md:mr-8 ml-auto xl:ml-0"
+          onClick={openModal}
+        >
           Skriv&nbsp;under&nbsp;🌱
         </Button>
       </div>
