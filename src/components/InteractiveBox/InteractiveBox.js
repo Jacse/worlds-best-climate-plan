@@ -7,9 +7,12 @@ const InteractiveBox = ({children}) => {
 
     useEffect(()=>{
         children.map((c,idx)=>{
-            document.getElementById(c.props.link).addEventListener('mouseenter',()=>{
-                setSlide(idx)
-            })
+            const element = document.getElementById(c.props.link)
+            if(typeof element !== 'undefined' && element !== null){
+                element.addEventListener('mouseenter',()=>{
+                    setSlide(idx)
+                })
+            }
         })
     })
 
@@ -37,7 +40,7 @@ const InteractiveBox = ({children}) => {
             <div className="box-index-container">
                 {
                     children.map((c,idx)=>(
-                        <div onClick={()=>setSlide(idx)} className={`box-index-ball ${(slide === idx) ? 'box-index-ball-active' : '' }`}></div>
+                        <div key={idx} onClick={()=>setSlide(idx)} className={`box-index-ball ${(slide === idx) ? 'box-index-ball-active' : '' }`}></div>
                     ))
                 }
             </div>
