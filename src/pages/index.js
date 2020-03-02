@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
 import MentionedIn from '../components/MentionedIn';
+import ShareButtons from '../components/ShareButtons';
 import SupportedBy from '../components/SupportedBy';
 
 const Index = () => {
@@ -36,6 +37,9 @@ const Index = () => {
               </Button>
             )}
           </ModalContext.Consumer>
+          <p className="max-w-xl mx-auto text-center md:text-xl my-8 sm:mb-16 text-sand-100">
+            <ShareButtons />
+          </p>
         </div>
         {/* Letter */}
         <div className="transform -mt-64 translate-y-64">
