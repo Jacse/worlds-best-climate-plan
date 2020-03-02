@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import Letter from '../components/Letter';
 import HowItWorks from '../components/HowItWorks';
 import MentionedIn from '../components/MentionedIn';
+import ShareButtons from '../components/ShareButtons';
 import SupportedBy from '../components/SupportedBy';
 
 const Index = () => {
@@ -20,22 +21,27 @@ const Index = () => {
           backgroundImage: 'url(../../background.png)',
         }}
       >
-        <div className="relative mx-auto md:py-32 p-8">
+        <div className="relative mx-auto md:pt-32 p-8">
           <h1 className="text-center text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none">
             Støt en retfærdig klimaafgift
           </h1>
-          <p className="max-w-xl mx-auto text-center md:text-xl my-8 sm:mb-16 text-sand-100">
+          <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
             Danmark skal have en afgift på varer der er klimabelastende.
             Forureneren betaler, men uden at det rammer socialt skævt, eller at
             alle vores udledninger flyttes til udlandet.
           </p>
           <ModalContext.Consumer>
             {openModal => (
-              <Button onClick={openModal} large className="block mx-auto">
+              <Button
+                onClick={openModal}
+                large
+                className="block mx-auto my-8 sm:my-16"
+              >
                 Skriv under nu&nbsp;&nbsp;✍️
               </Button>
             )}
           </ModalContext.Consumer>
+          <ShareButtons />
         </div>
         {/* Letter */}
         <div className="transform -mt-64 translate-y-64">
