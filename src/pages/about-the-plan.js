@@ -109,43 +109,28 @@ const faq = [
 const ThePlan = () => {
   return (
     <Layout>
-      <SEO title="Mere om planen" description="" />
+      <SEO title="Lidt mere om planen" description="" />
       <section>
         <h1 className="text-center text-3xl md:text-5xl my-12 font-bold">
-          Mere om planen
+          Lidt mere om planen
         </h1>
         <div className="w-full max-w-lg mx-auto">
           <P>
-            Ligesom alle os andre har du nok lidt klimaangst. Du hørte godt,
-            hvad dronningen sagde til nytår. Du ved, at hvis vi ikke gør noget
-            drastisk snart, så bliver det slemt. Men. Du vil stadigvæk gerne
-            bruge din bil i fred, og demonstrationer med Greta Thunberg er måske
-            ikke helt din kop te.
+            Klimakrisen er et globalt problem. Fordi Danmark har verdens 7. højeste klimaaftryk prper indbygger, skal vi være et grønt foregangsland, så vi kan inspirere og påvirke resten af verden. Vi skal nå de 70% men så omkostningseffektivt som muligt for at tage hensyn til vores velfærd, lighed, dansk konkurrenceevne og jobs. Vores klimahandlingsplaner skal ikke blot flytte vores udledninger uden for vores grænser, og det danske erhvervsliv skal stadig være konkurrencedygtig.
           </P>
           <P>
-            Du kunne godt tænke dig, at klimaet fikser sig selv, og at du ikke
-            behøver tænke over det. Det, du godt kunne tænke dig, er en slags
-            “doven revolution”.
+            For at nå disse mål foreslår vi at bruge en løsning, der bygger på følgende principper:
+            <ul>
+              <li>Forureneren betaler en støt stigende ensartet afgift på udledninger af drivhusgasser. Prisen skal være høj nok til at nå klimalovens målsætning. </li>
+              <li>Afgiften bør kombineres med tiltage, så løsningen ikke rammer socialt skævt og en dansker med gennemsnitlig forbrug ikke bliver ramt på pengepungen.</li>
+              <li>Afgiften bør kombineres med tiltag, så danske udledninger, jobs og konkurrenceevnen ikke unødigt flyttes til udlandet.</li>
+            </ul>
           </P>
           <P>
-            Vi holder med dig. Der er en løsning, der er så simpel og så
-            kedelig, at politikere ikke gider at snakke om det. Den går ud på,
-            at det skal koste noget at udlede drivhusgasser, men uden at den
-            gennemsnitlige dansker skal have penge op af lommen eller at det
-            skader danske arbejdspladser.
+            Løsningen lægger sig tæt op ad “klimabidrag og -bonus”-modellen, der støttes af 27 Nobelprismodtagere i økonomi og over 3500 økonomer.
           </P>
           <P>
-            Vi ved allerede hvad du tænker, og du kan bare tage det helt roligt.
-            Vi lover, at dette forslag ikke er grebet ud af luften.
-          </P>
-          <P>
-            Det er faktisk så gennemtænkt, at 27 Nobelprismodtagere støtter det.
-            Det samme gør 3.500 økonomer og flere hundrede virksomheder.
-          </P>
-          <P>
-            Og det tager kun 5 minutter at få det til at ske, så det passer lige
-            til reklamepausen. Så er du done. Det er den grønne omstilling fra
-            din sofa. Det er verdens bedste klimaplan.
+            Det er verdens bedste klimaplan.
           </P>
         </div>
       </section>
@@ -153,40 +138,19 @@ const ThePlan = () => {
         <div className="w-full max-w-5xl mx-auto md:flex items-center">
           <div className="md:w-1/2 md:pr-6">
             <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
-              Lad forureneren betale
+              Lad forureneren betale en støt stigende og ensartet klimaafgift 
             </h2>
             <P>
-              Hvis du smider skrald ud af vinduet, ender du nok med en klækkelig
-              bøde. Det gør du fordi det er super irriterende for os andre at
-              skulle tage os af det.
+              FNs klimapanel IPCC, Den Internationale Valutafond, Verdensbanken, OECD, Nationalbanken, De Økonomiske Råd, Klimarådet og senest 11.000 forskere er enige: en klimaafgift er den bedste løsning til at reducere hurtigst muligt vores udledninger, da indsatsen for at reducere udledningerne sker der, hvor det er billigst. 
             </P>
             <P>
-              Når vi derimod forurener med drivhusgasser, som forårsager klodens
-              globale opvarmning, så er det helt cool og ganske gratis. Forestil
-              dig to virksomheder der begge sælger T-shirts.<a className="highlight-link" id="link_1" href="#">Den første fabrik
-              er drevet på elektricitet fra vindmøller.</a> Den anden på el fra
-              olie. Den oliedrevne fabrik forurener langt mere end den
-              vindmølledrevne. <a id="link_2" href="#" className="highlight-link">Alligevel er der ingen, der kommer efter dem med
-              den klækkelige bøde, som du fik, da du kastede skraldeposen ud af
-              vinduet.</a>
+              Faktisk er en klimaafgift langt mere effektiv end hidtil beregnet og i Tyskland og Storbritannien har klimaafgifter har haft en stor indflydelse for at reducere deres udledninger. 
             </P>
             <P>
-              Det skal vi selvfølgelig have sat en stopper for. Og løsningen er
-              simpel: forurenere skal betale for deres eget skrald, også hvis
-              skraldet hedder drivhusgasser.
+              Modellen er smart, fordi den gør klimavenlige produkter og ydelser relativt billigere end før: det gør at kunder, altså virksomheder og forbrugere, får et større incitament til at købe disse i stedet for varer, der er klimabelastende. Klimaafgiften giver også et incitament til at innovere og skabe nye, klimavenlige løsninger: de kan pludselig være rentable. Fordi prisen er støt stigende, giver det også mulighed til alle for at omstille sig - også dem, som i dag ikke er særlig grønne. 
             </P>
             <P>
-              Verdensbanken, OECD, Den Internationale Valutafond,
-              Nationalbanken, Klimarådet og Det Økonomiske Råd er også enige:
-              den hurtigste og billigste måde at komme af med vores udledninger
-              er at sætte en pris på dem.
-            </P>
-            <P>
-              Den gode nyhed er, at vi allerede ved, hvor næsten alle
-              drivhusgasser kommer fra. når vi brænder fossile brændsler (olie,
-              gas, kul), når vi opdrætter køer, og når vi producerer gødning og
-              producerer cement. Derfor ved vi også, hvor regningen skal sendes
-              hen.
+              I Danmark bør en klimaafgift indføres på fossile brændsler, cement og landbruget - det sikrer en bred dækning. På grund af de eksisterende punktafgifter og Klimarådets foreslået værktøj er selve beskatning ikke nødvendigvis en kompliceret sag. Kraka og Deloitte har beregnet, at en afgift på 1250 kroner per ton CO2-ækvivalenter vil sandsynligvis være tilstrækkelig til at nå 70 pct. målet i 2030.
             </P>
           </div>
           <div className="md:w-1/2 md:pl-6">
@@ -201,44 +165,16 @@ const ThePlan = () => {
         <div className="w-full max-w-5xl mx-auto md:flex flex-row-reverse items-center">
           <div className="md:w-1/2 md:pl-6">
             <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
-              Et bidrag der ikke koster noget for de fleste
+              En løsning, der sikrer den sociale balance
             </h2>
             <P>
-              Lad os være ærlige. Hvis den oliedrevne T-shirt-producent
-              pludselig skal betale for den CO2, de smider ud i atmosfæren… Ja,
-              så smider virksomheden nok den nye, irriterende omkostning på en
-              eller anden måde videre til deres kunder, som i sidste ende sender
-              den videre til dig.
+              Udfordringen ved en klimaafgift er, at den kan ramme socialt skævt. De svagere stillede har en mindre rådighedsbeløb, og den ekstra omkostning har større betydning end hos de mere velhavende. Heldigvis findes der en løsning på det. 
             </P>
             <P>
-              Ligesom en afgift på sukker gør fredagssnold dyrere vil en afgift
-              på CO2 gøre klimabelastende varer dyrere. Det betyder, at når du
-              smutter forbi Netto, så vil varernes klimabelastning afspejles i
-              prisen. Du vil derfor ikke længere behøve at tjekke om agurken
-              komme fra Samsø eller Samoa.
+              Ved at give en betydelig andel af indtægten tilbage til borgerne sørger man for, at afgiften ikke vender den tunge ende nedad. Faktisk viser en analyse i Tyskland og to i USA, at det kan ende med, at de svageste får flere penge i lommen, end de gjorde før, fordi deres forbrug af klimabelastende varer er overordnet mindre end hos de velhavende. De har fx. færre biler, mindre boliger, flyver mindre og generelt et mindre forbrug. 
             </P>
             <P>
-              Når slik bliver dyrere, spiser vi mindre slik. Når klimabelastende
-              varer bliver dyrere, køber vi færre klimabelastende varer og flere
-              klimavenlige varer.
-            </P>
-            <P>
-              For at sikre at Hr. og Fru Jensen ikke betaler mere for deres
-              livsstil end de gør i dag, gør vi brug af et snedigt trick: Alle
-              penge, der er blevet opkrævet fra klimasyndere, bliver givet
-              tilbage ligeligt til borgerne. Ja, du læste rigtigt.
-            </P>
-            <P>
-              Det betyder, at hvis du køber færre klimabelastende ting end den
-              gennemsnitlige dansker, så ender du faktisk med flere penge i
-              lommen. Selv hvis du er milliardær men holder dig fra at flyve,
-              bor i en lille lejlighed og cykler på arbejde, ender du med at
-              være rigere, end du var før.
-            </P>
-            <P>
-              På den måde belønner vi de klimavenlige med penge fra de
-              klimafjendtlige. Faktisk vil de fleste husstande få flere penge
-              end de vil skulle bruge på prisstigningen af forurenende varer.
+              Pengene kan tilbageføres på mange måder. Det kunne være gennem den grønne check, gennem lavere skatter og afgifter, eller et højere personfradrag. Kraka og Deloitte har for nyligt anbefalet, at man hovedsageligt sænker de eksisterende energiafgifter. Nogle foretrækker et højere personfradrag, da det ikke går ud over incitamentet til at være i job. Fordi det samlede afgiftsprovenu falder over tiden, da vores udledninger falder, betyder det dog, at personfradraget skal justeres ned over tid - noget der kan gøre den grønne check mere attraktiv. 
             </P>
           </div>
           <div className="md:w-1/2 md:pr-6">
@@ -250,43 +186,16 @@ const ThePlan = () => {
         <div className="w-full max-w-5xl mx-auto md:flex items-center">
           <div className="md:w-1/2 md:pr-6">
             <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
-              Lad os lade være med at forbyde de sjove sager
+              En løsning, der sikrer, at virksomheder ikke flytter udledninger og jobs til udlandet
             </h2>
             <P>
-              Lad os undgå, at staten tager vores yndlingslegetøj væk fra os. De
-              røde bøffer, det billige Ryanair-fly til Tenerife, den kæmpe Audi
-              og Rema1000-plastikposen. Disse skal stadigvæk være tilgængelige -
-              men lad os sikre, at forureningen er betalt for.
+              Det er også vigtigt, at udledninger, jobs og konkurrenceevnen ikke blot flytter uden for vores grænser. Det er vigtigt at påpege, at OECD i 2016 viste, at strenge miljølove ikke påvirker eksporten negativt. Et nyere studie viser også, at højere klimaafgifter ikke påvirker væksten. 
             </P>
             <P>
-              Prisen for alle disse ting vil afhænge af, hvad det koster at
-              forurene. I dag er prisen på CO2 allerede ca. 200 kroner per ton.
-              Men vi ved, at det koster hele 7.000 kroner at fjerne CO2 direkte
-              fra luften med maskiner. Heldigvis behøver prisen per CO2-ton ikke
-              være lige så høj for at se de ønskede resultater, selvom der er
-              nogen uenighed om den optimale pris. Ifølge De Økonomiske Råd
-              burde den ligge omkring 563 kroner per ton CO2. Forskere fra
-              Stanford peger dog på, at prisen burde være 1.600 kroner. Her kan
-              du se, hvordan forskellige forurenings-priser vil påvirke prisen
-              for nogle almindelige varer.
+              Der er dog forståelse for, at det kan være svært at formidle budskabet til virksomheder. Ligesom skatteministeren Morten Bødskov forklarer i hans svar til Skatteudvalget d. 8. januar 2020, er der to nemme måder at sørge for, at man undgår det: at justere afgiften prper sektor eller ved at give et højere bundfradrag til virksomheder, der er særlige udsatte for international konkurrence. Et højere bundfradrag vil sørge for, at de gennem klimaafgiften får incitamentet til at reducere deres klimaaftryk, mens deres bundlinje bliver beskyttet. Det højere bundfradrag vil være baseret på den enkelte virksomheds historiske udledninger, ligesom vi har erfaring med fra det europæiske kvotesystem. 
             </P>
             <P>
-              Prisen på forurening behøver ikke starte på det højeste niveau. I
-              stedet skal den stige støt. Det gør at alle kan ændre deres adfærd
-              med forståelse for, hvad fremtiden bringer. Selv de største
-              klimasyndere bør have lidt tid til at blive klimavenlige.
-            </P>
-            <P>
-              At have en pris på forurening er faktisk et meget billigere tiltag
-              end når politikere vælger specifikke forbud eller rabatter. Når
-              man forbyder ting, ender det ofte med, at det kun er folk, som bor
-              på Strandvejen, der har råd til alternativerne, der så er
-              tilgængelige. Tænk blot på hvem der ville kunne købe en bil, hvis
-              benzinbiler blev forbudt. Hertil kommer, at politikerne er
-              elendige gamblere. Når de en gang imellem vælger at give ekstra
-              støtte til enkelte varer, ender de ofte med at give penge til
-              ting, der var cool for alt for mange år siden. Lad os lade være
-              med det.
+              Fordi bundfradraget ikke vil stige, mens klimaafgiften gør, får virksomhederne et incitament til at omstille sig. Virksomheder, der i forvejen er omfattet af det europæiske kvotesystem, kunne få fuld fradrag for kvoteprisen, de betaler, for at undgå dobbeltbeskatning. 
             </P>
           </div>
           <div className="md:w-1/2 md:pl-6">
@@ -298,73 +207,17 @@ const ThePlan = () => {
         <div className="w-full max-w-5xl mx-auto md:flex flex-row-reverse items-center">
           <div className="md:w-1/2 md:pl-6">
             <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
-              En god deal for virksomheder
+              Løsningen har allerede mange støtter i Danmark
             </h2>
             <P>
-              Den bedste klimaplan er no bueno hvis jobbene smutter til Polen
-              eller Kina. Den gode nyhed er, at danske virksomheder kommer til
-              at elske den bedste klimaplan. Ikke blot fordi det er den
-              billigste løsning, men også fordi den gør det nemt for dem at lave
-              de rigtige investeringer i dag, fordi de ved, hvordan priserne
-              kommer til at ændre sig i fremtiden. Virksomheder elsker
-              forudsigelighed.
+              En variant af den ovenstående løsning er blevet foreslået af Radikale Venstre i januar 2020. I de efterfølgende dage fik forslaget støtte fra Politiken, Ekstra Bladet, Børsen, Information, og Berlingske. Det fik også støtte fra CEPOS og AE-rådet, fra Kraka tidligere, og fra nogle af de meste prominente økonomere i Danmark. En gennemgribende rapport fra Kraka og Deloitte udgivet i februar viser, hvordan en dansk klimaafgift kan skrues sammen for at opnå målene.
             </P>
             <P>
-              Arbejdspladserne flytter sandsynligvis ikke til Gdansk eller
-              Shenzhen: Paris-aftalen og EUs ambitioner kommer til at tvinge
-              alle lande til at reducere deres udledninger til 0 inden 2050. Det
-              betyder, at andre lande faktisk heller ikke er interesseret i, at
-              der kommer forurenende forretninger til deres land. Ligegyldigt
-              hvor de flytter hen bliver virksomheder tvunget til at blive
-              klimaneutrale lige om hjørnet.
-            </P>
-            <P>
-              Nogle industrier kan dog blive udfordret på kort sigt. Der er
-              heldigvis mange muligheder for at sørge for, at de ikke bliver
-              mindre konkurrencedygtige af den bedste klimaplan.
-            </P>
-            <P>
-              En fornuftig måde vil være at justere lidt på prisen for at
-              forurene for nogle sektorer, der på grund af konkurrencen vil have
-              mest at tabe. En anden måde kunne være at give penge til
-              virksomheder der sælger mange varer til lande, hvor klimaet endnu
-              ikke er deres største bekymring (en bundfradrag), så deres varer
-              fortsat kan sælges i andre lande uden problemer.
-            </P>
-            <P>
-              Sidst men ikke mindst: hvis vores egne virksomheder bliver
-              grønnere, betyder det, at de bliver konkurrencedygtige i en
-              verden, der fremover gerne skal købe flere klimavenlige varer. Det
-              kan altså sætte skub i eksporten.
+              Selvom klimaafgifter ikke kan levere 70% reduktion i udledninger alene, så kan de 70% ikke realistisk nås uden. De ovenstående forslag sørger for, at klimaafgifter ikke svækker den danske konkurrenceevne, eller at den tunge ende vender nedad. 
             </P>
           </div>
           <div className="md:w-1/2 md:pr-6">
             <Article logo="information.svg" title="Lorem ipsum article" />
-            <Article logo="information.svg" title="Lorem ipsum article" />
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="w-full max-w-5xl mx-auto md:flex items-center">
-          <div className="md:w-1/2 md:pr-6">
-            <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
-              Støt verdens bedste klimaplan
-            </h2>
-            <P>
-              Nu er du nået til det sted, hvor du skal få fingeren ud så vi kan
-              sætte den bedste klimaplan i gang! Saml al din klimaangst, al din
-              like-iver, følg dit nytårsforsæt og skriv under på
-              borgerforslaget.
-            </P>
-            <P>
-              Når du er færdig skal du lige komme tilbage og dele den med din
-              bedstemor, din klimaskeptiske onkel og din hippie-veninde. Det er
-              nu, det gælder. Lad os få den bedste klimaplan i gang så vi alle
-              kan læne os tilbage og fokusere på de mange andre ting, vi hellere
-              vil bruge vores tid på.
-            </P>
-          </div>
-          <div className="md:w-1/2 md:pl-6">
             <Article logo="information.svg" title="Lorem ipsum article" />
           </div>
         </div>
