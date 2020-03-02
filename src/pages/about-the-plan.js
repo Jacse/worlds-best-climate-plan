@@ -4,12 +4,14 @@ import { FaExternalLinkAlt, FaPlus, FaMinus } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+import InteractiveBox from '../components/InteractiveBox/InteractiveBox'
+
 const P = ({ children }) => (
   <p className="my-4 leading-loose text-gray-800">{children}</p>
 );
 
-const Article = ({ logo, url, title }) => (
-  <div className="hover-translate w-full rounded-lg bg-white cursor-pointer text-gray-600 hover:text-gray-700 shadow-xl my-8">
+const Article = ({logo, url, title }) => (
+  <div className={`hover-translate w-full rounded-lg bg-white cursor-pointer text-gray-600 hover:text-gray-700 shadow-xl `}>
     <div className="p-6 flex items-center">
       <img className="h-6 opacity-50" src={`/media/${logo}`} />
       <div className="ml-auto text-sm uppercase tracking-wide text-gray-600">
@@ -17,6 +19,11 @@ const Article = ({ logo, url, title }) => (
       </div>
     </div>
     <h4 className="text-lg px-6 pb-6 text-gray-800">{title}</h4>
+    <p className="text-center">'
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      Danmarks politikere er blevet enige: Danmark skal reducere sine udledninger med 70 pct. ift. niveauet i 1990.
+      </p>
     <div className="w-full bg-gray-200 p-3 flex items-center justify-center">
       <FaExternalLinkAlt />
       <div className="ml-3">Læs mere</div>
@@ -147,7 +154,10 @@ const ThePlan = () => {
             </P>
           </div>
           <div className="md:w-1/2 md:pl-6">
-            <Article logo="information.svg" title="Lorem ipsum article" />
+            <InteractiveBox>
+              <Article link="link_1" logo="information.svg" title="Slide 1" />
+              <Article link="link_2" logo="information.svg" title="Slide 2" />
+            </InteractiveBox>
           </div>
         </div>
       </section>
@@ -168,7 +178,7 @@ const ThePlan = () => {
             </P>
           </div>
           <div className="md:w-1/2 md:pr-6">
-            <Article logo="information.svg" title="Lorem ipsum article" />
+            <Article logo="information.svg" title="Lorem ipsum article" text=""/>
           </div>
         </div>
       </section>
