@@ -80,18 +80,8 @@ body {
   box-shadow: none;
 }
 
-
 /* global spin animation - used by form on submit */
 @keyframes spin {
   from { transform:rotate(0deg); }
   to { transform:rotate(359deg); }
-}
-
-
-.highlight-link{
-  background-color:
-#1d9a6c;
-  color:
-  #fff;
-  padding: 2px 3px;
 }
