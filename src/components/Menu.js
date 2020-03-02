@@ -13,12 +13,28 @@ const pages = [
 
 const Menu = ({ transparent = false }) => {
   const [isSticky, setSticky] = useState(false);
+  const [backers, setBackers] = useState(null);
 
   const openModal = useContext(ModalContext);
 
   const handleScroll = () => {
     setSticky(window.scrollY > 50);
   };
+
+  // Fetch number of backers
+  if (!backers) {
+    const endpoint = 'https://us-central1-boxwood-academy-251913.cloudfunctions.net/scrapeSignatures';
+    fetch(endpoint, {
+      // mode: 'cors',
+    })
+      .then(res => res.json())
+      .then(res => {
+        if (res.backers) {
+          setBackers(res.backers.toString()
+            .replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
+        }
+      });
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -55,7 +71,18 @@ const Menu = ({ transparent = false }) => {
             {title}
           </Link>
         ))}
-        <Button secondary className="mr-4 md:mr-8 ml-auto" onClick={openModal}>
+        {backers !== null && (
+          <p className="text-sand-100 m-6 hidden md:block mr-8 ml-auto">
+            {backers} danskere har allerede skrevet under
+          </p>
+        )}
+        <Button
+          secondary
+          onClick={openModal}
+          className={classNames('mr-4 md:mr-8 ml-auto', {
+            'md:ml-0': backers !== null,
+          })}
+        >
           Skriv&nbsp;under&nbsp;🌱
         </Button>
       </div>
