@@ -38,7 +38,7 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
   return (
     <section
       className={classNames(
-        'mx-auto max-w-4xl p-8 py-16 bg-sand-100',
+        'mx-auto max-w-4xl p-8 py-16 rounded-sm bg-sand-100',
         className,
         {
           'h-full overflow-auto sm:h-auto': modal,
@@ -171,12 +171,13 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
                 </React.Fragment>
               )}
               {modal && (
-                <div
-                  className="absolute top-0 right-0 cursor-pointer mt-4 p-5 text-xl sm:m-4"
+                <button
+                  type="button"
+                  className="absolute top-0 right-0 cursor-pointer text-xl text-sand-700 hover:text-sand-800 transition ease-in-out duration-200 m-6 sm:m-8"
                   onClick={closeModal}
                 >
                   <FaTimes />
-                </div>
+                </button>
               )}
               {modal && (
                 <span

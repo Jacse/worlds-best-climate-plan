@@ -16,7 +16,7 @@ const Index = () => {
       <SEO title="Verdens Bedste klimaplan" description="" />
       {/* Hero and letter */}
       <section
-        className="pt-20 relative mb-64 bg-cover bg-green-900"
+        className="pt-24 relative mb-64 bg-cover bg-green-900"
         style={{
           backgroundImage: 'url(../../background.png)',
         }}
@@ -49,13 +49,17 @@ const Index = () => {
         </div>
       </section>
       {/* Sådan virker det */}
-      <section className="mx-auto max-w-2xl px-8 pt-12">
-        <HowItWorks />
-      </section>
+      <div className="pt-16 px-8">
+        <section className="mx-auto max-w-3xl">
+          <HowItWorks />
+        </section>
+      </div>
       <SupportedBy />
-      <section className="mx-auto max-w-4xl px-8 pt-12">
-        <MentionedIn />
-      </section>
+      <div className="px-8">
+        <section className="mx-auto max-w-4xl pt-12">
+          <MentionedIn />
+        </section>
+      </div>
       {/* Support form */}
       <Form className="mb-16" />
     </Layout>

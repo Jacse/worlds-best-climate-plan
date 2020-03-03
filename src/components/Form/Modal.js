@@ -19,7 +19,7 @@ const ModalProvider = ({ children }) => {
           />
           <div
             onClick={() => setIsModalOpen(false)}
-            className="absolute inset-0 bg-black opacity-50 cursor-pointer"
+            className="absolute inset-0 bg-green-900 opacity-50 cursor-pointer"
           ></div>
         </div>
       )}

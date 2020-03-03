@@ -46,7 +46,7 @@
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  @appy text-green-900;
+  @apply text-green-900;
 }
 
 * {
