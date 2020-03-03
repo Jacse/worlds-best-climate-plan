@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const supporters = ['350.svg', 'ccl.png', 'dgs.png', 'ungeklimaraadet.png'];
 
 const MentionedIn = () => (
-  <section className="sm:mx-12 my-24 text-white px-8 py-8 sm:py-32 bg-green-800">
+  <section className="sm:mx-12 my-24 text-white px-8 py-8 sm:py-32 bg-green-800 rounded-sm">
     <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:px-8 lg:px-32">
       <div className="sm:w-1/2 sm:mr-8 lg:mr-8 xl:mr-16 text-center">
         {supporters.map(s => (

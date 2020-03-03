@@ -1,4 +1,5 @@
 import React from 'react';
+import useBreakpoint from '../hooks/useBreakpoint';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Form from '../components/Form/Form';
@@ -11,6 +12,7 @@ import ShareButtons from '../components/ShareButtons';
 import SupportedBy from '../components/SupportedBy';
 
 const Index = () => {
+  const breakpoint = useBreakpoint();
   return (
     <Layout transparentMenu>
       <SEO title="Verdens Bedste klimaplan" description="" />
@@ -19,6 +21,12 @@ const Index = () => {
         className="pt-24 relative mb-64 bg-cover bg-green-900"
         style={{
           backgroundImage: 'url(../../background.png)',
+          backgroundPosition: breakpoint.sm
+            ? '50% -80px'
+            : breakpoint.xs
+            ? '50% -120px'
+            : '50% -160px',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <div className="relative mx-auto md:pt-32 p-8">
