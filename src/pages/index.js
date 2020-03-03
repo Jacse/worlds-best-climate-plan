@@ -57,7 +57,7 @@ const Index = () => {
         <MentionedIn />
       </section>
       {/* Support form */}
-      <Form className="mb-12" />
+      <Form className="mb-16" />
     </Layout>
   );
 };

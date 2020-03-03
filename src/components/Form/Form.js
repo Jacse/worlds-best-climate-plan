@@ -37,9 +37,13 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
   const [error, setError] = useState(false);
   return (
     <section
-      className={classNames('mx-auto max-w-4xl p-8 bg-sand-100', className, {
-        'h-full overflow-auto sm:h-auto': modal,
-      })}
+      className={classNames(
+        'mx-auto max-w-4xl p-8 py-16 bg-sand-100',
+        className,
+        {
+          'h-full overflow-auto sm:h-auto': modal,
+        }
+      )}
     >
       <div className="mx-auto max-w-lg">
         <Formik
@@ -139,7 +143,7 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
                       label="Efternavn"
                     />
                   </div>
-                  <div className="sm:flex sm:-mx-2">
+                  <div className="sm:flex sm:-mx-2 mb-8">
                     <FormField
                       className="w-full sm:w-2/3 sm:mx-2"
                       name="email"
@@ -160,7 +164,7 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
                       />
                     </div>
                   ) : (
-                    <Button type="submit" className="block sm:mx-auto">
+                    <Button type="submit" large className="block sm:mx-auto">
                       Skriv dig op 📮
                     </Button>
                   )}

@@ -11,18 +11,20 @@ const Button = ({
   <button
     {...props}
     className={classNames(
-      'font-bold py-2 px-6 rounded-sm transition ease-in-out duration-200',
+      'font-bold py-2 px-4 rounded-sm transition ease-in-out duration-200',
       {
         'px-8 py-3 text-xl': large,
       },
       {
-        'text-green-900 bg-sand-100': secondary,
-        'text-white bg-green-500 hover:bg-green-400': !secondary,
+        'text-green-900 bg-sand-200 hover:bg-sand-300': secondary,
+        'text-white bg-green-500 hover:bg-green-600': !secondary,
       },
       className
     )}
   >
-    {children}
+    <span className="inline-block" style={{ transform: 'translateY(1px)' }}>
+      {children}
+    </span>
   </button>
 );
 
