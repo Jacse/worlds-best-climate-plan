@@ -34,7 +34,7 @@ const Index = () => {
             Støt en retfærdig klimaafgift
           </h1>
           <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
-            Danmark skal have en afgift på varer der er klimabelastende.
+            Danmark skal have en afgift på klimabelastende varer.
             Forureneren betaler, men uden at det rammer socialt skævt, eller at
             alle vores udledninger flyttes til udlandet.
           </p>
