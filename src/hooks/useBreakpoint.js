@@ -1,31 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
-export default () => {
-  const [width, setWidth] = useState();
-  const getWidth = () => {
-    setWidth(window.innerWidth);
+const debounce = (ms, fn) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      fn(...args);
+    }, ms);
   };
+};
+
+export default () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const getWidth = debounce(200, () => {
+    setWidth(window.innerWidth);
+  });
   useEffect(() => {
-    window.addEventListener('resize', getWidth());
+    window.addEventListener('resize', getWidth);
     return () => {
-      window.removeEventListener('resize', getWidth());
+      window.removeEventListener('resize', getWidth);
     };
   });
-  let breakpoint = {};
-  if (width >= 1280) {
-    breakpoint.xl = true;
-  }
-  if (width >= 1024) {
-    breakpoint.lg = true;
-  }
-  if (width >= 768) {
-    breakpoint.md = true;
-  }
-  if (width >= 640) {
-    breakpoint.sm = true;
-  }
-  if (width >= 420) {
-    breakpoint.xs = true;
-  }
-  return breakpoint;
+  return {
+    xl: width >= 1280,
+    lg: width >= 1024,
+    md: width >= 768,
+    sm: width >= 640,
+    xs: width >= 420,
+  };
 };
