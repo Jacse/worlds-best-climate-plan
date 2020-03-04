@@ -11,7 +11,7 @@ const P = ({ children }) => (
 const ThePlan = () => {
   return (
     <Layout>
-      <SEO title="Lidt mere om planen" description="" />
+      <SEO title="Verdens Bedste Klimaplan" description="Læs her hvorfor Verdens Bedste Klimaplan giver super god mening." />
       <div className="max-w-xl mx-auto text-justify pt-16 px-6">
         <FootNoteContainer>
           <h1 className="text-2xl my-6 font-bold">Lidt mere om planen</h1>
