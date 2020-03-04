@@ -78,6 +78,11 @@ body {
   max-width: 15rem;
 }
 
+/* Jacob's hacks to get shit done ¯\_(ツ)_/¯ */
+.footnote:hover .article {
+  @apply bg-gray-200;
+}
+
 /* Disable default browser outlines */
 *:focus,
 *:invalid {
