@@ -1,4 +1,5 @@
 import React from 'react';
+import useBreakpoint from '../hooks/useBreakpoint';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Form from '../components/Form/Form';
@@ -11,14 +12,21 @@ import ShareButtons from '../components/ShareButtons';
 import SupportedBy from '../components/SupportedBy';
 
 const Index = () => {
+  const breakpoint = useBreakpoint();
   return (
     <Layout transparentMenu>
       <SEO title="Verdens Bedste klimaplan" description="" />
       {/* Hero and letter */}
       <section
-        className="pt-20 relative mb-64 bg-cover bg-green-900"
+        className="pt-24 relative mb-64 bg-cover bg-green-900"
         style={{
           backgroundImage: 'url(../../background.png)',
+          backgroundPosition: breakpoint.sm
+            ? '50% -80px'
+            : breakpoint.xs
+            ? '50% -120px'
+            : '50% -160px',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <div className="relative mx-auto md:pt-32 p-8">
@@ -26,7 +34,7 @@ const Index = () => {
             Støt en retfærdig klimaafgift
           </h1>
           <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
-            Danmark skal have en afgift på varer der er klimabelastende.
+            Danmark skal have en afgift på klimabelastende varer.
             Forureneren betaler, men uden at det rammer socialt skævt, eller at
             alle vores udledninger flyttes til udlandet.
           </p>
@@ -49,15 +57,19 @@ const Index = () => {
         </div>
       </section>
       {/* Sådan virker det */}
-      <section className="mx-auto max-w-2xl px-8 pt-12">
-        <HowItWorks />
-      </section>
+      <div className="pt-16 px-8">
+        <section className="mx-auto max-w-3xl">
+          <HowItWorks />
+        </section>
+      </div>
       <SupportedBy />
-      <section className="mx-auto max-w-4xl px-8 pt-12">
-        <MentionedIn />
-      </section>
+      <div className="px-8">
+        <section className="mx-auto max-w-4xl pt-12">
+          <MentionedIn />
+        </section>
+      </div>
       {/* Support form */}
-      <Form className="mb-12" />
+      <Form className="mb-16" />
     </Layout>
   );
 };

@@ -49,7 +49,7 @@ const Menu = ({ transparent = false }) => {
         className={classNames(
           'fixed w-full z-10 flex items-center transition-colors duration-300',
           {
-            'bg-green-800': !transparent || isSticky,
+            'bg-green-700': !transparent || isSticky,
           }
         )}
       >
@@ -63,7 +63,7 @@ const Menu = ({ transparent = false }) => {
         {pages.map(([href, title]) => (
           <Link
             activeClassName={href !== '/' ? 'menu-item-active' : null}
-            className="menu-item cursor-pointer m-6 text-sand-100 font-bold hidden md:block"
+            className="menu-item cursor-pointer m-6 text-sand-200 font-bold hidden md:block"
             to={href}
             key={href}
           >

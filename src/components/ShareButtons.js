@@ -42,7 +42,7 @@ const ShareButtons = () => (
         target="_blank"
         rel="noopener noreferrer"
         key={share.href}
-        className="flex items-center mx-4 my-2 sm:my-4 opacity-75 hover:opacity-100 hover:underline"
+        className="flex items-center text-sand-200 mx-4 my-2 sm:my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"
       >
         <share.icon
           style={{
