@@ -12,7 +12,9 @@ const debounce = (ms, fn) => {
 };
 
 export default () => {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(
+    (typeof window !== 'undefined' && window.innerWidth) || 0
+  );
   const getWidth = debounce(150, () => {
     setWidth(window.innerWidth);
   });
