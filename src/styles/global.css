@@ -78,6 +78,11 @@ body {
   max-width: 15rem;
 }
 
+/* Jacob's hacks to get shit done ¯\_(ツ)_/¯ */
+.footnote:hover .article {
+  @apply bg-gray-200;
+}
+
 /* Disable default browser outlines */
 *:focus,
 *:invalid {
@@ -87,16 +92,6 @@ body {
 
 /* global spin animation - used by form on submit */
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-.highlight-link {
-  background-color: #1d9a6c;
-  color: #fff;
-  padding: 2px 3px;
+  from { transform:rotate(0deg); }
+  to { transform:rotate(359deg); }
 }

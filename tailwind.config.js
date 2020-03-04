@@ -1,5 +1,11 @@
 module.exports = {
   theme: {
+    inset: {
+      auto: 'auto',
+      '0': 0,
+      '1/6': '16.6667%',
+      '100': '100%',
+    },
     colors: {
       green: {
         900: '#032120',
