@@ -205,7 +205,7 @@ const ThePlan = () => {
             >
               Kraka og Deloitte har beregnet, at en afgift på 1250 kroner per
               ton CO2-ækvivalenter vil sandsynligvis være tilstrækkelig til at
-              nå 70% pct. målet i 2030.
+              nå 70 pct. målet i 2030.
             </FootNote>{' '}
           </P>
         </FootNoteContainer>
