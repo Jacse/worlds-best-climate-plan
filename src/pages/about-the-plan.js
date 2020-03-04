@@ -278,7 +278,6 @@ const ThePlan = () => {
               url="https://journals.sagepub.com/doi/full/10.1177/2378023119898326"
               from="Daniel Driscoll, University of California, San Diego"
               date="7. januar 2020"
-              left
             >
               at højere klimaafgifter ikke påvirker væksten</FootNote>{' '}. I takt med at flere
               lande har reduktionsmål, bliver det meget usandsynligt, at udflytning
@@ -298,7 +297,6 @@ const ThePlan = () => {
               url="https://www.ft.dk/samling/20191/almdel/SAU/spm/192/svar/1624014/index.htm"
               from="Skatteministeren Morten Bødskov"
               date="10. januar 2020"
-              left
             >
                skatteministeren Morten Bødskov
             forklarer i hans svar til Skatteudvalget d. 8. januar 2020</FootNote>{' '}, er der
@@ -337,28 +335,24 @@ const ThePlan = () => {
               url="https://politiken.dk/debat/ledere/art7590141/Ja-%C3%98stergaard.-Det-skal-v%C3%A6re-dyrere-at-skade-klimaet"
               from="Politiken"
               date="8. januar 2020"
-              left
             > Politiken</FootNote>{' '}, {' '}
             <FootNote
               title="Grøn skat"
               url="https://ekstrabladet.dk/nyheder/lederen/groen-skat/7943974"
               from="Ekstra Bladet"
               date="6. januar 2020"
-              left
             > Ekstra Bladet</FootNote>{' '}, {' '}
             <FootNote
               title="Børsen mener: Den nødvendige grønne skattereform"
               url="https://borsen.dk/nyheder/opinion/boersen-mener-den-noedvendige-groenne-skattereform-4pmlg"
               from="Børsen"
               date="6. januar 2020"
-              left
             > Børsen</FootNote>{' '}, {' '}
             <FootNote
               title="Ja tak til en grøn skattereform, der belønner den klimabevidste forbruger"
               url="https://www.information.dk/indland/leder/2020/01/ja-tak-groen-skattereform-beloenner-klimabevidste-forbruger"
               from="Information"
               date="7. januar 2020"
-              left
             > Information</FootNote>{' '},
             og {' '}
             <FootNote
@@ -366,7 +360,6 @@ const ThePlan = () => {
               url="https://www.berlingske.dk/ledere/fint-med-groenne-skatter-ikke-hoejere-skatter-morten-oestergaard"
               from="Berlingske"
               date="7. januar 2020"
-              left
             > Berlingske</FootNote>{' '}. Det fik også støtte fra {' '}
             <FootNote
               title="Blå og røde økonomer er enige: CO2-afgift vil være godt redskab"
