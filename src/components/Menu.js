@@ -47,7 +47,7 @@ const Menu = ({ transparent = false }) => {
     <div>
       <div
         className={classNames(
-          'fixed w-full z-10 flex items-center transition-colors duration-300',
+          'fixed w-full z-30 flex items-center transition-colors duration-300',
           {
             'bg-green-700': !transparent || isSticky,
           }

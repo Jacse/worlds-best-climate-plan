@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import FootNote from '../components/FootNote';
+import FootNoteContainer from '../components/FootNote/FootNoteContainer';
+import FootNote from '../components/FootNote/FootNote';
 import SEO from '../components/SEO';
 
 const P = ({ children }) => (
@@ -12,7 +13,7 @@ const ThePlan = () => {
     <Layout>
       <SEO title="Lidt mere om planen" description="" />
       <div className="max-w-xl mx-auto text-justify pt-16 px-6">
-        <section>
+        <FootNoteContainer>
           <h1 className="text-2xl my-6 font-bold">Lidt mere om planen</h1>
           <P>
             Klimakrisen er et globalt problem.{' '}
@@ -65,8 +66,8 @@ const ThePlan = () => {
             </FootNote>
           </P>
           <P>Det er verdens bedste klimaplan.</P>
-        </section>
-        <section>
+        </FootNoteContainer>
+        <FootNoteContainer>
           <h2 className="text-lg my-6 font-bold">
             Lad forureneren betale en støt stigende og ensartet klimaafgift
           </h2>
@@ -110,8 +111,8 @@ const ThePlan = () => {
               nå 70% målet i 2030.
             </FootNote>
           </P>
-        </section>
-        <section>
+        </FootNoteContainer>
+        <FootNoteContainer>
           <img className="block mx-auto my-8" src="/how-it-works/loving.svg" />
           <h2 className="text-lg my-6 font-bold">
             En løsning, der sikrer den sociale balance
@@ -161,8 +162,8 @@ const ThePlan = () => {
             personfradraget skal justeres ned over tid - noget der kan gøre den
             grønne check mere attraktiv.
           </P>
-        </section>
-        <section>
+        </FootNoteContainer>
+        <FootNoteContainer>
           <h2 className="text-lg my-6 font-bold">
             En løsning, der sikrer, at virksomheder ikke flytter udledninger og
             jobs til udlandet
@@ -209,8 +210,8 @@ const ThePlan = () => {
             i forvejen er omfattet af det europæiske kvotesystem, kunne få fuld
             fradrag for kvoteprisen, de betaler, for at undgå dobbeltbeskatning.
           </P>
-        </section>
-        <section>
+        </FootNoteContainer>
+        <FootNoteContainer>
           <h2 className="text-lg my-6 font-bold">
             Løsningen har allerede mange støtter i Danmark
           </h2>
@@ -233,7 +234,7 @@ const ThePlan = () => {
             forslag sørger for, at klimaafgifter ikke svækker den danske
             konkurrenceevne, eller at den tunge ende vender nedad.
           </P>
-        </section>
+        </FootNoteContainer>
       </div>
     </Layout>
   );

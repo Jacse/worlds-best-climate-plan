@@ -11,11 +11,11 @@ const ModalProvider = ({ children }) => {
     <ModalContext.Provider value={openModal}>
       {children}
       {isModalOpen && (
-        <div className="fixed inset-0 z-20 flex items-center justify-center">
+        <div className="fixed inset-0 z-40 flex items-center justify-center">
           <Form
             modal
             closeModal={() => setIsModalOpen(false)}
-            className="relative z-30 flex-1"
+            className="relative z-50 flex-1"
           />
           <div
             onClick={() => setIsModalOpen(false)}
