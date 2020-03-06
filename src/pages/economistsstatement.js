@@ -59,10 +59,9 @@ const EconomistsStatement = () => {
           </P>
           <P>
             V. For at maksimere en stigende kulstofafgifts retfærdighed og
-            politiske levedygtighed skal alle indtægter returneres direkte til
-            danske borgere gennem lige rabatter. De fleste familier, inklusive
-            de mest sårbare, vil drage økonomisk fordel ved at modtage mere i
-            "kulstofdividende", end de betaler for øgede priser.
+            politiske levedygtighed skal indtægter returneres til
+            danske borgere gennem afgifts- eller skatterabatter. De fleste familier, inklusive
+            de mest sårbare, vil drage økonomisk fordel ved at modtage mere i rabatter, end de betaler for øgede priser.
           </P>
           <h2 className="text-2xl my-3 uppercase font-bold text-gray-800 tracking-wide">
             English
@@ -107,10 +106,10 @@ const EconomistsStatement = () => {
           </P>
           <P>
             V. To maximize the fairness and political viability of a rising
-            carbon tax, all the revenue should be returned directly to Danish
-            citizens through equal rebates. The majority of families, including
+            carbon tax, the revenue should be returned to Danish
+            citizens through tax rebates. The majority of families, including
             the most vulnerable, will benefit financially by receiving more in
-            “carbon dividends” than they pay in increased energy prices.
+            reduced taxes than they pay in increased prices.
           </P>
           <div style={{ textAlign: 'center' }}>
             <iframe
