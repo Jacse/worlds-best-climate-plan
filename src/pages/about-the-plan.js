@@ -266,9 +266,7 @@ const ThePlan = () => {
             Modellen er smart, fordi den gør klimavenlige produkter og ydelser
             relativt billigere end før: det gør at kunder, altså virksomheder og
             forbrugere, får et større incitament til at købe disse i stedet for
-            varer, der er klimabelastende. Klimaafgiften giver også et
-            incitament til at innovere og skabe nye, klimavenlige løsninger: de
-            kan pludselig være rentable. Klimaafgiften giver også et incitament
+            varer, der er klimabelastende. Klimaafgiften giver også et incitament
             til at innovere og skabe nye klimavenlige løsninger: De kan
             pludselig være rentable. Fordi prisen er støt stigende, giver det
             også mulighed til alle for at omstille sig - også dem, som i dag
