@@ -34,9 +34,9 @@ const Index = () => {
             Støt en retfærdig klimaafgift
           </h1>
           <p className="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
-            Danmark skal have en afgift på klimabelastende varer.
-            Forureneren betaler, men uden at det rammer socialt skævt, eller at
-            alle vores udledninger flyttes til udlandet.
+            Danmark skal have en afgift på klimabelastende varer. Forureneren
+            betaler, men uden at det rammer socialt skævt, eller at alle vores
+            udledninger flyttes til udlandet.
           </p>
           <ModalContext.Consumer>
             {openModal => (
@@ -45,7 +45,9 @@ const Index = () => {
                 large
                 className="block mx-auto my-8 sm:my-16"
               >
-                Skriv under nu&nbsp;&nbsp;✍️
+                Skriv under
+                <span className="hidden sm:inline"> på borgerforslaget</span>
+                &nbsp;&nbsp;✍️
               </Button>
             )}
           </ModalContext.Consumer>
