@@ -72,9 +72,9 @@ const FootNote = ({ children, url, ...props }) => {
 
   const pos = boundingRect(ref);
   const left = !breakpoint.md
-    ? (window ? window.innerWidth : 0) / 2
+    ? (typeof window !== 'undefined' ? window.innerWidth : 0) / 2
     : pos.left + pos.width / 2;
-  const top = pos.top + (window ? window.scrollY : 0);
+  const top = pos.top + (typeof window !== 'undefined' ? window.scrollY : 0);
 
   return (
     <React.Fragment>
