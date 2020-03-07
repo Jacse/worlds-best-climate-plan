@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import FootNoteContainer from '../components/FootNote/FootNoteContainer';
-import FootNote from '../components/FootNote/FootNote';
+import FootNoteContainer, {
+  FootNoteItem as FootNote,
+} from '../components/FootNote';
 import SEO from '../components/SEO';
 
 const P = ({ children }) => (
@@ -27,13 +28,14 @@ const ThePlan = () => {
               date="2. marts 2020"
             >
               Fordi Danmark har verdens 7. højeste klimaaftryk per indbygger
-            </FootNote>{' '}
-            ,skal vi være et grønt foregangsland, så vi kan inspirere og påvirke
-            resten af verden. Vi skal nå de 70 pct. men så omkostningseffektivt
-            som muligt for at tage hensyn til vores velfærd, lighed, dansk
-            konkurrenceevne og jobs. Vores klimahandlingsplaner skal ikke
-            unødigt flytte vores udledninger uden for vores grænser, og det
-            danske erhvervsliv skal stadig være konkurrencedygtig.
+            </FootNote>
+            , skal vi være et grønt foregangsland, så vi kan inspirere og
+            påvirke resten af verden. Vi skal nå de 70 pct. men så
+            omkostningseffektivt som muligt for at tage hensyn til vores
+            velfærd, lighed, dansk konkurrenceevne og jobs. Vores
+            klimahandlingsplaner skal ikke unødigt flytte vores udledninger uden
+            for vores grænser, og det danske erhvervsliv skal stadig være
+            konkurrencedygtig.
           </P>
           <P>
             For at nå disse mål foreslår vi at bruge en løsning, der bygger på
@@ -58,10 +60,9 @@ const ThePlan = () => {
               url="https://www.econstatement.org/"
               from="Climate Leadership Council"
               date="16. januar 2019"
-              left
             >
               støttes af 27 Nobelprismodtagere i økonomi og over 3500 økonomer.
-            </FootNote>{' '}
+            </FootNote>
           </P>
           <P>Det er verdens bedste klimaplan.</P>
 
@@ -69,50 +70,54 @@ const ThePlan = () => {
             Lad forureneren betale en støt stigende og ensartet klimaafgift
           </h2>
           <P>
-            {' '}
             <FootNote
               title="New U.N. Climate Report Says Put a High Price on Carbon"
               url="https://www.nytimes.com/2018/10/08/climate/carbon-tax-united-nations-report-nordhaus.html"
               from="The New York Times"
               date="8. oktober 2018"
+              img="/about-the-plan/newyorktimes.svg"
             >
               FNs klimapanel IPCC
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="A carbon tax is ‘single most powerful’ way to combat climate change, IMF says"
               url="https://www.cnbc.com/2019/10/10/carbon-tax-most-powerful-way-to-combat-climate-change-imf.html"
               from="CNBC"
               date="10. oktober 2019"
+              img="/about-the-plan/cnbc.svg"
             >
               Den Internationale Valutafond
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Pricing Carbon"
               url="https://www.worldbank.org/en/programs/pricing-carbon"
               from="The World Bank"
+              img="/about-the-plan/theworldbank.svg"
             >
               Verdensbanken
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Few countries are pricing carbon high enough to meet climate targets"
               url="http://kraka.org/small_great_nation/en_klimareform_der_sikrer_de_magiske_70_pct"
               from="OECD"
               date="18. september 2018"
+              img="/about-the-plan/kraka.svg"
             >
               OECD
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Macroeconomic and Financial Policies for Climate Change Mitigation: A Review of The Literature"
               url="http://www.nationalbanken.dk/en/publications/Pages/2019/09/Working-paper-Macroeconomic-and-financial-policies-for-climate-change-mitigation-A-review-of-the-literature.aspx"
               from="Danmarks National Bank"
               date="5. september 2020"
+              img="/about-the-plan/nationalbanken.svg"
             >
               Nationalbanken
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Ensartet afgift på tværs af brancher er den billigste klimaløsning"
@@ -121,14 +126,14 @@ const ThePlan = () => {
               date="22. august 2019"
             >
               De Økonomiske Råd
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Analyse: CO2-afgift bør være drivkraft for den grønne omstilling"
               url="https://klimaraadet.dk/da/nyheder/analyse-co2-afgift-boer-vaere-drivkraft-den-groenne-omstilling"
               from="Klimarådet"
               date="17. april 2018"
-              left
+              img="/about-the-plan/klimaraadet.svg"
             >
               Klimarådet
             </FootNote>{' '}
@@ -138,6 +143,7 @@ const ThePlan = () => {
               url="https://academic.oup.com/bioscience/article/70/1/8/5610806"
               from="American Institute of Biological Sciences"
               date="5. november 2020"
+              img="/about-the-plan/americaninstituteofbiologicalsciences.svg"
             >
               11.000 forskere
             </FootNote>{' '}
@@ -152,6 +158,7 @@ const ThePlan = () => {
               url="https://www.aeaweb.org/research/carbon-tax-impact-sweden"
               from="American Economic Association"
               date="15. november 2019"
+              img="/about-the-plan/americaneconomicassociation.svg"
             >
               en klimaafgift langt mere effektiv end hidtil beregnet
             </FootNote>{' '}
@@ -161,6 +168,7 @@ const ThePlan = () => {
               url="https://apnews.com/5388d8a3e1e69b24211a66191f129aba"
               from="AP News"
               date="7. januar 2020"
+              img="/about-the-plan/apnews.svg"
             >
               Tyskland
             </FootNote>{' '}
@@ -170,6 +178,7 @@ const ThePlan = () => {
               url="https://qz.com/1192753/a-carbon-tax-killed-coal-in-the-uk-natural-gas-is-next/"
               from="Quartz"
               date="1. februar 2020"
+              img="/about-the-plan/quartz.svg"
             >
               Storbritannien
             </FootNote>{' '}
@@ -197,6 +206,7 @@ const ThePlan = () => {
               url="https://klimaraadet.dk/da/analyser/effektive-veje-til-drivhusgasreduktion-i-landbruget"
               from="Klimarådet"
               date="15. februar 2016"
+              img="/about-the-plan/klimaraadet.svg"
             >
               Klimarådets foreslået værktøj
             </FootNote>{' '}
@@ -209,12 +219,12 @@ const ThePlan = () => {
               url="http://kraka.org/small_great_nation/en_klimareform_der_sikrer_de_magiske_70_pct"
               from="Kraka"
               date="22. februar 2020"
-              img="http://kraka.org/sites/all/themes/regnar/logo.png"
+              img="/about-the-plan/kraka.svg"
             >
               Kraka og Deloitte har beregnet, at en afgift på 1250 kroner per
               ton CO2-ækvivalenter vil sandsynligvis være tilstrækkelig til at
               nå 70 pct. målet i 2030.
-            </FootNote>{' '}
+            </FootNote>
           </P>
 
           <img className="block mx-auto my-8" src="/how-it-works/loving.svg" />
@@ -245,10 +255,10 @@ const ThePlan = () => {
               url="https://taxfoundation.org/carbon-tax/"
               from="Tax Foundation"
               date="6. november 2019"
-              img="https://taxfoundation.org/wp-content/themes/tf-wp-theme/images/favicons/apple-touch-icon-180x180.png"
+              img="/about-the-plan/taxfoundation.svg"
             >
               i USA
-            </FootNote>{' '}
+            </FootNote>
             , at det kan ende med, at de svageste får flere penge i lommen, end
             de gjorde før, fordi deres forbrug af klimabelastende varer er
             overordnet mindre end hos de velhavende. De har fx. færre biler,
@@ -279,10 +289,11 @@ const ThePlan = () => {
               url="https://www.oecd.org/newsroom/tougher-environmental-laws-do-not-hurt-export-competitiveness.htm"
               from="OECD"
               date="10. marts 2016"
+              img="/about-the-plan/oecd.svg"
             >
               OECD i 2016 viste, at strenge miljølove ikke påvirker eksporten
               negativt
-            </FootNote>{' '}
+            </FootNote>
             . Et nyere studie viser også,{' '}
             <FootNote
               title="Do Carbon Prices Limit Economic Growth? "
@@ -291,7 +302,7 @@ const ThePlan = () => {
               date="7. januar 2020"
             >
               at højere klimaafgifter ikke påvirker væksten
-            </FootNote>{' '}
+            </FootNote>
             . I takt med at flere lande har reduktionsmål, bliver det meget
             usandsynligt, at udflytning af klimabelastende industrier sker. Det
             gælder især i EU, hvor det nye EU-parlament arbejder på at lovgive
@@ -303,15 +314,14 @@ const ThePlan = () => {
             budskabet til virksomheder. Ligesom{' '}
             <FootNote
               title="SAU alm. del - svar på spm. 192 om kommentar til henvendelsen af 13/12-19
-              fra Ungeklimarådet, Martin Collignon vedrørende foretræde om klimaafgifter, 
-              klimabidrag og -bonus, fra skatteministeren"
+              fra Ungeklimarådet"
               url="https://www.ft.dk/samling/20191/almdel/SAU/spm/192/svar/1624014/index.htm"
               from="Skatteministeren Morten Bødskov"
               date="10. januar 2020"
             >
               skatteministeren Morten Bødskov forklarer i hans svar til
               Skatteudvalget d. 8. januar 2020
-            </FootNote>{' '}
+            </FootNote>
             , er der to nemme måder at sørge for, at man undgår det: at justere
             afgiften prper sektor eller ved at give et højere bundfradrag til
             virksomheder, der er særlige udsatte for international konkurrence.
@@ -338,8 +348,8 @@ const ThePlan = () => {
               url="https://politiken.dk/indland/politik/art7586970/Radikale-vil-have-en-gr%C3%B8n-skattereform-s%C3%A5-al-forurening-koster-penge"
               from="Politiken"
               date="3. januar 2020"
+              img="/about-the-plan/politiken.svg"
             >
-              {' '}
               Radikale Venstre
             </FootNote>{' '}
             i januar 2020. I de efterfølgende dage fik forslaget støtte fra{' '}
@@ -348,30 +358,30 @@ const ThePlan = () => {
               url="https://politiken.dk/debat/ledere/art7590141/Ja-%C3%98stergaard.-Det-skal-v%C3%A6re-dyrere-at-skade-klimaet"
               from="Politiken"
               date="8. januar 2020"
+              img="/about-the-plan/politiken.svg"
             >
-              {' '}
               Politiken
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Grøn skat"
               url="https://ekstrabladet.dk/nyheder/lederen/groen-skat/7943974"
               from="Ekstra Bladet"
               date="6. januar 2020"
+              img="/about-the-plan/ekstrabladet.svg"
             >
-              {' '}
               Ekstra Bladet
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Børsen mener: Den nødvendige grønne skattereform"
               url="https://borsen.dk/nyheder/opinion/boersen-mener-den-noedvendige-groenne-skattereform-4pmlg"
               from="Børsen"
               date="6. januar 2020"
+              img="/about-the-plan/boersen.svg"
             >
-              {' '}
               Børsen
-            </FootNote>{' '}
+            </FootNote>
             ,{' '}
             <FootNote
               title="Ja tak til en grøn skattereform, der belønner den klimabevidste forbruger"
@@ -379,39 +389,38 @@ const ThePlan = () => {
               from="Information"
               date="7. januar 2020"
             >
-              {' '}
               Information
-            </FootNote>{' '}
+            </FootNote>
             , og{' '}
             <FootNote
               title="Fint med grønne skatter – ikke højere skatter, Morten Østergaard"
               url="https://www.berlingske.dk/ledere/fint-med-groenne-skatter-ikke-hoejere-skatter-morten-oestergaard"
               from="Berlingske"
               date="7. januar 2020"
+              img="/about-the-plan/berlingske.svg"
             >
-              {' '}
               Berlingske
-            </FootNote>{' '}
+            </FootNote>
             . Det fik også støtte fra{' '}
             <FootNote
               title="Blå og røde økonomer er enige: CO2-afgift vil være godt redskab"
               url="https://borsen.dk/nyheder/politik/blaa-og-roede-oekonomer-er-enige-co2-afgift-vil-vaere-godt-redskab-8rv6y"
               from="Børsen"
               date="8. januar 2020"
+              img="/about-the-plan/boersen.svg"
             >
-              {' '}
               CEPOS og AE-rådet
-            </FootNote>{' '}
+            </FootNote>
             , fra{' '}
             <FootNote
               title="Afgifter - den skarpeste kniv i klimaskuffen"
               url="http://kraka.org/debatindlaeg/afgifter_den_skarpeste_kniv_i_klimaskuffen"
               from="Kraka"
               date="27. november 2019"
+              img="/about-the-plan/kraka.svg"
             >
-              {' '}
               Kraka tidligere
-            </FootNote>{' '}
+            </FootNote>
             , og fra{' '}
             <FootNote
               title="Økonomer i kor: Danmark skal have en grøn skattereform. Og nej, det behøver ikke øge uligheden"
@@ -419,21 +428,20 @@ const ThePlan = () => {
               from="Information"
               date="29. januar 2020"
             >
-              {' '}
               nogle af de meste prominente økonomer i Danmark
-            </FootNote>{' '}
+            </FootNote>
             .{' '}
             <FootNote
               title="En klimareform, der sikrer de magiske 70 pct."
               url="http://kraka.org/small_great_nation/en_klimareform_der_sikrer_de_magiske_70_pct"
               from="Kraka"
               date="22. februar 2020"
-              img="http://kraka.org/sites/all/themes/regnar/logo.png"
+              img="/about-the-plan/kraka.svg"
             >
               En gennemgribende rapport fra Kraka og Deloitte udgivet i februar
               viser, hvordan en dansk klimaafgift kan skrues sammen for at opnå
               målene
-            </FootNote>{' '}
+            </FootNote>
             .
           </P>
           <P>
