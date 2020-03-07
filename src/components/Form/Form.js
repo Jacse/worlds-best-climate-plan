@@ -118,8 +118,7 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
                     Følg med og hjælp til
                   </h2>
                   <p className="mb-3 text-sm sm:text-base sm:mb-8 sm:text-center">
-                    Borgerforslaget er første skridt i at indføre klimabidrag-
-                    og dividende i Danmark. Skriv dig op til nyheder og støt
+                    Borgerforslaget er første skridt i at indføre retfærdige klimaafgifter i Danmark. Skriv dig op til nyheder og støt
                     kampen for at løse klimakrisen på den mest effektive og
                     socialt retfærdige måde.
                   </p>
