@@ -19,7 +19,7 @@ const Supporters = () => {
       <section className="w-full max-w-4xl mx-auto py-16 sm:pb-32 px-6">
         <div className="max-w-2xl">
           <h1 className="text-2xl font-bold mb-4">Støtter</h1>
-          <p className="sm:text-lg mb-12">
+          <p className="sm:text-lg leading-relaxed mb-12">
             Det er ikke os, der har fundet på ideen med klimabidrag og
             dividende. Idéen er gennemtænkt og støttet af forskere og økonomer
             verden over. Og i Danmark støtter over 100 forskere, virksomheder og

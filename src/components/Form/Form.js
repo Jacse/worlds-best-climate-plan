@@ -165,9 +165,26 @@ const SupportForm = ({ modal = false, closeModal, className }) => {
                     </div>
                   ) : (
                     <Button type="submit" large className="block sm:mx-auto">
-                      Skriv dig op 📮
+                      Skriv dig op&nbsp;&nbsp;📮
                     </Button>
                   )}
+                  {/* 
+                  ADD THIS WHEN WE HAVE A LINK TO THE BORGERFORSLAG
+                  {!modal && (
+                    <p className="mt-8 text-center">
+                      Pssst ... har du husket at skrive under på{' '}
+                      <a
+                        href="/"
+                        target="_blank"
+                        rel="noopener"
+                        className="underline text-green-700 hover:text-green-500"
+                      >
+                        borgerforslaget
+                      </a>
+                      ?
+                    </p>
+                  )}
+                  */}
                 </React.Fragment>
               )}
               {modal && (
